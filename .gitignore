@@ -1,0 +1,16 @@
+# IDE
+.nova/
+
+# Node Modules
+node_modules/
+
+# OS Specific
+.DS_Store
+.rsync
+
+# Jekyll
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
