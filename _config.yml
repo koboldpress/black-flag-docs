@@ -24,7 +24,7 @@ description: >-
   VTT.
 domain: black-flag.github.io
 url: "https://black-flag.github.io"
-baseurl: ""
+baseurl: "/black-flag-docs"
 github_username:  arbron
 
 # Build settings
