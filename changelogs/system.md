@@ -4,6 +4,23 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.9.022] - Beta: Biography & V12 Compatibility
+Added biography tab and dropdown descriptions on PC sheets and made the system compatible with Foundry V12.
+
+#### Improvements
+- Item names on sheet can now be clicked to drop down item description ([#363])
+- PCs now have a functional biography tab ([#455])
+- Sheet context menus now display in popover rather than inline styling, preventing layout issues ([#456])
+- Clicking actor artwork in play mode now pops out a larger version of the image ([#463])
+
+#### Compendium Content
+- NPCs should now have token artwork properly configured ([#464])
+
+#### Bug Fixes
+- Compatibility issues with V12 have been fixed ([#458], [#460], [#462])
+- Healing activity should no longer throw error when in actions section of PC sheet ([#459])
+
+
 ## [0.8.021] - Alpha 8: Finalize Alpha SRD
 Final pass over the Alpha SRD content and squashed a few bugs.
 
@@ -489,6 +506,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.8.019]: https://github.com/koboldpress/black-flag/releases/tag/0.8.019
 [0.8.020]: https://github.com/koboldpress/black-flag/releases/tag/0.8.020
 [0.8.021]: https://github.com/koboldpress/black-flag/releases/tag/0.8.021
+[0.9.022]: https://github.com/koboldpress/black-flag/releases/tag/0.9.022
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -781,6 +799,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#359]: https://github.com/koboldpress/black-flag/issues/359
 [#360]: https://github.com/koboldpress/black-flag/issues/360
 [#361]: https://github.com/koboldpress/black-flag/issues/361
+[#363]: https://github.com/koboldpress/black-flag/issues/363
 [#364]: https://github.com/koboldpress/black-flag/issues/364
 [#369]: https://github.com/koboldpress/black-flag/issues/369
 [#370]: https://github.com/koboldpress/black-flag/issues/370
@@ -844,3 +863,11 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#446]: https://github.com/koboldpress/black-flag/issues/446
 [#453]: https://github.com/koboldpress/black-flag/issues/453
 [#454]: https://github.com/koboldpress/black-flag/issues/454
+[#455]: https://github.com/koboldpress/black-flag/issues/455
+[#456]: https://github.com/koboldpress/black-flag/issues/456
+[#458]: https://github.com/koboldpress/black-flag/issues/458
+[#459]: https://github.com/koboldpress/black-flag/issues/459
+[#460]: https://github.com/koboldpress/black-flag/issues/460
+[#462]: https://github.com/koboldpress/black-flag/issues/462
+[#463]: https://github.com/koboldpress/black-flag/issues/463
+[#464]: https://github.com/koboldpress/black-flag/issues/464
