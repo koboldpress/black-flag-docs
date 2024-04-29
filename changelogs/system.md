@@ -4,6 +4,16 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.9.023] - Beta: Spell Advancement
+Add Grant & Choose spells advancement types and a few other spell improvements.
+
+#### Improvements
+- Added `GrantSpellAdvancement` and `ChooseSpellAdvancement` ([#163])
+- Always prepared is now a separate boolean value rather than its own preparation mode and preparation data has been moved into the `relationship` flag (**breaking**) ([#465], [#469])
+- Spellcasting terminology has been adjusted to match wording in Player's Guide (**breaking**) ([#467])
+- Spells can now have short descriptions ([#468])
+
+
 ## [0.9.022] - Beta: Biography & V12 Compatibility
 Added biography tab and dropdown descriptions on PC sheets and made the system compatible with Foundry V12.
 
@@ -507,6 +517,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.8.020]: https://github.com/koboldpress/black-flag/releases/tag/0.8.020
 [0.8.021]: https://github.com/koboldpress/black-flag/releases/tag/0.8.021
 [0.9.022]: https://github.com/koboldpress/black-flag/releases/tag/0.9.022
+[0.9.023]: https://github.com/koboldpress/black-flag/releases/tag/0.9.023
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -639,6 +650,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#160]: https://github.com/koboldpress/black-flag/issues/160
 [#161]: https://github.com/koboldpress/black-flag/issues/161
 [#162]: https://github.com/koboldpress/black-flag/issues/162
+[#163]: https://github.com/koboldpress/black-flag/issues/163
 [#165]: https://github.com/koboldpress/black-flag/issues/165
 [#166]: https://github.com/koboldpress/black-flag/issues/166
 [#167]: https://github.com/koboldpress/black-flag/issues/167
@@ -871,3 +883,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#462]: https://github.com/koboldpress/black-flag/issues/462
 [#463]: https://github.com/koboldpress/black-flag/issues/463
 [#464]: https://github.com/koboldpress/black-flag/issues/464
+[#465]: https://github.com/koboldpress/black-flag/issues/465
+[#467]: https://github.com/koboldpress/black-flag/issues/467
+[#468]: https://github.com/koboldpress/black-flag/issues/468
+[#469]: https://github.com/koboldpress/black-flag/issues/469
