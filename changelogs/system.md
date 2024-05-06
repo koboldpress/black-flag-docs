@@ -4,6 +4,18 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.9.024] - Beta: Polishing
+Fix a few bugs and add multiclassing ability restrictions.
+
+#### Improvements
+- Multi-classing will now take player's ability scores into account ([#193])
+
+#### Bug Fixes
+- Content links should now enrich properly in V12 ([#474])
+- Spells should now properly choose ability base on their spellcasting origin ([#475])
+- Changes to character portrait should now be saved ([#476])
+
+
 ## [0.9.023] - Beta: Spell Advancement
 Add Grant & Choose spells advancement types and a few other spell improvements.
 
@@ -518,6 +530,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.8.021]: https://github.com/koboldpress/black-flag/releases/tag/0.8.021
 [0.9.022]: https://github.com/koboldpress/black-flag/releases/tag/0.9.022
 [0.9.023]: https://github.com/koboldpress/black-flag/releases/tag/0.9.023
+[0.9.024]: https://github.com/koboldpress/black-flag/releases/tag/0.9.024
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -675,6 +688,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#190]: https://github.com/koboldpress/black-flag/issues/190
 [#191]: https://github.com/koboldpress/black-flag/issues/191
 [#192]: https://github.com/koboldpress/black-flag/issues/192
+[#193]: https://github.com/koboldpress/black-flag/issues/193
 [#194]: https://github.com/koboldpress/black-flag/issues/194
 [#195]: https://github.com/koboldpress/black-flag/issues/195
 [#196]: https://github.com/koboldpress/black-flag/issues/196
@@ -887,3 +901,6 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#467]: https://github.com/koboldpress/black-flag/issues/467
 [#468]: https://github.com/koboldpress/black-flag/issues/468
 [#469]: https://github.com/koboldpress/black-flag/issues/469
+[#474]: https://github.com/koboldpress/black-flag/issues/474
+[#475]: https://github.com/koboldpress/black-flag/issues/475
+[#476]: https://github.com/koboldpress/black-flag/issues/476
