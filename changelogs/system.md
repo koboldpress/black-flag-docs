@@ -4,6 +4,23 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.9.025] - Beta: Lucky
+Luck rest formula can be configured & luck can be decreased.
+
+#### Improvements
+- The formula used for resetting luck if too much is gained can now be set ([#452])
+- Luck can now be removed in editing mode and the explicit value can be set using a config app ([#472])
+- Character portrait & token now shown on biography tab ([#482])
+
+#### Compendium Content
+- Touch of Luck has been updated to set the proper reset formula ([#452])
+
+#### Bug Fixes
+- Expand and View controls should no longer be disabled on locked sheets ([#478])
+- Context menus should now display proper options when accessing documents in locked compendiums ([#479])
+- Inventory element no longer prevents hook from being sent out for non-items ([#486])
+
+
 ## [0.9.024] - Beta: Polishing
 Fix a few bugs and add multiclassing ability restrictions.
 
@@ -531,6 +548,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.9.022]: https://github.com/koboldpress/black-flag/releases/tag/0.9.022
 [0.9.023]: https://github.com/koboldpress/black-flag/releases/tag/0.9.023
 [0.9.024]: https://github.com/koboldpress/black-flag/releases/tag/0.9.024
+[0.9.025]: https://github.com/koboldpress/black-flag/releases/tag/0.9.025
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -887,6 +905,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#444]: https://github.com/koboldpress/black-flag/issues/444
 [#445]: https://github.com/koboldpress/black-flag/issues/445
 [#446]: https://github.com/koboldpress/black-flag/issues/446
+[#452]: https://github.com/koboldpress/black-flag/issues/452
 [#453]: https://github.com/koboldpress/black-flag/issues/453
 [#454]: https://github.com/koboldpress/black-flag/issues/454
 [#455]: https://github.com/koboldpress/black-flag/issues/455
@@ -901,6 +920,11 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#467]: https://github.com/koboldpress/black-flag/issues/467
 [#468]: https://github.com/koboldpress/black-flag/issues/468
 [#469]: https://github.com/koboldpress/black-flag/issues/469
+[#472]: https://github.com/koboldpress/black-flag/issues/472
 [#474]: https://github.com/koboldpress/black-flag/issues/474
 [#475]: https://github.com/koboldpress/black-flag/issues/475
 [#476]: https://github.com/koboldpress/black-flag/issues/476
+[#478]: https://github.com/koboldpress/black-flag/issues/478
+[#479]: https://github.com/koboldpress/black-flag/issues/479
+[#482]: https://github.com/koboldpress/black-flag/issues/482
+[#486]: https://github.com/koboldpress/black-flag/issues/486
