@@ -4,6 +4,27 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.9.026] - Beta: Reference Document Updates
+Update existing content in the system to match released version of reference document.
+
+#### Improvements
+- Custom journal entry sheet added with tweaked styling ([#495])
+- Properties have been added to consumables, gear, and tools ([#496])
+- Subclass feature levels are now displayed on class journal page ([#506])
+- Add new feature types for Heroic & Epic Boons and adjusted sheet logic to better support them ([#509])
+- Improvement should now only be listed once on class journal page feature list ([#513])
+- Features with scale values now list all their levels in class journal page feature lists ([#514])
+
+#### Compendium Content
+- Update Cleric, Fighter, Rogue, and Wizard classes to match released reference document ([#497])
+
+#### Bug Fixes
+- Choose Spells Advancement should now display "Allow Rituals" checkbox at the correct levels ([#501])
+- Removed limitation preventing multiple copies of Improvement Advancement from being added ([#505])
+- Item categories in Grant Spells Advancement are now properly localized ([#508])
+- Change list entries can now be deleted from Property Advancement ([#517])
+
+
 ## [0.9.025] - Beta: Lucky
 Luck rest formula can be configured & luck can be decreased.
 
@@ -549,6 +570,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.9.023]: https://github.com/koboldpress/black-flag/releases/tag/0.9.023
 [0.9.024]: https://github.com/koboldpress/black-flag/releases/tag/0.9.024
 [0.9.025]: https://github.com/koboldpress/black-flag/releases/tag/0.9.025
+[0.9.026]: https://github.com/koboldpress/black-flag/releases/tag/0.9.026
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -928,3 +950,14 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#479]: https://github.com/koboldpress/black-flag/issues/479
 [#482]: https://github.com/koboldpress/black-flag/issues/482
 [#486]: https://github.com/koboldpress/black-flag/issues/486
+[#495]: https://github.com/koboldpress/black-flag/issues/495
+[#496]: https://github.com/koboldpress/black-flag/issues/496
+[#497]: https://github.com/koboldpress/black-flag/issues/497
+[#501]: https://github.com/koboldpress/black-flag/issues/501
+[#505]: https://github.com/koboldpress/black-flag/issues/505
+[#506]: https://github.com/koboldpress/black-flag/issues/506
+[#508]: https://github.com/koboldpress/black-flag/issues/508
+[#509]: https://github.com/koboldpress/black-flag/issues/509
+[#513]: https://github.com/koboldpress/black-flag/issues/513
+[#514]: https://github.com/koboldpress/black-flag/issues/514
+[#517]: https://github.com/koboldpress/black-flag/issues/517
