@@ -4,6 +4,26 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.9.028] - Beta: Reference Document Lineage & Heritage Updates
+Continued updating the content to match the released BFRD and added magical bonuses.
+
+#### Improvements
+- Weapons, Armor, and Ammunition can now have magical bonuses ([#329], [#345])
+- Advancements can now be dragged and dropped ([#527])
+- Grant & Choose Spell advancement types can now offer spellcasting ability choice ([#528])
+
+#### Compendium Content
+- Weapons, armor, and tools have been updated to match released reference document ([#497])
+- Lineages & heritages have been updated to match released reference document ([#499])
+
+#### Bug Fixes
+- Short keys can now be used in enrichers properly (e.g. `dex` instead of `dexterity`) ([#529])
+- Clicking "Level Up" without class levels no longer opens ability assignment dialog ([#530])
+- Create Actor & Item dialogs now populate folder list when activated from compendiums ([#535])
+- Inline text journal page embeds can no include leading label ([#536])
+- Trait preparation should no longer fail if invalid traits are found ([#537])
+
+
 ## [0.9.027] - Beta: Activities Improvements
 Add duration, range, and targeting to activity data and improve chat cards.
 
@@ -589,6 +609,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.9.025]: https://github.com/koboldpress/black-flag/releases/tag/0.9.025
 [0.9.026]: https://github.com/koboldpress/black-flag/releases/tag/0.9.026
 [0.9.027]: https://github.com/koboldpress/black-flag/releases/tag/0.9.027
+[0.9.028]: https://github.com/koboldpress/black-flag/releases/tag/0.9.028
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -859,6 +880,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#325]: https://github.com/koboldpress/black-flag/issues/325
 [#326]: https://github.com/koboldpress/black-flag/issues/326
 [#327]: https://github.com/koboldpress/black-flag/issues/327
+[#329]: https://github.com/koboldpress/black-flag/issues/329
 [#331]: https://github.com/koboldpress/black-flag/issues/331
 [#332]: https://github.com/koboldpress/black-flag/issues/332
 [#333]: https://github.com/koboldpress/black-flag/issues/333
@@ -872,6 +894,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#342]: https://github.com/koboldpress/black-flag/issues/342
 [#343]: https://github.com/koboldpress/black-flag/issues/343
 [#344]: https://github.com/koboldpress/black-flag/issues/344
+[#345]: https://github.com/koboldpress/black-flag/issues/345
 [#346]: https://github.com/koboldpress/black-flag/issues/346
 [#347]: https://github.com/koboldpress/black-flag/issues/347
 [#348]: https://github.com/koboldpress/black-flag/issues/348
@@ -976,6 +999,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#495]: https://github.com/koboldpress/black-flag/issues/495
 [#496]: https://github.com/koboldpress/black-flag/issues/496
 [#497]: https://github.com/koboldpress/black-flag/issues/497
+[#499]: https://github.com/koboldpress/black-flag/issues/499
 [#501]: https://github.com/koboldpress/black-flag/issues/501
 [#505]: https://github.com/koboldpress/black-flag/issues/505
 [#506]: https://github.com/koboldpress/black-flag/issues/506
@@ -988,3 +1012,10 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#523]: https://github.com/koboldpress/black-flag/issues/523
 [#524]: https://github.com/koboldpress/black-flag/issues/524
 [#525]: https://github.com/koboldpress/black-flag/issues/525
+[#527]: https://github.com/koboldpress/black-flag/issues/527
+[#528]: https://github.com/koboldpress/black-flag/issues/528
+[#529]: https://github.com/koboldpress/black-flag/issues/529
+[#530]: https://github.com/koboldpress/black-flag/issues/530
+[#535]: https://github.com/koboldpress/black-flag/issues/535
+[#536]: https://github.com/koboldpress/black-flag/issues/536
+[#537]: https://github.com/koboldpress/black-flag/issues/537
