@@ -4,6 +4,33 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.9.031] - Beta: Barbarian & Talents
+Introducing the Barbarian class and Berserker subclass! Plus updated the talent list to match the final BFRD.
+
+### Breaking
+- NPC attacks without the "Flat" checkbox may have changed due to updated with how proficiency is handled. Existing NPCs should be reviewed to ensure their attacks have the right To Hit.
+- Critical options passed to roll data have be restructured. This should only matter if you are manually building roll configurations.
+
+#### Improvements
+- NPCs should now handle proficiency in weapons & other attacks properly ([#442])
+- Added support for `min` modifiers on hit dice rolls ([#451])
+- Added support for base types on Consumables & Sundry items and added poison consumable type ([#515])
+- Class journal page features should now display proper levels regardless of advancement type ([#518])
+- Greatly expanded the number of prerequisite options for talents ([#531], [#553], [#555])
+- Added `critical-threshold` and `critical-dice` modifiers ([#561])
+
+#### Compendium Content
+- Updated & added talents to make them match final version of the BFRD ([#497])
+- Added Barbarian class & Berserker subclass ([#498])
+
+#### Bug Fixes
+- Hit Dice & Spell Slot consumption types on non-embedded items should now display selection dropdown ([#556])
+- Canceling an initiative roll should no longer throw an error ([#557])
+- Activity & Advancement selection dialog title is now localized ([#558])
+- Inferred attack type & classification should now be set correctly in Attack activities ([#560])
+- Improvement advancement should no longer display warning of action needed if two abilities were selected ([#568])
+
+
 ## [0.9.030] - Beta: NPC Spellcasting
 Properly display NPC spellcasting and ensure uses are properly handled. Also added resting support to NPCs to allow spellcasting & other feature uses to recover.
 
@@ -647,6 +674,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.9.028]: https://github.com/koboldpress/black-flag/releases/tag/0.9.028
 [0.9.029]: https://github.com/koboldpress/black-flag/releases/tag/0.9.029
 [0.9.030]: https://github.com/koboldpress/black-flag/releases/tag/0.9.030
+[0.9.031]: https://github.com/koboldpress/black-flag/releases/tag/0.9.031
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1009,9 +1037,11 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#437]: https://github.com/koboldpress/black-flag/issues/437
 [#440]: https://github.com/koboldpress/black-flag/issues/440
 [#441]: https://github.com/koboldpress/black-flag/issues/441
+[#442]: https://github.com/koboldpress/black-flag/issues/442
 [#444]: https://github.com/koboldpress/black-flag/issues/444
 [#445]: https://github.com/koboldpress/black-flag/issues/445
 [#446]: https://github.com/koboldpress/black-flag/issues/446
+[#451]: https://github.com/koboldpress/black-flag/issues/451
 [#452]: https://github.com/koboldpress/black-flag/issues/452
 [#453]: https://github.com/koboldpress/black-flag/issues/453
 [#454]: https://github.com/koboldpress/black-flag/issues/454
@@ -1041,6 +1071,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#495]: https://github.com/koboldpress/black-flag/issues/495
 [#496]: https://github.com/koboldpress/black-flag/issues/496
 [#497]: https://github.com/koboldpress/black-flag/issues/497
+[#498]: https://github.com/koboldpress/black-flag/issues/498
 [#499]: https://github.com/koboldpress/black-flag/issues/499
 [#501]: https://github.com/koboldpress/black-flag/issues/501
 [#503]: https://github.com/koboldpress/black-flag/issues/503
@@ -1051,7 +1082,9 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#509]: https://github.com/koboldpress/black-flag/issues/509
 [#513]: https://github.com/koboldpress/black-flag/issues/513
 [#514]: https://github.com/koboldpress/black-flag/issues/514
+[#515]: https://github.com/koboldpress/black-flag/issues/515
 [#517]: https://github.com/koboldpress/black-flag/issues/517
+[#518]: https://github.com/koboldpress/black-flag/issues/518
 [#521]: https://github.com/koboldpress/black-flag/issues/521
 [#522]: https://github.com/koboldpress/black-flag/issues/522
 [#523]: https://github.com/koboldpress/black-flag/issues/523
@@ -1061,6 +1094,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#528]: https://github.com/koboldpress/black-flag/issues/528
 [#529]: https://github.com/koboldpress/black-flag/issues/529
 [#530]: https://github.com/koboldpress/black-flag/issues/530
+[#531]: https://github.com/koboldpress/black-flag/issues/531
 [#535]: https://github.com/koboldpress/black-flag/issues/535
 [#536]: https://github.com/koboldpress/black-flag/issues/536
 [#537]: https://github.com/koboldpress/black-flag/issues/537
@@ -1072,3 +1106,11 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#547]: https://github.com/koboldpress/black-flag/issues/547
 [#548]: https://github.com/koboldpress/black-flag/issues/548
 [#549]: https://github.com/koboldpress/black-flag/issues/549
+[#553]: https://github.com/koboldpress/black-flag/issues/553
+[#555]: https://github.com/koboldpress/black-flag/issues/555
+[#556]: https://github.com/koboldpress/black-flag/issues/556
+[#557]: https://github.com/koboldpress/black-flag/issues/557
+[#558]: https://github.com/koboldpress/black-flag/issues/558
+[#560]: https://github.com/koboldpress/black-flag/issues/560
+[#561]: https://github.com/koboldpress/black-flag/issues/561
+[#568]: https://github.com/koboldpress/black-flag/issues/568
