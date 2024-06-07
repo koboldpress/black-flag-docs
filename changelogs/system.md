@@ -4,6 +4,36 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.9.032] - Beta: Bard & Lairs
+Play some funky music with the Bard class and Lore subclass! There is also a brand new Lair actor to represent the lairs of legendary creatures.
+
+### Improvements
+- Added Lair actor and example Red Dragon’s Lair ([#248])
+- Added explicit "Spellcasting" save DC option ([#554])
+- Added Map Location journal page & custom map markers ([#559])
+- Redesigned class & subclass journal page configs ([#562])
+- Items can now be posted to chat with descriptions & tags ([#569])
+- Creating items directly on actor sheets will now go through the standard Create Item dialog ([#570])
+- Added vehicle proficiencies ([#572])
+- Embedded features & talents will now display prerequisites ([#573])
+- Dropping items directly onto concept advancement tabs will now automatically add to Feature advancement at right level ([#575])
+- NPCs now have a source field ([#581])
+- Invalid item consumption in activities will now display actor warning ([#586])
+
+### Compendium Content
+- Added Bard class & Lore subclass ([#498])
+- Updated Backgrounds & Talents to match final BFRD ([#500])
+
+### Bug Fixes
+- Badly formatted modifiers should no longer break actor sheets ([#567])
+- Fixed un-localized "Any *" labels in trait categories ([#571])
+- Advancement data will now be properly cleaned before saving to prevent odd data from being saved ([#574])
+- Usage scale value without number will no longer display `null/LR` ([#577])
+- Class restriction in advancement list should now display properly ([#580])
+- Fixed bug preventing inline rolls in chat message descriptions from rolling ([#585])
+- Targeting & duration formulas will now be properly resolved ([#587])
+
+
 ## [0.9.031] - Beta: Barbarian & Talents
 Introducing the Barbarian class and Berserker subclass! Plus updated the talent list to match the final BFRD.
 
@@ -11,7 +41,7 @@ Introducing the Barbarian class and Berserker subclass! Plus updated the talent 
 - NPC attacks without the "Flat" checkbox may have changed due to updated with how proficiency is handled. Existing NPCs should be reviewed to ensure their attacks have the right To Hit.
 - Critical options passed to roll data have be restructured. This should only matter if you are manually building roll configurations.
 
-#### Improvements
+### Improvements
 - NPCs should now handle proficiency in weapons & other attacks properly ([#442])
 - Added support for `min` modifiers on hit dice rolls ([#451])
 - Added support for base types on Consumables & Sundry items and added poison consumable type ([#515])
@@ -19,11 +49,11 @@ Introducing the Barbarian class and Berserker subclass! Plus updated the talent 
 - Greatly expanded the number of prerequisite options for talents ([#531], [#553], [#555])
 - Added `critical-threshold` and `critical-dice` modifiers ([#561])
 
-#### Compendium Content
+### Compendium Content
 - Updated & added talents to make them match final version of the BFRD ([#497])
 - Added Barbarian class & Berserker subclass ([#498])
 
-#### Bug Fixes
+### Bug Fixes
 - Hit Dice & Spell Slot consumption types on non-embedded items should now display selection dropdown ([#556])
 - Canceling an initiative roll should no longer throw an error ([#557])
 - Activity & Advancement selection dialog title is now localized ([#558])
@@ -34,16 +64,16 @@ Introducing the Barbarian class and Berserker subclass! Plus updated the talent 
 ## [0.9.030] - Beta: NPC Spellcasting
 Properly display NPC spellcasting and ensure uses are properly handled. Also added resting support to NPCs to allow spellcasting & other feature uses to recover.
 
-#### Improvements
+### Improvements
 - NPC sheets will now display as multiple columns if made wide enough ([#432])
 - NPCs with spells will now get auto-generated spellcasting block with configurable ability & DC ([#441])
 - NPCs can now take short and long rests ([#547])
 - Spells cast by NPCs will use the ability & DC specified directly on their sheet, unless overridden by the spell ([#548])
 
-#### Compendium Content
+### Compendium Content
 - Black Flag Rules journals have been updated to match the final BFRD ordering & content ([#497])
 
-#### Bug Fixes
+### Bug Fixes
 - Passive NPC features with activities should now be properly sorted relative to passive features without ([#435])
 - System will now use `_stats.compendiumSource` rather than `flags.core.sourceId` in V12 ([#546])
 - Properties in chat cards should now wrap ([#549])
@@ -52,14 +82,14 @@ Properly display NPC spellcasting and ensure uses are properly handled. Also add
 ## [0.9.029] - Beta: Improved Improvements
 Update Improvements to match final rules and support multiple talent lists and fix a number of lingering bugs on V12.
 
-#### Improvements
+### Improvements
 - Portrait can now be edited from top of PC sheet or biography tab ([#490])
 - Re-implemented Improvement Advancement to match final released rules ([#503])
 - Subclasses will now be auto-populated with feature advancement at the right levels ([#507])
 - Spellcasting Value Advancement has been added to represent spells/cantrips/rituals known ([#522])
 - Improvement & Expanded Talent List Advancement types can now specify multiple talent lists ([#543])
 
-#### Bug Fixes
+### Bug Fixes
 - Fixed portrait reverting in V12 ([#493])
 - More Information links on concept items now work in V12 ([#539])
 - Activity config should no longer throw an error in V12 ([#541])
@@ -69,16 +99,16 @@ Update Improvements to match final rules and support multiple talent lists and f
 ## [0.9.028] - Beta: Reference Document Lineage & Heritage Updates
 Continued updating the content to match the released BFRD and added magical bonuses.
 
-#### Improvements
+### Improvements
 - Weapons, Armor, and Ammunition can now have magical bonuses ([#329], [#345])
 - Advancements can now be dragged and dropped ([#527])
 - Grant & Choose Spell advancement types can now offer spellcasting ability choice ([#528])
 
-#### Compendium Content
+### Compendium Content
 - Weapons, armor, and tools have been updated to match released reference document ([#497])
 - Lineages & heritages have been updated to match released reference document ([#499])
 
-#### Bug Fixes
+### Bug Fixes
 - Short keys can now be used in enrichers properly (e.g. `dex` instead of `dexterity`) ([#529])
 - Clicking "Level Up" without class levels no longer opens ability assignment dialog ([#530])
 - Create Actor & Item dialogs now populate folder list when activated from compendiums ([#535])
@@ -89,13 +119,13 @@ Continued updating the content to match the released BFRD and added magical bonu
 ## [0.9.027] - Beta: Activities Improvements
 Add duration, range, and targeting to activity data and improve chat cards.
 
-#### Improvements
+### Improvements
 - Activity description, tags, and save DCs are now displayed on chat cards ([#257])
 - Added duration, targeting, and range data to activities ([#374])
 - Activities can now be added to armor items ([#425])
 - GM can now set what save DCs are visible to players ([#429])
 
-#### Bug Fixes
+### Bug Fixes
 - Activity & Advancement sheets should no longer become disconnected from underlying document changes ([#470])
 - Now only one sheet for an activity & advancement can be opened at a time ([#521])
 - Default activities on activities on various items should now display correctly ([#523])
@@ -106,7 +136,7 @@ Add duration, range, and targeting to activity data and improve chat cards.
 ## [0.9.026] - Beta: Reference Document Class Updates
 Update existing classes in the system to match released version of reference document and extend them to level 20.
 
-#### Improvements
+### Improvements
 - Custom journal entry sheet added with tweaked styling ([#495])
 - Properties have been added to consumables, gear, and tools ([#496])
 - Subclass feature levels are now displayed on class journal page ([#506])
@@ -114,10 +144,10 @@ Update existing classes in the system to match released version of reference doc
 - Improvement should now only be listed once on class journal page feature list ([#513])
 - Features with scale values now list all their levels in class journal page feature lists ([#514])
 
-#### Compendium Content
+### Compendium Content
 - Update Cleric, Fighter, Rogue, and Wizard classes to match released reference document ([#497])
 
-#### Bug Fixes
+### Bug Fixes
 - Choose Spells Advancement should now display "Allow Rituals" checkbox at the correct levels ([#501])
 - Removed limitation preventing multiple copies of Improvement Advancement from being added ([#505])
 - Item categories in Grant Spells Advancement are now properly localized ([#508])
@@ -127,15 +157,15 @@ Update existing classes in the system to match released version of reference doc
 ## [0.9.025] - Beta: Lucky
 Luck rest formula can be configured & luck can be decreased.
 
-#### Improvements
+### Improvements
 - The formula used for resetting luck if too much is gained can now be set ([#452])
 - Luck can now be removed in editing mode and the explicit value can be set using a config app ([#472])
 - Character portrait & token now shown on biography tab ([#482])
 
-#### Compendium Content
+### Compendium Content
 - Touch of Luck has been updated to set the proper reset formula ([#452])
 
-#### Bug Fixes
+### Bug Fixes
 - Expand and View controls should no longer be disabled on locked sheets ([#478])
 - Context menus should now display proper options when accessing documents in locked compendiums ([#479])
 - Inventory element no longer prevents hook from being sent out for non-items ([#486])
@@ -144,10 +174,10 @@ Luck rest formula can be configured & luck can be decreased.
 ## [0.9.024] - Beta: Polishing
 Fix a few bugs and add multiclassing ability restrictions.
 
-#### Improvements
+### Improvements
 - Multi-classing will now take player's ability scores into account ([#193])
 
-#### Bug Fixes
+### Bug Fixes
 - Content links should now enrich properly in V12 ([#474])
 - Spells should now properly choose ability base on their spellcasting origin ([#475])
 - Changes to character portrait should now be saved ([#476])
@@ -156,7 +186,7 @@ Fix a few bugs and add multiclassing ability restrictions.
 ## [0.9.023] - Beta: Spell Advancement
 Add Grant & Choose spells advancement types and a few other spell improvements.
 
-#### Improvements
+### Improvements
 - Added `GrantSpellAdvancement` and `ChooseSpellAdvancement` ([#163])
 - Always prepared is now a separate boolean value rather than its own preparation mode and preparation data has been moved into the `relationship` flag (**breaking**) ([#465], [#469])
 - Spellcasting terminology has been adjusted to match wording in Player's Guide (**breaking**) ([#467])
@@ -166,16 +196,16 @@ Add Grant & Choose spells advancement types and a few other spell improvements.
 ## [0.9.022] - Beta: Biography & V12 Compatibility
 Added biography tab and dropdown descriptions on PC sheets and made the system compatible with Foundry V12.
 
-#### Improvements
+### Improvements
 - Item names on sheet can now be clicked to drop down item description ([#363])
 - PCs now have a functional biography tab ([#455])
 - Sheet context menus now display in popover rather than inline styling, preventing layout issues ([#456])
 - Clicking actor artwork in play mode now pops out a larger version of the image ([#463])
 
-#### Compendium Content
+### Compendium Content
 - NPCs should now have token artwork properly configured ([#464])
 
-#### Bug Fixes
+### Bug Fixes
 - Compatibility issues with V12 have been fixed ([#458], [#460], [#462])
 - Healing activity should no longer throw error when in actions section of PC sheet ([#459])
 
@@ -183,15 +213,15 @@ Added biography tab and dropdown descriptions on PC sheets and made the system c
 ## [0.8.021] - Alpha 8: Finalize Alpha SRD
 Final pass over the Alpha SRD content and squashed a few bugs.
 
-#### Improvements
+### Improvements
 - Identifiers are now set automatically & have an interface for adjustments ([#144], [#145])
 - Item resource consumption can now be configured using an UUID for non-embedded items ([#350])
 - Level cap has been raised to 20 ([#444])
 
-#### Compendium Content
+### Compendium Content
 - Complete remaining SRD content ([#167], [#168], [#169], [#170], [#171], [#172], [#174])
 
-#### Bug Fixes
+### Bug Fixes
 - Recovery periods should display properly for activities once more ([#445])
 - Resistances & vulnerabilities should now all properly display on PC sheets ([#446])
 - Containers within contains in compendiums will no longer throw error generating weight label ([#453])
@@ -201,16 +231,16 @@ Final pass over the Alpha SRD content and squashed a few bugs.
 ## [0.8.020] - Alpha 8: Activation Dialog & Spell Slots
 The activation dialog is now implemented allowing for consumption to be bypassed on activation and for selecting a slot to use when casting a spell (no upcasting of damage yet though).
 
-#### Improvements
+### Improvements
 - Legendary actions will now consume uses which will replenish automatically on NPC's turn [#239]
 - Activation dialog implemented to allow for configuring consumption & other usage [#263]
 - NPC features will now display their limited uses on the main tab [#369]
 - Uses can now be recharged based on a D6 roll which will be rolled automatically [#376]
 
-#### Compendium Content
+### Compendium Content
 - Monsters compendium now completed ([#326])
 
-#### Bug Fixes
+### Bug Fixes
 - Casting spells will now actually consume spell slots ([#335])
 - Damage dialog & chat card will now properly display healing types ([#436])
 - Spells slots now properly recover during rests ([#437])
@@ -220,7 +250,7 @@ The activation dialog is now implemented allowing for consumption to be bypassed
 ## [0.8.019] - Alpha 8: Complete NPCs
 Add a number of features to make building NPC stat blocks easier and more rich.
 
-#### Improvements
+### Improvements
 - Legendary actions can now be added to NPC sheets ([#239])
 - Add "Add Feature" button to NPC main tab & create features with Monster type by default ([#321], [#372])
 - To hit value on attacks can now have bonus & flat value ([#370])
@@ -233,11 +263,11 @@ Add a number of features to make building NPC stat blocks easier and more rich.
 - New healing enricher added ([#426])
 - Localized reach & range labels can now be referenced using lookup enricher ([#433])
 
-#### Compendium Content
+### Compendium Content
 - Added icons and standard descriptions to SRD weapons ([#174])
 - Continue building out SRD monsters ([#326])
 
-#### Bug Fixes
+### Bug Fixes
 - Switching sheet mode will now commit unsaved changes ([#416])
 - Blank damage enrichers should no longer throw an error if one of the damage lines has a blank formula ([#420])
 - Blank damage enrichers should now properly include base weapon damage ([#422])
@@ -249,7 +279,7 @@ Add a number of features to make building NPC stat blocks easier and more rich.
 ## [0.8.018] - Alpha 8: Additional Spell Improvements
 Completed features for learning spells and expanded enrichers to aid with creation of template monster features.
 
-#### Improvements
+### Improvements
 - Added `[[/attack]]` enricher for rolling attacks ([#247])
 - Source data is now object to support more rich source details ([#302])
 - Spells & physical items now have an effects tab ([#360])
@@ -259,27 +289,27 @@ Completed features for learning spells and expanded enrichers to aid with creati
 - Enrichers can now roll from multiple tokens at once ([#410])
 - Damage enricher now supports multiple parts & damage derived from containing item ([#412], [#413])
 
-#### Compendium Content
+### Compendium Content
 - Added artwork for SRD monsters ([#326])
 
-#### Bug Fixes
+### Bug Fixes
 - Activity description editor will no longer lose the description ([#414])
 
 
 ## [0.8.017] - Alpha 8: Bug Fix
 Fix a bug with the spell manager & add a new notification.
 
-#### Improvements
+### Improvements
 - Sheet now displays notification after leveling up if new spells need to be learned ([#403])
 
-#### Bug Fixes
+### Bug Fixes
 - Spell manager should no longer throw error when viewing ring slot ([#407])
 
 
 ## [0.8.016] - Alpha 8: Learning Spells
 Adds a spell manager that support learning spells based on class or subclass's spellcasting details. This allows clerics and druids to gain all spells for their circle they can cast, sorcerers and spell blades can choose a certain number of spells, and wizards can scribe some free spells into their spellbook.
 
-#### Improvements
+### Improvements
 - Implemented system for learning new spells at each level ([#160])
 - Added spellcasting source block to spellbook tab that displays ability, to hit, save DC, & prepared spells ([#347])
 - Adjusted movement & sense tags to be associated with specific block ([#383])
@@ -287,17 +317,17 @@ Adds a spell manager that support learning spells based on class or subclass's s
 - NPC sheets will now show adjusted stealth from noisy armor ([#390])
 - Players will now get a roll note indicating they have disadvantage on stealth with noisy armor ([#406])
 
-#### Compendium Content
+### Compendium Content
 - SRD spells have now all been added ([#173])
 
-#### Bug Fixes
+### Bug Fixes
 - Roll notes should once again properly display ([#400])
 
 
 ## [0.8.015] - Alpha 8: SRD NPC Stats
 Began implementing all the NPCs in the SRD (attributes, but no features) and improved a number of things on the NPC sheet.
 
-#### Improvements
+### Improvements
 - Implemented `[[lookup]]` and `[[calc]]` enrichers for stock NPC features ([#276], [#398])
 - Custom armor labels can now be set ([#364])
 - Senses & movement now have tags ("Can't sense beyond this radius" & "Hover") ([#380])
@@ -307,10 +337,10 @@ Began implementing all the NPCs in the SRD (attributes, but no features) and imp
 - Added condition vulnerabilities ([#395])
 - Effects tab on actor sheets has been redesigned to match inventory styling ([#396])
 
-#### Compendium Content
+### Compendium Content
 - Built out stats for all NPC monsters, added several NPC features ([#326])
 
-#### Bug Fixes
+### Bug Fixes
 - Resistance config no longer shows traits applied by active effects as checked ([#382])
 - Fixed column highlighting on Resistance configuration dialog ([#384])
 - Key for lightning damage is no longer misspelled ([#385])
@@ -325,16 +355,16 @@ Began implementing all the NPCs in the SRD (attributes, but no features) and imp
 ## [0.8.014] - Alpha 8: SRD Improvements
 Build out all of the journals that will be part of the SRD with the new Rule page.
 
-#### Improvements
+### Improvements
 - Spells can now have multiple circles ([#337])
 - Activities on NPC sheets now fall back to item description ([#373])
 - Refactored rolling infrastructure to have clearer API ([#377])
 - Added rule journal entry page type ([#378])
 
-#### Compendium Content
+### Compendium Content
 - Journals for SRD rules built out ([#175])
 
-#### Bug Fixes
+### Bug Fixes
 - NPC should now have the proper proficiency calculated ([#371])
 - Item on NPC main page are now properly sorted ([#375])
 
@@ -342,12 +372,12 @@ Build out all of the journals that will be part of the SRD with the new Rule pag
 ## [0.8.013] - Alpha 8: Spellcasting Improvements
 Some new information added to the spells tab for each spellcasting source and max slots can be manually changed.
 
-#### Improvements
+### Improvements
 - Each spellcasting source now displays details block at top of spells tab ([#347])
 - Spellcasting advancement can now define alternate spellcasting ability, rather than only getting Key Ability ([#355])
 - Max spell slots can no be overridden for each ring ([#359])
 
-#### Bug Fixes
+### Bug Fixes
 - Advancements on subclasses no longer display class restrictions ([#352])
 - Cantrips/Rituals/Spells known scale values created from Spellcasting Advancement will now have correct type ([#353])
 - Advancement notifications once again display their messages ([#356])
@@ -358,12 +388,12 @@ Some new information added to the spells tab for each spellcasting source and ma
 ## [0.8.012] - Alpha 8: Rarity & Gear
 Added rarities to items and more SRD content.
 
-#### Improvements
+### Improvements
 - Added adventuring gear and magic items ([#174])
 - Items can now have rarities ([#344])
 - Warning will now be displayed if too many items are attuned ([#346])
 
-#### Bug Fixes
+### Bug Fixes
 - Previously chosen languages will no longer be presented as valid options ([#334])
 - Rolling ability scores out of order will no longer cause an error ([#348])
 
@@ -371,7 +401,7 @@ Added rarities to items and more SRD content.
 ## [0.8.011] - Alpha 8: Accessibility & Inventory Improvements
 Modify the sheet to be more accessible, add controls for attuning & equipping items and preparing spells.
 
-#### Improvements
+### Improvements
 - Spells can now be prepared and filtered by prepared status ([#154])
 - Items can now be attuned and attunement count is displayed in inventory ([#327])
 - Concept items now have extended description on item ([#331])
@@ -383,14 +413,14 @@ Modify the sheet to be more accessible, add controls for attuning & equipping it
 - Added more controls button to bring up context menu in inventory ([#342])
 - Redesigned enabled checkbox on features to match equipped & other controls ([#343])
 
-#### Bug Fixes
+### Bug Fixes
 - Class selection dialog can now be scrolled in Chrome ([#333])
 
 
 ## [0.7.010] - Alpha 7: Bug Fixes & NPC Improvements
 Add the final pieces necessary for functional NPCs and fix a variety of bugs.
 
-#### Improvements
+### Improvements
 - Added application for manually configuring weapon & armor proficiencies ([#117])
 - Added ability to manually set base ability scores from the config app if allowed by the setting ([#118])
 - Added application for configuring languages & language tags ([#272])
@@ -405,7 +435,7 @@ Add the final pieces necessary for functional NPCs and fix a variety of bugs.
 - NPC abilities can now be rolled directly from the sheet ([#324])
 - Added support for condition resistances ([#325])
 
-#### Bug Fixes
+### Bug Fixes
 - Delete journal link button should not longer display on locked items ([#311])
 - Death saves icon should no longer be transparent in Chrome ([#312])
 - Concept can now be deleted from the progression tab ([#314])
@@ -416,7 +446,7 @@ Add the final pieces necessary for functional NPCs and fix a variety of bugs.
 ## [0.7.009] - Alpha 7: UI Polish
 A few polishing updates.
 
-#### Improvements
+### Improvements
 - Actors & items now have a variety of default icons ([#103])
 - Blocks on PC sheet moved around to give more room to actions & remove excessive white space ([#138])
 - PC token link & disposition will now be set on creation ([#147])
@@ -425,7 +455,7 @@ A few polishing updates.
 ## [0.7.008] - Alpha 7: Mundane Items
 Add the remaining item types, containers that can hold items, and rework conditions.
 
-#### Improvements
+### Improvements
 - Items are now enabled by default when added to actors ([#282])
 - `Container`, `Consumable`, `Gear`, `Tool`, and `Sundry` item types added ([#288], [#289], [#294], [#295], [#296], [#301])
 - Added `Currency` item type and currency section in inventory ([#290], [#306])
@@ -434,7 +464,7 @@ Add the remaining item types, containers that can hold items, and rework conditi
 - Build scripts now output compendium sources into folders ([#303])
 - Items now have the option to consume quantities when they run out of uses ([#305])
 
-#### Bug Fixes
+### Bug Fixes
 - Fix drag event working incorrectly in Chromium browsers ([#297])
 - Fix bug calculating weight using mixed units ([#308])
 
@@ -442,7 +472,7 @@ Add the remaining item types, containers that can hold items, and rework conditi
 ## [0.6.007] - Alpha 6: Polish
 A polish release that improves various inventory tabs, damage application, and critical damage. Also adds a few new activity types.
 
-#### Improvements
+### Improvements
 - `applyDamage` method now takes resistance, immunity, and vulnerability into account ([#53])
 - Luck cards in chat now update when luck is spent or gained ([#72])
 - Features, inventory, & spellcasting tabs can now be automatically sorted ([#83])
@@ -462,7 +492,7 @@ A polish release that improves various inventory tabs, damage application, and c
 ## [0.6.006] - Alpha 6: Opponents
 NPCs can now be created to oppose players and limited uses have been added to items & activities.
 
-#### Improvements
+### Improvements
 - Activities can now be added to features & talents ([#228])
 - `NPC` actor type added ([#233], [#236], [#237], [#238])
 - Added support for limited uses ([#235])
@@ -483,14 +513,14 @@ NPCs can now be created to oppose players and limited uses have been added to it
 - Implemented new `MovementConfig` and `SensesConfig` apps for actors ([#270], [#271])
 - Activities can now have descriptions ([#273])
 
-#### Bug Fixes
+### Bug Fixes
 - Features without types should now display properly on features tab ([#265])
 
 
 ## [0.5.005] - Alpha 5: Beyond 1st Level
 Characters can now be leveled up, select subclasses when they reach 3rd level, and improvements at 4th level. When leveling up they also have the option of multi-classing, if the DM allows it. This release also includes the initial version of the activities system, so you can make attacks with weapons and spells.
 
-#### Improvements
+### Improvements
 - Adjusted `ChooseFeaturesDialog` to add restrictions, browsing all compendium items ([#31])
 - Improved class journal pages ([#65])
   - Subclass & improvement will now display in progression table & feature list ([#63])
@@ -524,7 +554,7 @@ Characters can now be leveled up, select subclasses when they reach 3rd level, a
 - Moved contained sheet logic into custom elements ([#224], [#225])
 - Added context menu options for edit, duplicate, toggle, and delete commands for active effects ([#226])
 
-#### Bug Fixes
+### Bug Fixes
 - Hit dice should now disappear from sheet if no class with that HD size remains ([#185])
 - Fix single level advancements not having their level properly set on creation ([#217])
 - Sheet should now re-render when adding class with no advancement on initial level ([#218])
@@ -533,7 +563,7 @@ Characters can now be leveled up, select subclasses when they reach 3rd level, a
 ## [0.4.004] - Alpha 4: Spellcasting
 Introduces the spellcasting system and spell items. Classes can get spellcasting progression and the number of slots per ring will be calculated automatically.
 
-#### Improvements
+### Improvements
 - Death saves can now be rolled with player reaches zero HP ([#78], [#79])
 - Implement spellcasting system ([#148])
   - Added `SpellcastingAdvancement` to represent a class's spellcasting abilities ([#150], [#157], [#158], [#161])
@@ -551,7 +581,7 @@ Introduces the spellcasting system and spell items. Classes can get spellcasting
 ## [0.3.003] - Alpha 3: Combat
 Added weapons & armor, armor class calculations, condition tracking, and initiative.
 
-#### Improvements
+### Improvements
 - `TraitAdvancement` has been improved ([#69])
   - Choices can now be set to use "exclusive" selection mode ([#29])
   - Build proficiencies section on class journal pages ([#66])
@@ -593,7 +623,7 @@ Added weapons & armor, armor class calculations, condition tracking, and initiat
 - Tool checks can now be rolled from sheet ([#130])
 - Styling on tool and skill sections is improved ([#133])
 
-#### Bug Fixes
+### Bug Fixes
 - Chat messages should still render if referenced actor has been deleted ([#73])
 - Progression tab should now retain scroll position when choices are made ([#85])
 
@@ -601,7 +631,7 @@ Added weapons & armor, armor class calculations, condition tracking, and initiat
 ## [0.2.002] - Alpha 2: Checks & Luck
 Implemented ability checks & saves, luck, roll modifiers, resting, and a journal entry page for classes.
 
-#### Improvements
+### Improvements
 - Talents & features now support pre-requisites that are enforced by the choose Features advancement ([#32])
 - `BaseRoll`, `ChallengeRoll`, and `ChallengeDie` added to support dice rolls ([#33])
 - Player can now roll ability checks, ability saves, and skill checks ([#34])
@@ -614,7 +644,7 @@ Implemented ability checks & saves, luck, roll modifiers, resting, and a journal
 - Highlight roll results (success/failure & criticals) in roll messages ([#46])
 - Data models now use mixin pattern for more extensibility ([#59])
 
-#### Bug Fixes
+### Bug Fixes
 - Registration should no longer throw error when updating multiple documents ([#51])
 - Choose Features dialog should still display if linked items cannot be located ([#52])
 - Font Awesome Pro icons will no longer be used by accident for dice icons ([#55])
@@ -623,7 +653,7 @@ Implemented ability checks & saves, luck, roll modifiers, resting, and a journal
 ## [0.1.001] - Alpha 1: Character Creation
 Character creation workflow created with classes, lineages, heritages, and backgrounds as well as features and talents. The progression tab was built to display these choices and an interface was added to help select these concept items and ability scores.
 
-#### Improvements
+### Improvements
 - Advancement system derived from dnd5e & Everyday Heroes implemented ([#6], [#15])
 - Designed character progression tab to store details on character concept, levels, & choices ([#7], [#17], [#28])
 - `Class`, `Lineage`, `Heritage`, & `Background` item types added ([#8], [#9], [#10], [#11])
@@ -675,6 +705,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.9.029]: https://github.com/koboldpress/black-flag/releases/tag/0.9.029
 [0.9.030]: https://github.com/koboldpress/black-flag/releases/tag/0.9.030
 [0.9.031]: https://github.com/koboldpress/black-flag/releases/tag/0.9.031
+[0.9.032]: https://github.com/koboldpress/black-flag/releases/tag/0.9.032
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -882,6 +913,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#245]: https://github.com/koboldpress/black-flag/issues/245
 [#246]: https://github.com/koboldpress/black-flag/issues/246
 [#247]: https://github.com/koboldpress/black-flag/issues/247
+[#248]: https://github.com/koboldpress/black-flag/issues/248
 [#249]: https://github.com/koboldpress/black-flag/issues/249
 [#251]: https://github.com/koboldpress/black-flag/issues/251
 [#253]: https://github.com/koboldpress/black-flag/issues/253
@@ -1073,6 +1105,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#497]: https://github.com/koboldpress/black-flag/issues/497
 [#498]: https://github.com/koboldpress/black-flag/issues/498
 [#499]: https://github.com/koboldpress/black-flag/issues/499
+[#500]: https://github.com/koboldpress/black-flag/issues/500
 [#501]: https://github.com/koboldpress/black-flag/issues/501
 [#503]: https://github.com/koboldpress/black-flag/issues/503
 [#505]: https://github.com/koboldpress/black-flag/issues/505
@@ -1107,10 +1140,27 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#548]: https://github.com/koboldpress/black-flag/issues/548
 [#549]: https://github.com/koboldpress/black-flag/issues/549
 [#553]: https://github.com/koboldpress/black-flag/issues/553
+[#554]: https://github.com/koboldpress/black-flag/issues/554
 [#555]: https://github.com/koboldpress/black-flag/issues/555
 [#556]: https://github.com/koboldpress/black-flag/issues/556
 [#557]: https://github.com/koboldpress/black-flag/issues/557
 [#558]: https://github.com/koboldpress/black-flag/issues/558
+[#559]: https://github.com/koboldpress/black-flag/issues/559
 [#560]: https://github.com/koboldpress/black-flag/issues/560
 [#561]: https://github.com/koboldpress/black-flag/issues/561
+[#562]: https://github.com/koboldpress/black-flag/issues/562
+[#567]: https://github.com/koboldpress/black-flag/issues/567
 [#568]: https://github.com/koboldpress/black-flag/issues/568
+[#569]: https://github.com/koboldpress/black-flag/issues/569
+[#570]: https://github.com/koboldpress/black-flag/issues/570
+[#571]: https://github.com/koboldpress/black-flag/issues/571
+[#572]: https://github.com/koboldpress/black-flag/issues/572
+[#573]: https://github.com/koboldpress/black-flag/issues/573
+[#574]: https://github.com/koboldpress/black-flag/issues/574
+[#575]: https://github.com/koboldpress/black-flag/issues/575
+[#577]: https://github.com/koboldpress/black-flag/issues/577
+[#580]: https://github.com/koboldpress/black-flag/issues/580
+[#581]: https://github.com/koboldpress/black-flag/issues/581
+[#585]: https://github.com/koboldpress/black-flag/issues/585
+[#586]: https://github.com/koboldpress/black-flag/issues/586
+[#587]: https://github.com/koboldpress/black-flag/issues/587
