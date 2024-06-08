@@ -4,6 +4,27 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.9.033] - Beta: Druid
+Harness nature's power with the Druid class & Shifter subclass!
+
+### Improvements
+- Heading levels in class & subclass journal pages can now be set separate from the indentation level ([#582])
+- Improved styling of headers & tables in inventory & chat descriptions ([#588])
+- Active effects are now suppressed for items that are not enabled, equipped, or attuned ([#591])
+- Features advancement can now add items in a disabled state ([#592])
+- Items added through advancement should now get initial sorting values ([#594])
+- Features & talents with transferred active effects can now be disabled ([#595])
+
+### Compendium Content
+- Updated monster features to take advantage of new system features ([#497])
+- Added Druid class & Shifter subclass ([#498])
+
+### Bug Fixes
+- Spellcasting values should once again appear in class journal tables ([#589])
+- Subclass features should now be grouped under class section in features tab ([#596])
+- Items should once again be droppable onto advancement configs ([#598])
+
+
 ## [0.9.032] - Beta: Bard & Lairs
 Play some funky music with the Bard class and Lore subclass! There is also a brand new Lair actor to represent the lairs of legendary creatures.
 
@@ -21,6 +42,7 @@ Play some funky music with the Bard class and Lore subclass! There is also a bra
 - Invalid item consumption in activities will now display actor warning ([#586])
 
 ### Compendium Content
+- Added remaining adventuring gear ([#497])
 - Added Bard class & Lore subclass ([#498])
 - Updated Backgrounds & Talents to match final BFRD ([#500])
 
@@ -706,6 +728,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.9.030]: https://github.com/koboldpress/black-flag/releases/tag/0.9.030
 [0.9.031]: https://github.com/koboldpress/black-flag/releases/tag/0.9.031
 [0.9.032]: https://github.com/koboldpress/black-flag/releases/tag/0.9.032
+[0.9.033]: https://github.com/koboldpress/black-flag/releases/tag/0.9.033
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1161,6 +1184,15 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#577]: https://github.com/koboldpress/black-flag/issues/577
 [#580]: https://github.com/koboldpress/black-flag/issues/580
 [#581]: https://github.com/koboldpress/black-flag/issues/581
+[#582]: https://github.com/koboldpress/black-flag/issues/582
 [#585]: https://github.com/koboldpress/black-flag/issues/585
 [#586]: https://github.com/koboldpress/black-flag/issues/586
 [#587]: https://github.com/koboldpress/black-flag/issues/587
+[#588]: https://github.com/koboldpress/black-flag/issues/588
+[#589]: https://github.com/koboldpress/black-flag/issues/589
+[#591]: https://github.com/koboldpress/black-flag/issues/591
+[#592]: https://github.com/koboldpress/black-flag/issues/592
+[#594]: https://github.com/koboldpress/black-flag/issues/594
+[#595]: https://github.com/koboldpress/black-flag/issues/595
+[#596]: https://github.com/koboldpress/black-flag/issues/596
+[#598]: https://github.com/koboldpress/black-flag/issues/598
