@@ -4,6 +4,23 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.9.034] - Beta: Monk
+Pop pop! The Monk class is here bringing with it the Open Hand subclass!
+
+### Improvements
+- Improved legibility of text on low-DPI screens ([#599])
+- Refactored Actor & Item data preparation with clearer flow ([#603])
+- Activation buttons in actions list will now display activation condition as tooltip ([#607])
+
+### Compendium Content
+- Added Monk class & Open Hand subclass ([#498])
+
+### Bug Fixes
+- Fixed display of inferred duration & targeting on activity sheets ([#600])
+- Fixed styling of content links and inline rolls in certain locations ([#602])
+- Upgraded & forced expertise in Trait Advancement should now work with tools & vehicles ([#606])
+
+
 ## [0.9.033] - Beta: Druid
 Harness nature's power with the Druid class & Shifter subclass!
 
@@ -729,6 +746,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.9.031]: https://github.com/koboldpress/black-flag/releases/tag/0.9.031
 [0.9.032]: https://github.com/koboldpress/black-flag/releases/tag/0.9.032
 [0.9.033]: https://github.com/koboldpress/black-flag/releases/tag/0.9.033
+[0.9.034]: https://github.com/koboldpress/black-flag/releases/tag/0.9.034
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1196,3 +1214,9 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#595]: https://github.com/koboldpress/black-flag/issues/595
 [#596]: https://github.com/koboldpress/black-flag/issues/596
 [#598]: https://github.com/koboldpress/black-flag/issues/598
+[#599]: https://github.com/koboldpress/black-flag/issues/599
+[#600]: https://github.com/koboldpress/black-flag/issues/600
+[#602]: https://github.com/koboldpress/black-flag/issues/602
+[#603]: https://github.com/koboldpress/black-flag/issues/603
+[#606]: https://github.com/koboldpress/black-flag/issues/606
+[#607]: https://github.com/koboldpress/black-flag/issues/607
