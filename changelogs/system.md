@@ -4,6 +4,22 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.9.035] - Beta: Paladin, Ranger, & Damage Scaling
+A twofer this time with the Paladin & Ranger classes with their Devotion & Hunter subclasses! Also, damage scaling can now be configured on spells.
+
+### Improvements
+- Spell damage can now be scaled at higher levels ([#439])
+- Custom damage formulas are now explicitly toggled ([#613])
+
+### Compendium Content
+- Add Paladin & Ranger classes and Devotion & Hunter subclass ([#498])
+
+### Bug Fixes
+- Fixed loading new fonts into text editor ([#612])
+- Fixed spell slot data being retained on certain actor ([#614])
+- Healing rolls should no longer add modifier twice ([#615])
+
+
 ## [0.9.034] - Beta: Monk
 Pop pop! The Monk class is here bringing with it the Open Hand subclass!
 
