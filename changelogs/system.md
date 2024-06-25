@@ -4,6 +4,31 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.9.036] - Beta: Sorcerer & Resource Scaling
+Do weird things with your magic in the Sorcerer class and its Draconic subclass! The system now also supports scaling for non-spell features such as a Paladin's Lay on Hands or Sorcerer's ability to trade sorcery points for spell slots.
+
+### Breaking
+**Saving Throw Proficiencies**: Key Ability advancement no longer grants saving throw proficiency. All of the existing classes has been given a Trait advancement to grant their saving throw proficiencies. Any classes will need to be updated to take this into account including those on actors. Easily update previously created actors by opening the class sheet from the actor's progression tab, then opening the same class in the compendium and dragging the new Saving Throws advancement over to the class on the actor.
+
+### Improvements
+- Improved styling and accessibility information on several dialog buttons ([#338])
+- Active Effects can now be dragged and dropped ([#397])
+- Key Ability advancement now only has one ability selection and no longer grants save proficiency ([#616])
+- Non-spell activities can now be scaled and scaling details can be specified for consumption targets ([#617])
+- Added "On Short Rest" and "On Long Rest" activation types to support features triggered on rest completion ([#618])
+- Removed default actor size to better support features choices that are restricted by size ([#624])
+
+### Compendium Content
+- Added additional spells used by new class ([#497])
+- Added Sorcerer class and Draconic subclass ([#498])
+- Added saving throw proficiencies to classes and updated Key Ability data ([#616])
+- Fixed Lay on Hands' "Cure Disease" activity to properly consume uses ([#623])
+
+### Bug Fixes
+- Fixed scale value data that was broken by activity scaling data included in roll data ([#620])
+- Fixed spell slots not recovering on a long rest ([#626])
+
+
 ## [0.9.035] - Beta: Paladin, Ranger, & Damage Scaling
 A twofer this time with the Paladin & Ranger classes with their Devotion & Hunter subclasses! Also, damage scaling can now be configured on spells.
 
@@ -93,8 +118,9 @@ Play some funky music with the Bard class and Lore subclass! There is also a bra
 Introducing the Barbarian class and Berserker subclass! Plus updated the talent list to match the final BFRD.
 
 ### Breaking
-- NPC attacks without the "Flat" checkbox may have changed due to updated with how proficiency is handled. Existing NPCs should be reviewed to ensure their attacks have the right To Hit.
-- Critical options passed to roll data have be restructured. This should only matter if you are manually building roll configurations.
+**NPC Attacks**: NPC attacks without the "Flat" checkbox may have changed due to updated with how proficiency is handled. Existing NPCs should be reviewed to ensure their attacks have the right To Hit.
+
+**Challenge Roll Options**: Critical options passed to roll data have be restructured. This should only matter if you are manually building roll configurations.
 
 ### Improvements
 - NPCs should now handle proficiency in weapons & other attacks properly ([#442])
@@ -763,6 +789,8 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.9.032]: https://github.com/koboldpress/black-flag/releases/tag/0.9.032
 [0.9.033]: https://github.com/koboldpress/black-flag/releases/tag/0.9.033
 [0.9.034]: https://github.com/koboldpress/black-flag/releases/tag/0.9.034
+[0.9.035]: https://github.com/koboldpress/black-flag/releases/tag/0.9.035
+[0.9.036]: https://github.com/koboldpress/black-flag/releases/tag/0.9.036
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1042,6 +1070,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#335]: https://github.com/koboldpress/black-flag/issues/335
 [#336]: https://github.com/koboldpress/black-flag/issues/336
 [#337]: https://github.com/koboldpress/black-flag/issues/337
+[#338]: https://github.com/koboldpress/black-flag/issues/338
 [#339]: https://github.com/koboldpress/black-flag/issues/339
 [#340]: https://github.com/koboldpress/black-flag/issues/340
 [#341]: https://github.com/koboldpress/black-flag/issues/341
@@ -1090,6 +1119,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#394]: https://github.com/koboldpress/black-flag/issues/394
 [#395]: https://github.com/koboldpress/black-flag/issues/395
 [#396]: https://github.com/koboldpress/black-flag/issues/396
+[#397]: https://github.com/koboldpress/black-flag/issues/397
 [#398]: https://github.com/koboldpress/black-flag/issues/398
 [#399]: https://github.com/koboldpress/black-flag/issues/399
 [#400]: https://github.com/koboldpress/black-flag/issues/400
@@ -1124,6 +1154,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#435]: https://github.com/koboldpress/black-flag/issues/435
 [#436]: https://github.com/koboldpress/black-flag/issues/436
 [#437]: https://github.com/koboldpress/black-flag/issues/437
+[#439]: https://github.com/koboldpress/black-flag/issues/439
 [#440]: https://github.com/koboldpress/black-flag/issues/440
 [#441]: https://github.com/koboldpress/black-flag/issues/441
 [#442]: https://github.com/koboldpress/black-flag/issues/442
@@ -1236,3 +1267,14 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#603]: https://github.com/koboldpress/black-flag/issues/603
 [#606]: https://github.com/koboldpress/black-flag/issues/606
 [#607]: https://github.com/koboldpress/black-flag/issues/607
+[#612]: https://github.com/koboldpress/black-flag/issues/612
+[#613]: https://github.com/koboldpress/black-flag/issues/613
+[#614]: https://github.com/koboldpress/black-flag/issues/614
+[#615]: https://github.com/koboldpress/black-flag/issues/615
+[#616]: https://github.com/koboldpress/black-flag/issues/616
+[#617]: https://github.com/koboldpress/black-flag/issues/617
+[#618]: https://github.com/koboldpress/black-flag/issues/618
+[#620]: https://github.com/koboldpress/black-flag/issues/620
+[#623]: https://github.com/koboldpress/black-flag/issues/623
+[#624]: https://github.com/koboldpress/black-flag/issues/624
+[#626]: https://github.com/koboldpress/black-flag/issues/626
