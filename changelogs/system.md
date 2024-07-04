@@ -4,10 +4,41 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.9.037] - Beta: Warlock & Pact Casting
+Accept power from beyond with the Warlock class and its Fiend subclass! This release includes Pact Casting and improvements to the system for learning spells.
+
+### Breaking ⚠️
+**Spellcasting Ability**: Previously Spellcasting advancement could infer the ability from the selected key ability. With that functionality removed from the Key Ability advancement, each Spellcasting advancement must now define what ability it uses.
+
+### Improvements
+- Spell selection now has an option for ritual selection to bypass normal source restriction ([#471])
+- Choose Spells advancement can now limit selection to only ritual spells ([#610])
+- Pact casting is now available as a spellcasting type ([#622])
+- Targeting data can now specify area of effect count and whether the caster chooses targets within the area ([#627])
+- Prerequisites can now require another item be present on the actor ([#628])
+- Level prerequisite can now reference a specific class level, rather than just character level ([#629])
+- Max circle for a specific class is now calculated ([#630])
+- Learning spells is now handled by Spellcasting advancement in progression tab, rather than through spellbook ([#631])
+- Renamed `system.spellcasting.circles` to `system.spellcasting.slots` to be more accurate ([#636])
+- Rest types can now more explicitly define what spellcasting slots are recovered ([#637])
+- Spellcasting advancement now requires a specific ability to be defined ([#639])
+- Choose Spells advancement can now specify a specific maximum level, in addition to just basing it off the level the character can cast ([#642])
+
+### Compendium Content
+- Added Warlock class and Fiend subclass ([#498])
+- Set spellcasting ability for each class ([#639])
+
+### Bug Fixes
+- Spell selection should no longer allow choosing spells that are of a higher circle then allowed ([#526])
+- Layout of Free Spells fields in Spellcasting configuration has fixed ([#632])
+- Tables should now be properly styled in Choose Features dialog and item descriptions ([#634])
+- Dragging & dropping an advancement onto the same item will no longer duplicate it ([#638])
+
+
 ## [0.9.036] - Beta: Sorcerer & Resource Scaling
 Do weird things with your magic in the Sorcerer class and its Draconic subclass! The system now also supports scaling for non-spell features such as a Paladin's Lay on Hands or Sorcerer's ability to trade sorcery points for spell slots.
 
-### Breaking
+### Breaking ⚠️
 **Saving Throw Proficiencies**: Key Ability advancement no longer grants saving throw proficiency. All of the existing classes has been given a Trait advancement to grant their saving throw proficiencies. Any classes will need to be updated to take this into account including those on actors. Easily update previously created actors by opening the class sheet from the actor's progression tab, then opening the same class in the compendium and dragging the new Saving Throws advancement over to the class on the actor.
 
 ### Improvements
@@ -117,7 +148,7 @@ Play some funky music with the Bard class and Lore subclass! There is also a bra
 ## [0.9.031] - Beta: Barbarian & Talents
 Introducing the Barbarian class and Berserker subclass! Plus updated the talent list to match the final BFRD.
 
-### Breaking
+### Breaking ⚠️
 **NPC Attacks**: NPC attacks without the "Flat" checkbox may have changed due to updated with how proficiency is handled. Existing NPCs should be reviewed to ensure their attacks have the right To Hit.
 
 **Challenge Roll Options**: Critical options passed to roll data have be restructured. This should only matter if you are manually building roll configurations.
@@ -791,6 +822,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.9.034]: https://github.com/koboldpress/black-flag/releases/tag/0.9.034
 [0.9.035]: https://github.com/koboldpress/black-flag/releases/tag/0.9.035
 [0.9.036]: https://github.com/koboldpress/black-flag/releases/tag/0.9.036
+[0.9.037]: https://github.com/koboldpress/black-flag/releases/tag/0.9.037
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1178,6 +1210,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#468]: https://github.com/koboldpress/black-flag/issues/468
 [#469]: https://github.com/koboldpress/black-flag/issues/469
 [#470]: https://github.com/koboldpress/black-flag/issues/470
+[#471]: https://github.com/koboldpress/black-flag/issues/471
 [#472]: https://github.com/koboldpress/black-flag/issues/472
 [#474]: https://github.com/koboldpress/black-flag/issues/474
 [#475]: https://github.com/koboldpress/black-flag/issues/475
@@ -1211,6 +1244,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#523]: https://github.com/koboldpress/black-flag/issues/523
 [#524]: https://github.com/koboldpress/black-flag/issues/524
 [#525]: https://github.com/koboldpress/black-flag/issues/525
+[#526]: https://github.com/koboldpress/black-flag/issues/526
 [#527]: https://github.com/koboldpress/black-flag/issues/527
 [#528]: https://github.com/koboldpress/black-flag/issues/528
 [#529]: https://github.com/koboldpress/black-flag/issues/529
@@ -1267,6 +1301,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#603]: https://github.com/koboldpress/black-flag/issues/603
 [#606]: https://github.com/koboldpress/black-flag/issues/606
 [#607]: https://github.com/koboldpress/black-flag/issues/607
+[#610]: https://github.com/koboldpress/black-flag/issues/610
 [#612]: https://github.com/koboldpress/black-flag/issues/612
 [#613]: https://github.com/koboldpress/black-flag/issues/613
 [#614]: https://github.com/koboldpress/black-flag/issues/614
@@ -1275,6 +1310,19 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#617]: https://github.com/koboldpress/black-flag/issues/617
 [#618]: https://github.com/koboldpress/black-flag/issues/618
 [#620]: https://github.com/koboldpress/black-flag/issues/620
+[#622]: https://github.com/koboldpress/black-flag/issues/622
 [#623]: https://github.com/koboldpress/black-flag/issues/623
 [#624]: https://github.com/koboldpress/black-flag/issues/624
 [#626]: https://github.com/koboldpress/black-flag/issues/626
+[#627]: https://github.com/koboldpress/black-flag/issues/627
+[#628]: https://github.com/koboldpress/black-flag/issues/628
+[#629]: https://github.com/koboldpress/black-flag/issues/629
+[#630]: https://github.com/koboldpress/black-flag/issues/630
+[#631]: https://github.com/koboldpress/black-flag/issues/631
+[#632]: https://github.com/koboldpress/black-flag/issues/632
+[#634]: https://github.com/koboldpress/black-flag/issues/634
+[#636]: https://github.com/koboldpress/black-flag/issues/636
+[#637]: https://github.com/koboldpress/black-flag/issues/637
+[#638]: https://github.com/koboldpress/black-flag/issues/638
+[#639]: https://github.com/koboldpress/black-flag/issues/639
+[#642]: https://github.com/koboldpress/black-flag/issues/642
