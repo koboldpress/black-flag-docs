@@ -4,6 +4,28 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.9.038] - Beta: Mechanist & More Spells
+Harness magical creations with the new Mechanist class and its Metallurgist subclass! This release completes all of the classes offered by the BFRD and also adds all of the spells up through letter C.
+
+### Improvements
+- Features can now specify that they can be taken more than once ([#644])
+- Activities can now be embedded with an optional activation button ([#645])
+- Ritual spells are now scaled based on maximum circle the character can cast ([#647])
+- Embedded spells will now display their details in addition to their description ([#648])
+- Added the "Wall" area of effect type ([#649])
+- Target data no longer defaults to `1` if no area of effect is defined ([#651])
+- Items with area of effect defined no longer have to specify specific target in that area ([#653])
+
+### Compendium Content
+- Added A–C spells ([#497])
+- Added Mechanist class and Metallurgist subclass ([#498])
+
+### Bug Fixes
+- Death saves control should once again display properly ([#650])
+- Opening item sheet repeatedly will no longer continually scale up base damage die ([#654])
+- Average damage calculation should no longer produce `NaN` on V12 ([#655])
+
+
 ## [0.9.037] - Beta: Warlock & Pact Casting
 Accept power from beyond with the Warlock class and its Fiend subclass! This release includes Pact Casting and improvements to the system for learning spells.
 
@@ -823,6 +845,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.9.035]: https://github.com/koboldpress/black-flag/releases/tag/0.9.035
 [0.9.036]: https://github.com/koboldpress/black-flag/releases/tag/0.9.036
 [0.9.037]: https://github.com/koboldpress/black-flag/releases/tag/0.9.037
+[0.9.038]: https://github.com/koboldpress/black-flag/releases/tag/0.9.038
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1326,3 +1349,13 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#638]: https://github.com/koboldpress/black-flag/issues/638
 [#639]: https://github.com/koboldpress/black-flag/issues/639
 [#642]: https://github.com/koboldpress/black-flag/issues/642
+[#644]: https://github.com/koboldpress/black-flag/issues/644
+[#645]: https://github.com/koboldpress/black-flag/issues/645
+[#647]: https://github.com/koboldpress/black-flag/issues/647
+[#648]: https://github.com/koboldpress/black-flag/issues/648
+[#649]: https://github.com/koboldpress/black-flag/issues/649
+[#650]: https://github.com/koboldpress/black-flag/issues/650
+[#651]: https://github.com/koboldpress/black-flag/issues/651
+[#653]: https://github.com/koboldpress/black-flag/issues/653
+[#654]: https://github.com/koboldpress/black-flag/issues/654
+[#655]: https://github.com/koboldpress/black-flag/issues/655
