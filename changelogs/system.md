@@ -4,6 +4,35 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.10.040] - Beta: User Experience
+A series of user experience improvements are contained in this release, including a new tray for showing attack targets and whether they are hit, a new activity for just doing damage, and reference enrichers for easily linking to rules.
+
+### Improvements
+- Display carrying weight on PC sheet & track encumbrance with optional status effects ([#291])
+- Introduce `&Reference` enrichers for referencing conditions, damage types, and other rules ([#368])
+- Added chat tray indicating whether attack hits targeted tokens ([#430])
+- Added rich item tooltips to sheet and spell manager ([#466], [#481])
+- Uses scale value can now be infinite and can tie into recovery periods ([#511], [#566])
+- Added `DamageActivity` for rolling damage without attack or save ([#666] 👹)
+- Added rider conditions that are applied alongside another condition (e.g. unconscious applies prone) ([#667])
+- Removed custom active effect application handling that is no longer necessary in V12 ([#671])
+- Entries in a set can now be removed by active effects using `-fire` format ([#672])
+- Added improved styling for images in journals ([#677])
+- Identifiers in scale value advancement config are now copyable, added additional roll paths for dice scale values ([#678])
+- Added option for automatically expanding chat trays ([#680])
+
+### Compendium Content
+- Added G spells ([#497])
+- Added description of psychic damage to the rules ([#670])
+
+### Bug Fixes
+- Fixed formatting of embedded roll tables in items to avoid squishing columns ([#665])
+- Fixed UUID link in Activity & Advancement headers not matching the modified behavior in V12 ([#668])
+- Inline embeds with a label specified should once again show it in front of the embed ([#669])
+- NPC sheets should now load properly if a spell without any activities is added ([#676])
+- Lair sheets should now load properly if they contain an attack activity, attack activities should now roll properly on lairs ([#679])
+
+
 ## [0.10.039] - Beta: The Big Damage Release
 This release brings a laundry list of improvements to how damage is handled in the system. Damage cards have been redesigned in chat to better communicate damage types, activities can now specify variable damage types for spells like Prismatic Wall, and the new damage application interface allows easily applying damage to targets taking resistances, vulnerabilities, and immunities into account.
 
@@ -872,6 +901,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.9.037]: https://github.com/koboldpress/black-flag/releases/tag/0.9.037
 [0.9.038]: https://github.com/koboldpress/black-flag/releases/tag/0.9.038
 [0.10.039]: https://github.com/koboldpress/black-flag/releases/tag/0.10.039
+[0.10.040]: https://github.com/koboldpress/black-flag/releases/tag/0.10.040
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1117,6 +1147,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#288]: https://github.com/koboldpress/black-flag/issues/288
 [#289]: https://github.com/koboldpress/black-flag/issues/289
 [#290]: https://github.com/koboldpress/black-flag/issues/290
+[#291]: https://github.com/koboldpress/black-flag/issues/291
 [#294]: https://github.com/koboldpress/black-flag/issues/294
 [#297]: https://github.com/koboldpress/black-flag/issues/297
 [#298]: https://github.com/koboldpress/black-flag/issues/298
@@ -1177,6 +1208,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#361]: https://github.com/koboldpress/black-flag/issues/361
 [#363]: https://github.com/koboldpress/black-flag/issues/363
 [#364]: https://github.com/koboldpress/black-flag/issues/364
+[#368]: https://github.com/koboldpress/black-flag/issues/368
 [#369]: https://github.com/koboldpress/black-flag/issues/369
 [#370]: https://github.com/koboldpress/black-flag/issues/370
 [#371]: https://github.com/koboldpress/black-flag/issues/371
@@ -1235,6 +1267,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#427]: https://github.com/koboldpress/black-flag/issues/427
 [#428]: https://github.com/koboldpress/black-flag/issues/428
 [#429]: https://github.com/koboldpress/black-flag/issues/429
+[#430]: https://github.com/koboldpress/black-flag/issues/430
 [#432]: https://github.com/koboldpress/black-flag/issues/432
 [#433]: https://github.com/koboldpress/black-flag/issues/433
 [#434]: https://github.com/koboldpress/black-flag/issues/434
@@ -1261,6 +1294,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#463]: https://github.com/koboldpress/black-flag/issues/463
 [#464]: https://github.com/koboldpress/black-flag/issues/464
 [#465]: https://github.com/koboldpress/black-flag/issues/465
+[#466]: https://github.com/koboldpress/black-flag/issues/466
 [#467]: https://github.com/koboldpress/black-flag/issues/467
 [#468]: https://github.com/koboldpress/black-flag/issues/468
 [#469]: https://github.com/koboldpress/black-flag/issues/469
@@ -1272,6 +1306,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#476]: https://github.com/koboldpress/black-flag/issues/476
 [#478]: https://github.com/koboldpress/black-flag/issues/478
 [#479]: https://github.com/koboldpress/black-flag/issues/479
+[#481]: https://github.com/koboldpress/black-flag/issues/481
 [#482]: https://github.com/koboldpress/black-flag/issues/482
 [#486]: https://github.com/koboldpress/black-flag/issues/486
 [#490]: https://github.com/koboldpress/black-flag/issues/490
@@ -1289,6 +1324,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#507]: https://github.com/koboldpress/black-flag/issues/507
 [#508]: https://github.com/koboldpress/black-flag/issues/508
 [#509]: https://github.com/koboldpress/black-flag/issues/509
+[#511]: https://github.com/koboldpress/black-flag/issues/511
 [#513]: https://github.com/koboldpress/black-flag/issues/513
 [#514]: https://github.com/koboldpress/black-flag/issues/514
 [#515]: https://github.com/koboldpress/black-flag/issues/515
@@ -1326,6 +1362,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#560]: https://github.com/koboldpress/black-flag/issues/560
 [#561]: https://github.com/koboldpress/black-flag/issues/561
 [#562]: https://github.com/koboldpress/black-flag/issues/562
+[#566]: https://github.com/koboldpress/black-flag/issues/566
 [#567]: https://github.com/koboldpress/black-flag/issues/567
 [#568]: https://github.com/koboldpress/black-flag/issues/568
 [#569]: https://github.com/koboldpress/black-flag/issues/569
@@ -1399,3 +1436,16 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#661]: https://github.com/koboldpress/black-flag/issues/661
 [#662]: https://github.com/koboldpress/black-flag/issues/662
 [#664]: https://github.com/koboldpress/black-flag/issues/664
+[#665]: https://github.com/koboldpress/black-flag/issues/665
+[#666]: https://github.com/koboldpress/black-flag/issues/666
+[#667]: https://github.com/koboldpress/black-flag/issues/667
+[#668]: https://github.com/koboldpress/black-flag/issues/668
+[#669]: https://github.com/koboldpress/black-flag/issues/669
+[#670]: https://github.com/koboldpress/black-flag/issues/670
+[#671]: https://github.com/koboldpress/black-flag/issues/671
+[#672]: https://github.com/koboldpress/black-flag/issues/672
+[#676]: https://github.com/koboldpress/black-flag/issues/676
+[#677]: https://github.com/koboldpress/black-flag/issues/677
+[#678]: https://github.com/koboldpress/black-flag/issues/678
+[#679]: https://github.com/koboldpress/black-flag/issues/679
+[#680]: https://github.com/koboldpress/black-flag/issues/680
