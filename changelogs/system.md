@@ -4,6 +4,32 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.10.041] - Beta: Starting Equipment
+Start your characters off with some great gear with the new starting equipment system!
+
+### Improvements
+- Added `EquipmentAdvancement` to handle starting equipment & display in class journals ([#62], [#293])
+- Activity description tab can now be resized ([#534])
+- Roll formulas should now be simplified when displayed in attack enricher ([#675])
+- Added overall movement multiplier available through active effects ([#691])
+- Calls to `rollSkill` on actors without skills will now forward to `rollAbilityCheck` ([#701])
+
+### Compendium Content
+- Added H–I spells ([#497])
+
+### Bug Fixes
+- Fixed descriptions sometimes not appearing in activity sheet ([#544])
+- Luck UI should once again display in chat messages ([#682])
+- Spending luck will no longer cause the chat trays to lose current opened state ([#683])
+- Learning spells should no longer delete automatically added spells ([#686])
+- Item types without uses should no longer cause the NPC sheet to fail to render ([#688])
+- Using short form ability in enrichers (e.g. `[[/save DEX]]`) should now work ([#690])
+- Container inventory should now allow expanding items ([#692])
+- Rich tooltip styling should no longer affect unrelated tooltips ([#693])
+- Formulas in dice numbers should no longer display as `NaN` after being simplified ([#700])
+- Various formulas on spells should now be properly resolved ([#702])
+
+
 ## [0.10.040] - Beta: User Experience
 A series of user experience improvements are contained in this release, including a new tray for showing attack targets and whether they are hit, a new activity for just doing damage, and reference enrichers for easily linking to rules.
 
@@ -902,6 +928,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.9.038]: https://github.com/koboldpress/black-flag/releases/tag/0.9.038
 [0.10.039]: https://github.com/koboldpress/black-flag/releases/tag/0.10.039
 [0.10.040]: https://github.com/koboldpress/black-flag/releases/tag/0.10.040
+[0.10.041]: https://github.com/koboldpress/black-flag/releases/tag/0.10.041
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -953,6 +980,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#58]: https://github.com/koboldpress/black-flag/issues/58
 [#59]: https://github.com/koboldpress/black-flag/issues/59
 [#61]: https://github.com/koboldpress/black-flag/issues/61
+[#62]: https://github.com/koboldpress/black-flag/issues/62
 [#63]: https://github.com/koboldpress/black-flag/issues/63
 [#64]: https://github.com/koboldpress/black-flag/issues/64
 [#65]: https://github.com/koboldpress/black-flag/issues/65
@@ -1148,12 +1176,13 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#289]: https://github.com/koboldpress/black-flag/issues/289
 [#290]: https://github.com/koboldpress/black-flag/issues/290
 [#291]: https://github.com/koboldpress/black-flag/issues/291
+[#293]: https://github.com/koboldpress/black-flag/issues/293
 [#294]: https://github.com/koboldpress/black-flag/issues/294
+[#295]: https://github.com/koboldpress/black-flag/issues/295
+[#296]: https://github.com/koboldpress/black-flag/issues/296
 [#297]: https://github.com/koboldpress/black-flag/issues/297
 [#298]: https://github.com/koboldpress/black-flag/issues/298
 [#299]: https://github.com/koboldpress/black-flag/issues/299
-[#295]: https://github.com/koboldpress/black-flag/issues/295
-[#296]: https://github.com/koboldpress/black-flag/issues/296
 [#300]: https://github.com/koboldpress/black-flag/issues/300
 [#301]: https://github.com/koboldpress/black-flag/issues/301
 [#302]: https://github.com/koboldpress/black-flag/issues/302
@@ -1341,6 +1370,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#529]: https://github.com/koboldpress/black-flag/issues/529
 [#530]: https://github.com/koboldpress/black-flag/issues/530
 [#531]: https://github.com/koboldpress/black-flag/issues/531
+[#534]: https://github.com/koboldpress/black-flag/issues/534
 [#535]: https://github.com/koboldpress/black-flag/issues/535
 [#536]: https://github.com/koboldpress/black-flag/issues/536
 [#537]: https://github.com/koboldpress/black-flag/issues/537
@@ -1348,6 +1378,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#541]: https://github.com/koboldpress/black-flag/issues/541
 [#542]: https://github.com/koboldpress/black-flag/issues/542
 [#543]: https://github.com/koboldpress/black-flag/issues/543
+[#544]: https://github.com/koboldpress/black-flag/issues/544
 [#546]: https://github.com/koboldpress/black-flag/issues/546
 [#547]: https://github.com/koboldpress/black-flag/issues/547
 [#548]: https://github.com/koboldpress/black-flag/issues/548
@@ -1444,8 +1475,20 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#670]: https://github.com/koboldpress/black-flag/issues/670
 [#671]: https://github.com/koboldpress/black-flag/issues/671
 [#672]: https://github.com/koboldpress/black-flag/issues/672
+[#675]: https://github.com/koboldpress/black-flag/issues/675
 [#676]: https://github.com/koboldpress/black-flag/issues/676
 [#677]: https://github.com/koboldpress/black-flag/issues/677
 [#678]: https://github.com/koboldpress/black-flag/issues/678
 [#679]: https://github.com/koboldpress/black-flag/issues/679
 [#680]: https://github.com/koboldpress/black-flag/issues/680
+[#682]: https://github.com/koboldpress/black-flag/issues/682
+[#683]: https://github.com/koboldpress/black-flag/issues/683
+[#686]: https://github.com/koboldpress/black-flag/issues/686
+[#688]: https://github.com/koboldpress/black-flag/issues/688
+[#690]: https://github.com/koboldpress/black-flag/issues/690
+[#691]: https://github.com/koboldpress/black-flag/issues/691
+[#692]: https://github.com/koboldpress/black-flag/issues/692
+[#693]: https://github.com/koboldpress/black-flag/issues/693
+[#700]: https://github.com/koboldpress/black-flag/issues/700
+[#701]: https://github.com/koboldpress/black-flag/issues/701
+[#702]: https://github.com/koboldpress/black-flag/issues/702
