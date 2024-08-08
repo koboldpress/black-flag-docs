@@ -16,8 +16,7 @@ Modify the character's ability score.
 | ---------------------------------- | ----------- | ------------ | ---------- |
 | `system.abilities.[name].value`    | Any         | `number`     | No         |
 
-<details>
-<summary>Ability Names</summary>
+##### Ability Names
 
 | Ability      | Name            |
 | ------------ | --------------- |
@@ -29,8 +28,6 @@ Modify the character's ability score.
 | Charisma     | `charisma`      |
 
 Source: `CONFIG.BlackFlag.abilities`
-
-</details>
 
 ### Ability - Maximum Score
 
@@ -86,8 +83,7 @@ Change the NPCs ability modifier.
 | ---------------------------------- | ----------- | ------------ | ---------- |
 | `system.abilities.[name].mod`      | Any         | `number`     | No         |
 
-<details>
-<summary>Ability Names</summary>
+##### Ability Names
 
 | Ability      | Name            |
 | ------------ | --------------- |
@@ -100,7 +96,6 @@ Change the NPCs ability modifier.
 
 Source: `CONFIG.BlackFlag.abilities`
 
-</details>
 
 ### Hit Points - Maximum
 
@@ -122,7 +117,7 @@ Add an additional armor class calculation.
 | ---------------------------------- | ----------- | ------------ | ---------- |
 | `system.attributes.ac.formulas`    | Add         | `object`     | No         |
 
-```json
+```javascript
 // Example: Mage Armor
 { "label": "Mage Armor", "formula": "13 + @abilities.dexterity.mod" }
 
@@ -153,8 +148,7 @@ Add additional languages, tags, or telepathy distance.
 | `system.proficiencies.languages.custom` 											 | Add         | `string `    | No         |
 | `system.proficiencies.languages.tags`   											 | Add         | `[tag]`      | No         |
 
-<details>
-<summary>Communication Types</summary>
+##### Communication Types
 
 | Ability      | Name            |
 | ------------ | --------------- |
@@ -162,10 +156,7 @@ Add additional languages, tags, or telepathy distance.
 
 Source: `CONFIG.BlackFlag.rangedCommunication`
 
-</details>
-
-<details>
-<summary>Language Tags</summary>
+##### Language Tags
 
 | Ability                   | Name            |
 | ------------------------- | --------------- |
@@ -173,8 +164,6 @@ Source: `CONFIG.BlackFlag.rangedCommunication`
 | Language Known in Life    | `knownInLife`   |
 
 Source: `CONFIG.BlackFlag.languageTags`
-
-</details>
 
 ### Movement
 
@@ -186,8 +175,7 @@ Change base movement, modify a movement formula, or add movement tags
 | `system.traits.movement.types.[movement]` | Any         | `formula`    | Yes        |
 | `system.traits.movement.tags`             | Add         | `[tag]`      | No         |
 
-<details>
-<summary>Movement Types</summary>
+##### Movement Types
 
 | Ability      | Name            |
 | ------------ | --------------- |
@@ -199,8 +187,6 @@ Change base movement, modify a movement formula, or add movement tags
 
 Source: `CONFIG.BlackFlag.movementTypes`
 
-</details>
-
 ### Senses
 
 Modify senses distances or add tags.
@@ -210,9 +196,7 @@ Modify senses distances or add tags.
 | `system.traits.senses.types.[sense]` | Any         | `formula`    | Yes        |
 | `system.traits.senses.tags`          | Add         | `[tag]`      | No         |
 
-
-<details>
-<summary>Sense Types</summary>
+##### Sense Types
 
 | Ability      | Name            |
 | ------------ | --------------- |
@@ -223,18 +207,13 @@ Modify senses distances or add tags.
 
 Source: `CONFIG.BlackFlag.senses`
 
-</details>
-
-<details>
-<summary>Sense Tags</summary>
+##### Sense Tags
 
 | Ability                         | Name            |
 | ------------------------------- | --------------- |
 | Can't Sense Beyond This Radius  | `cantSense`     |
 
 Source: `CONFIG.BlackFlag.senseTags`
-
-</details>
 
 ### Size
 
@@ -244,8 +223,7 @@ Change the creature's size (will not change the token size).
 | ---------------------------------- | ----------- | ------------ | ---------- |
 | `system.traits.size`               | Any         | [size]       | No         |
 
-<details>
-<summary>Sizes</summary>
+##### Sizes
 
 | Ability     | Name         |
 | ----------- | ------------ |
@@ -257,8 +235,6 @@ Change the creature's size (will not change the token size).
 | Gargantuan  | `gargantuan` |
 
 Source: `CONFIG.BlackFlag.sizes`
-
-</details>
 
 ### Condition/Damage Resistances/Immunities/Vulnerabilities
 
