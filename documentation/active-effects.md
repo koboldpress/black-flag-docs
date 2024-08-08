@@ -16,21 +16,21 @@ Modify the character's ability score.
 | ---------------------------------- | ----------- | ------------ | ---------- |
 | `system.abilities.[name].value`    | Any         | `number`     | No         |
 
-> <details>
-> <summary>Ability Names</summary>
->
-> | Ability      | Name            |
-> | ------------ | --------------- |
-> | Strength     | `strength`      |
-> | Dexterity    | `dexterity`     |
-> | Constitution | `constitution`  |
-> | Wisdom       | `wisdom`        |
-> | Intelligence | `intelligence`  |
-> | Charisma     | `charisma`      |
->
-> Source: `CONFIG.BlackFlag.abilities`
->
-> </details>
+<details>
+<summary>Ability Names</summary>
+
+| Ability      | Name            |
+| ------------ | --------------- |
+| Strength     | `strength`      |
+| Dexterity    | `dexterity`     |
+| Constitution | `constitution`  |
+| Wisdom       | `wisdom`        |
+| Intelligence | `intelligence`  |
+| Charisma     | `charisma`      |
+
+Source: `CONFIG.BlackFlag.abilities`
+
+</details>
 
 ### Ability - Maximum Score
 
@@ -86,21 +86,21 @@ Change the NPCs ability modifier.
 | ---------------------------------- | ----------- | ------------ | ---------- |
 | `system.abilities.[name].mod`      | Any         | `number`     | No         |
 
-> <details>
-> <summary>Ability Names</summary>
->
-> | Ability      | Name            |
-> | ------------ | --------------- |
-> | Strength     | `strength`      |
-> | Dexterity    | `dexterity`     |
-> | Constitution | `constitution`  |
-> | Wisdom       | `wisdom`        |
-> | Intelligence | `intelligence`  |
-> | Charisma     | `charisma`      |
->
-> Source: `CONFIG.BlackFlag.abilities`
->
-> </details>
+<details>
+<summary>Ability Names</summary>
+
+| Ability      | Name            |
+| ------------ | --------------- |
+| Strength     | `strength`      |
+| Dexterity    | `dexterity`     |
+| Constitution | `constitution`  |
+| Wisdom       | `wisdom`        |
+| Intelligence | `intelligence`  |
+| Charisma     | `charisma`      |
+
+Source: `CONFIG.BlackFlag.abilities`
+
+</details>
 
 ### Hit Points - Maximum
 
@@ -153,28 +153,28 @@ Add additional languages, tags, or telepathy distance.
 | `system.proficiencies.languages.custom` 											 | Add         | `string `    | No         |
 | `system.proficiencies.languages.tags`   											 | Add         | `[tag]`      | No         |
 
-> <details>
-> <summary>Communication Types</summary>
->
-> | Ability      | Name            |
-> | ------------ | --------------- |
-> | Telepathy    | `telepathy`     |
->
-> Source: `CONFIG.BlackFlag.rangedCommunication`
->
-> </details>
+<details>
+<summary>Communication Types</summary>
 
-> <details>
-> <summary>Language Tags</summary>
->
-> | Ability                   | Name            |
-> | ------------------------- | --------------- |
-> | Can't Speak               | `cantSpeak`     |
-> | Language Known in Life    | `knownInLife`   |
->
-> Source: `CONFIG.BlackFlag.languageTags`
->
-> </details>
+| Ability      | Name            |
+| ------------ | --------------- |
+| Telepathy    | `telepathy`     |
+
+Source: `CONFIG.BlackFlag.rangedCommunication`
+
+</details>
+
+<details>
+<summary>Language Tags</summary>
+
+| Ability                   | Name            |
+| ------------------------- | --------------- |
+| Can't Speak               | `cantSpeak`     |
+| Language Known in Life    | `knownInLife`   |
+
+Source: `CONFIG.BlackFlag.languageTags`
+
+</details>
 
 ### Movement
 
@@ -186,20 +186,20 @@ Change base movement, modify a movement formula, or add movement tags
 | `system.traits.movement.types.[movement]` | Any         | `formula`    | Yes        |
 | `system.traits.movement.tags`             | Add         | `[tag]`      | No         |
 
-> <details>
-> <summary>Movement Types</summary>
->
-> | Ability      | Name            |
-> | ------------ | --------------- |
-> | Walk         | `walk`          |
-> | Climb        | `climb`         |
-> | Fly          | `fly`           |
-> | Swim         | `swim`          |
-> | Burrow       | `burrow`        |
->
-> Source: `CONFIG.BlackFlag.movementTypes`
->
-> </details>
+<details>
+<summary>Movement Types</summary>
+
+| Ability      | Name            |
+| ------------ | --------------- |
+| Walk         | `walk`          |
+| Climb        | `climb`         |
+| Fly          | `fly`           |
+| Swim         | `swim`          |
+| Burrow       | `burrow`        |
+
+Source: `CONFIG.BlackFlag.movementTypes`
+
+</details>
 
 ### Senses
 
@@ -211,30 +211,30 @@ Modify senses distances or add tags.
 | `system.traits.senses.tags`          | Add         | `[tag]`      | No         |
 
 
-> <details>
-> <summary>Sense Types</summary>
->
-> | Ability      | Name            |
-> | ------------ | --------------- |
-> | Darkvision   | `darkvision`    |
-> | Keensense    | `keensense`     |
-> | Tremorsense  | `tremorsense`   |
-> | Truesight    | `truesight`     |
->
-> Source: `CONFIG.BlackFlag.senses`
->
-> </details>
+<details>
+<summary>Sense Types</summary>
 
-> <details>
-> <summary>Sense Tags</summary>
->
-> | Ability                         | Name            |
-> | ------------------------------- | --------------- |
-> | Can't Sense Beyond This Radius  | `cantSense`     |
->
-> Source: `CONFIG.BlackFlag.senseTags`
->
-> </details>
+| Ability      | Name            |
+| ------------ | --------------- |
+| Darkvision   | `darkvision`    |
+| Keensense    | `keensense`     |
+| Tremorsense  | `tremorsense`   |
+| Truesight    | `truesight`     |
+
+Source: `CONFIG.BlackFlag.senses`
+
+</details>
+
+<details>
+<summary>Sense Tags</summary>
+
+| Ability                         | Name            |
+| ------------------------------- | --------------- |
+| Can't Sense Beyond This Radius  | `cantSense`     |
+
+Source: `CONFIG.BlackFlag.senseTags`
+
+</details>
 
 ### Size
 
@@ -244,21 +244,21 @@ Change the creature's size (will not change the token size).
 | ---------------------------------- | ----------- | ------------ | ---------- |
 | `system.traits.size`               | Any         | [size]       | No         |
 
-> <details>
-> <summary>Sizes</summary>
->
-> | Ability     | Name         |
-> | ----------- | ------------ |
-> | Tiny        | `tiny`       |
-> | Small       | `small`      |
-> | Medium      | `medium`     |
-> | Large       | `large`      |
-> | Huge        | `huge`       |
-> | Gargantuan  | `gargantuan` |
->
-> Source: `CONFIG.BlackFlag.sizes`
->
-> </details>
+<details>
+<summary>Sizes</summary>
+
+| Ability     | Name         |
+| ----------- | ------------ |
+| Tiny        | `tiny`       |
+| Small       | `small`      |
+| Medium      | `medium`     |
+| Large       | `large`      |
+| Huge        | `huge`       |
+| Gargantuan  | `gargantuan` |
+
+Source: `CONFIG.BlackFlag.sizes`
+
+</details>
 
 ### Condition/Damage Resistances/Immunities/Vulnerabilities
 
