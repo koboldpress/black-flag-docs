@@ -10,4 +10,5 @@ This site provides documentation and guides for the **Black Flag Roleplaying** g
 
 - [Changelog](changelogs/system)
 - Documentation
+  - [Active Effects](documentation/active-effects)
   - [Roll Formulas](documentation/roll-formulas)
