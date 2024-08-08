@@ -4,7 +4,7 @@ title: Roll Formulas
 permalink: /documentation/roll-formulas
 ---
 
-![Up to date as of 0.9.022](https://img.shields.io/static/v1?label=black-flag&message=0.9.022&color=informational)
+![Up to date as of 0.10.042](https://img.shields.io/static/v1?label=black-flag&message=0.10.042&color=informational)
 
 ## Actor Properties
 
@@ -22,14 +22,17 @@ permalink: /documentation/roll-formulas
 - `@attributes.ac.value` - Current armor class
 - `@attributes.attunement.value` - Number of currently attuned items
 - `@attributes.attunement.max` - Maximum number of attuned items allowed
-- `@attributes.dead.success` - Number of death save successes rolled.
-- `@attributes.dead.failure` - Number of death save failures rolled.
+- `@attributes.dead.success` - Number of death save successes rolled
+- `@attributes.dead.failure` - Number of death save failures rolled
+- `@attributes.encumbrance.max` - Maximum carrying capacity
+- `@attributes.encumbrance.value` - Current carried weight
 - `@attributes.exhaustion` - Current level of exhaustion
-- `@attributes.hd` **TODO**
+- `@attributes.hd.d.*.value` - Number of hit dice available of a certain size (replace `*` with a certain die size)
 - `@attributes.hp.value` - Current hit points
 - `@attributes.hp.damage` - Amount of damage taken
 - `@attributes.hp.temp` - Current temporary hit points
 - `@attributes.hp.max` - Maximum hit points
+- `@attributes.initiative.mod` - Initiative modifier
 - `@attributes.luck.value` - Current number of luck points
 - `@attributes.proficiency` - Proficiency bonus
 
@@ -53,11 +56,30 @@ permalink: /documentation/roll-formulas
 
 ### Spellcasting
 
-- `@spellcasting.maxRing` - Maximum spell ring cast-able by the character across all classes
+> **Note:** Replace the `*` in any of the following formulas with a spell slot: either `circle-1` for a specific circle or `pact` for pact slots.
+
+- `@spellcasting.maxCircle` - Maximum spell circle cast-able by the character across all classes
+- `@spellcasting.slots.*.max` - Max slots
+- `@spellcasting.slots.*.spent` - Spent slots
+- `@spellcasting.slots.*.value` - Available slots
+
+### Traits
+
+- `@traits.movement.base` - Base movement
+- `@traits.movement.types.*` - Movement of specific type (replace `*` with `walk`, `climb`, `fly`, `swim`, or `burrow`)
+- `@traits.senses.types.*` - Distances of certain senses (replace `*` with `darkvision`, `keensense`, `tremorsense`, or `truesight`)
+
 
 
 ## Item Properties
 
-- `@item.ring.value` - Ring at which a spell is being cast
+These properties are available on items in addition to the actor properties above.
+
+- `@item.circle` - Ring at which a spell is being cast
+- `@item.uses.max` - Maximum item uses.
+- `@item.uses.spent` - Spent item uses.
+- `@item.uses.value` - Currently available item uses.
 - `@mod` - Modifier for the primary ability associated with the item
 - `@prof` - Proficiency for the item
+- `@scaling` - Scaling value (starts at `1` for base usage)
+- `@scaling.increase` - Number of scaling steps above baseline (starts at `0` for base usage)
