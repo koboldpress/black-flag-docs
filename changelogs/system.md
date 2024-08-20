@@ -4,6 +4,23 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.10.042] - Beta: Spells & Activity Sheets
+All of the spells from the BFRD are now set up and ready to be used! Also underwent a redesign of the activity & advancement sheets to make use of the new application framework.
+
+### Improvements
+- Utility activity now has a generic roll it can perform ([#584])
+- Activities can now declare what specific effects they apply ([#696])
+- Migrated activity & advancement sheets to ApplicationV2 ([#698], [#699])
+- Moved document type definitions into system manifest ([#703])
+- Check enrichers can now be parsed if their include parentheses (so `[[/check INT (Investigation)]]` is now valid) ([#706])
+- Renamed `Healing` and `Saving Throw` activities to `Heal` and `Save` ([#707])
+- Movement & senses now have units and custom entries ([#708])
+- Added `@spellcasting.dc` to roll data ([#709])
+
+### Compendium Content
+- Completed all spells in the BFRD ([#497])
+
+
 ## [0.10.041] - Beta: Starting Equipment
 Start your characters off with some great gear with the new starting equipment system!
 
@@ -929,6 +946,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.10.039]: https://github.com/koboldpress/black-flag/releases/tag/0.10.039
 [0.10.040]: https://github.com/koboldpress/black-flag/releases/tag/0.10.040
 [0.10.041]: https://github.com/koboldpress/black-flag/releases/tag/0.10.041
+[0.10.042]: https://github.com/koboldpress/black-flag/releases/tag/0.10.042
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1407,6 +1425,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#580]: https://github.com/koboldpress/black-flag/issues/580
 [#581]: https://github.com/koboldpress/black-flag/issues/581
 [#582]: https://github.com/koboldpress/black-flag/issues/582
+[#584]: https://github.com/koboldpress/black-flag/issues/584
 [#585]: https://github.com/koboldpress/black-flag/issues/585
 [#586]: https://github.com/koboldpress/black-flag/issues/586
 [#587]: https://github.com/koboldpress/black-flag/issues/587
@@ -1489,6 +1508,14 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#691]: https://github.com/koboldpress/black-flag/issues/691
 [#692]: https://github.com/koboldpress/black-flag/issues/692
 [#693]: https://github.com/koboldpress/black-flag/issues/693
+[#696]: https://github.com/koboldpress/black-flag/issues/696
+[#698]: https://github.com/koboldpress/black-flag/issues/698
+[#699]: https://github.com/koboldpress/black-flag/issues/699
 [#700]: https://github.com/koboldpress/black-flag/issues/700
 [#701]: https://github.com/koboldpress/black-flag/issues/701
 [#702]: https://github.com/koboldpress/black-flag/issues/702
+[#703]: https://github.com/koboldpress/black-flag/issues/703
+[#706]: https://github.com/koboldpress/black-flag/issues/706
+[#707]: https://github.com/koboldpress/black-flag/issues/707
+[#708]: https://github.com/koboldpress/black-flag/issues/708
+[#709]: https://github.com/koboldpress/black-flag/issues/709

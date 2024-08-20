@@ -58,6 +58,7 @@ permalink: /documentation/roll-formulas
 
 > **Note:** Replace the `*` in any of the following formulas with a spell slot: either `circle-1` for a specific circle or `pact` for pact slots.
 
+- `@spellcasting.dc` - Spellcasting DC of the spellcasting class with the highest ability.
 - `@spellcasting.maxCircle` - Maximum spell circle cast-able by the character across all classes
 - `@spellcasting.slots.*.max` - Max slots
 - `@spellcasting.slots.*.spent` - Spent slots
@@ -83,3 +84,4 @@ These properties are available on items in addition to the actor properties abov
 - `@prof` - Proficiency for the item
 - `@scaling` - Scaling value (starts at `1` for base usage)
 - `@scaling.increase` - Number of scaling steps above baseline (starts at `0` for base usage)
+- `@spellcasting.dc` - Spellcasting DC of class that granted the spell if used on a spell, otherwise highest DC
