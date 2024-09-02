@@ -4,6 +4,32 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.10.043] - Beta: Attack Improvements
+It is now possible to make attacks using ammunition and to select attack modes (versatile damage!).
+
+### Improvements
+- Methods for wielding weapons (e.g. one-handed, offhand, thrown) can now be selected when making an attack ([#284])
+- Resistance/Immunity/Vulnerability to nonmagical damage can now be specified on actors ([#550])
+- Activities can now specify whether their effects are magical & whether they require concentration ([#694])
+- Custom critical thresholds & bonus damage can now be set on attack activity ([#712])
+- Ammunition can now be chosen when attacking & will affect attack & damage rolls ([#714])
+- Vehicle checks can now be rolled from enrichers ([#716])
+- Attunement requirements can now be specified on items ([#717])
+- Activity activation dialog can now by bypassed using "Skip Dialog" keys ([#719])
+- Modifiers can now add bonuses to movement ([#725])
+
+### Bug Fixes
+- Damage enricher will now roll proper damage when the `versatile` flag is specified ([#695])
+- Proficiency bonus no longer removed from NPC attacks ([#704])
+- Long rest should once again restore all actor attributes ([#711])
+- Fixed advancement & activity sheets not scrolling ([#715])
+- Add missing localization for "Skip Dialog" keybindings, fix disadvantage rolling on Mac ([#718])
+- Spell slot consumption error message should now properly show spell circle ([#720])
+- Consumption labels in activity activation dialog should no longer show raw HTML ([#721])
+- Armor items should no longer be listed under NPC features ([#723])
+- Choose Features configuration should no longer throw error when pool has items ([#726])
+
+
 ## [0.10.042] - Beta: Spells & Activity Sheets
 All of the spells from the BFRD are now set up and ready to be used! Also underwent a redesign of the activity & advancement sheets to make use of the new application framework.
 
