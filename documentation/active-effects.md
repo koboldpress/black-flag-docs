@@ -4,7 +4,7 @@ title: Active Effects
 permalink: /documentation/active-effects
 ---
 
-![Up to date as of 0.10.042](https://img.shields.io/static/v1?label=black-flag&message=0.10.042&color=informational)
+![Up to date as of 0.10.043](https://img.shields.io/static/v1?label=black-flag&message=0.10.043&color=informational)
 
 ## Player Characters
 
@@ -172,6 +172,7 @@ Change base movement, modify a movement formula, or add movement tags
 | Attribute Key                             | Change Mode | Effect Value | Roll Data? |
 | ----------------------------------------- | ----------- | ------------ | ---------- |
 | `system.traits.movement.base`             | Any         | `number`     | No         |
+| `system.traits.movement.multiplier`       | Any         | `formula`    | Yes        |
 | `system.traits.movement.types.[movement]` | Any         | `formula`    | Yes        |
 | `system.traits.movement.tags`             | Add         | `[tag]`      | No         |
 
@@ -186,6 +187,15 @@ Change base movement, modify a movement formula, or add movement tags
 | Burrow       | `burrow`        |
 
 Source: `CONFIG.BlackFlag.movementTypes`
+
+##### Movement Modifiers
+
+Movement can take a bonus modifier that is applied to all non-zero movement types. This can be filtered by the specific movement type and whether the character is armored or wielding a shield.
+
+```javascript
+// Example: Monk's Unarmored Movement
+{ "type": "bonus", "filter": [{ "k": "type", "v": "movement" }, { "k": "armored", "v": false }, { "k": "shielded", "v": false }], "formula": "@scale.monk.movement" }
+```
 
 ### Senses
 
