@@ -4,6 +4,20 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.10.044] - Beta: Squashing Bugs
+A handful of bug fixes.
+
+### Improvements
+- Ammunition dropdown will no longer appear in attack dialog if no ammo is available ([#733])
+
+### Bug Fixes
+- Fixed making attacks with weapons that have the Ammunition property if no ammo is present on actor ([#728])
+- Description area on Talents should be editable once more ([#729])
+- Blank healing enrichers will no longer throw an error ([#730])
+- Setting attack ability on Attack activities should work once again ([#731])
+- Extra damage parts on weapon attacks should no longer be replaced by copies of the versatile damage ([#732])
+
+
 ## [0.10.043] - Beta: Attack Improvements
 It is now possible to make attacks using ammunition and to select attack modes (versatile damage!).
 
@@ -973,6 +987,8 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.10.040]: https://github.com/koboldpress/black-flag/releases/tag/0.10.040
 [0.10.041]: https://github.com/koboldpress/black-flag/releases/tag/0.10.041
 [0.10.042]: https://github.com/koboldpress/black-flag/releases/tag/0.10.042
+[0.10.043]: https://github.com/koboldpress/black-flag/releases/tag/0.10.043
+[0.10.044]: https://github.com/koboldpress/black-flag/releases/tag/0.10.044
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1213,6 +1229,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#281]: https://github.com/koboldpress/black-flag/issues/281
 [#282]: https://github.com/koboldpress/black-flag/issues/282
 [#283]: https://github.com/koboldpress/black-flag/issues/283
+[#284]: https://github.com/koboldpress/black-flag/issues/284
 [#285]: https://github.com/koboldpress/black-flag/issues/285
 [#286]: https://github.com/koboldpress/black-flag/issues/286
 [#287]: https://github.com/koboldpress/black-flag/issues/287
@@ -1427,6 +1444,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#547]: https://github.com/koboldpress/black-flag/issues/547
 [#548]: https://github.com/koboldpress/black-flag/issues/548
 [#549]: https://github.com/koboldpress/black-flag/issues/549
+[#550]: https://github.com/koboldpress/black-flag/issues/550
 [#553]: https://github.com/koboldpress/black-flag/issues/553
 [#554]: https://github.com/koboldpress/black-flag/issues/554
 [#555]: https://github.com/koboldpress/black-flag/issues/555
@@ -1534,6 +1552,8 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#691]: https://github.com/koboldpress/black-flag/issues/691
 [#692]: https://github.com/koboldpress/black-flag/issues/692
 [#693]: https://github.com/koboldpress/black-flag/issues/693
+[#694]: https://github.com/koboldpress/black-flag/issues/694
+[#695]: https://github.com/koboldpress/black-flag/issues/695
 [#696]: https://github.com/koboldpress/black-flag/issues/696
 [#698]: https://github.com/koboldpress/black-flag/issues/698
 [#699]: https://github.com/koboldpress/black-flag/issues/699
@@ -1541,7 +1561,26 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#701]: https://github.com/koboldpress/black-flag/issues/701
 [#702]: https://github.com/koboldpress/black-flag/issues/702
 [#703]: https://github.com/koboldpress/black-flag/issues/703
+[#704]: https://github.com/koboldpress/black-flag/issues/704
 [#706]: https://github.com/koboldpress/black-flag/issues/706
 [#707]: https://github.com/koboldpress/black-flag/issues/707
 [#708]: https://github.com/koboldpress/black-flag/issues/708
 [#709]: https://github.com/koboldpress/black-flag/issues/709
+[#711]: https://github.com/koboldpress/black-flag/issues/711
+[#712]: https://github.com/koboldpress/black-flag/issues/712
+[#714]: https://github.com/koboldpress/black-flag/issues/714
+[#715]: https://github.com/koboldpress/black-flag/issues/715
+[#716]: https://github.com/koboldpress/black-flag/issues/716
+[#717]: https://github.com/koboldpress/black-flag/issues/717
+[#718]: https://github.com/koboldpress/black-flag/issues/718
+[#719]: https://github.com/koboldpress/black-flag/issues/719
+[#720]: https://github.com/koboldpress/black-flag/issues/720
+[#721]: https://github.com/koboldpress/black-flag/issues/721
+[#723]: https://github.com/koboldpress/black-flag/issues/723
+[#725]: https://github.com/koboldpress/black-flag/issues/725
+[#728]: https://github.com/koboldpress/black-flag/issues/728
+[#729]: https://github.com/koboldpress/black-flag/issues/729
+[#730]: https://github.com/koboldpress/black-flag/issues/730
+[#731]: https://github.com/koboldpress/black-flag/issues/731
+[#732]: https://github.com/koboldpress/black-flag/issues/732
+[#733]: https://github.com/koboldpress/black-flag/issues/733
