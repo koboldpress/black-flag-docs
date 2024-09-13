@@ -4,6 +4,13 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.10.045] - Beta: Migration Fix
+Fix an annoying issue with migrating old activities.
+
+### Bug Fixes
+- Old Save & Heal activities should now be properly migrated when inside compendiums ([#735])
+
+
 ## [0.10.044] - Beta: Squashing Bugs
 A handful of bug fixes.
 
@@ -989,6 +996,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.10.042]: https://github.com/koboldpress/black-flag/releases/tag/0.10.042
 [0.10.043]: https://github.com/koboldpress/black-flag/releases/tag/0.10.043
 [0.10.044]: https://github.com/koboldpress/black-flag/releases/tag/0.10.044
+[0.10.045]: https://github.com/koboldpress/black-flag/releases/tag/0.10.045
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1584,3 +1592,4 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#731]: https://github.com/koboldpress/black-flag/issues/731
 [#732]: https://github.com/koboldpress/black-flag/issues/732
 [#733]: https://github.com/koboldpress/black-flag/issues/733
+[#735]: https://github.com/koboldpress/black-flag/issues/735
