@@ -4,6 +4,38 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.10.046] - Beta: Checks, Enchantments, & Templates
+A wide mixture of system improvements including base proficiencies (for Jack of All Trades), respecting nonmagical resistances, activities on ammo, the Check activity type, the Enchantment effect type, and guided template placement.
+
+### Improvements
+- Base proficiency for checks & saves can now be set ([#129])
+- Rich actor & item source can now be configured ([#415])
+- Armor class & movement modifiers now receive more details information on equipped armor & shield ([#450])
+- Damage enricher now supports variable damage types in explicit and inferred format ([#681])
+- Minimum modifiers can now be applied to armor class ([#710])
+- Resistances to nonmagical sources of damage are now respected by damage application system ([#727])
+- Ammunition items can now have activities & active effects ([#734], [#750])
+- Added the Check activity type for making ability, skill, tool, and vehicle checks ([#740])
+- Removed restriction requiring both class and background to be present to select starting equipment ([#743])
+- Added Enchantment active effect type that applies to items, not actors ([#745])
+- Measured templates can now be placed automatically when using activity ([#746])
+- String interpolation now supported for active effects in `override` mode ([#751])
+- Activities can now be re-ordered on an item ([#752])
+- Dropdown in inventory now displays activities and they can be triggered directly from the dropdown ([#757])
+
+### Compendium Content
+- Removed level restriction on Mental Fortitude talent ([#739])
+
+### Bug Fixes
+- Adding a heal activity will no longer throw an error ([#736])
+- NPC damage will no longer add proficiency if ability proficiency checkbox is checked ([#737])
+- Critical settings on roll process will now be applied properly to all damage rolls ([#738])
+- Luck tray should now display properly for attack rolls ([#742])
+- Fixed activity sheets not opening if associated effect is not present ([#749])
+- Select equipment dialog should no longer throw error if one item is missing equipment advancement ([#766])
+- Item & activity uses consumption on activities should no longer throw an error ([#767])
+
+
 ## [0.10.045] - Beta: Migration Fix
 Fix an annoying issue with migrating old activities.
 
@@ -997,6 +1029,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.10.043]: https://github.com/koboldpress/black-flag/releases/tag/0.10.043
 [0.10.044]: https://github.com/koboldpress/black-flag/releases/tag/0.10.044
 [0.10.045]: https://github.com/koboldpress/black-flag/releases/tag/0.10.045
+[0.10.046]: https://github.com/koboldpress/black-flag/releases/tag/0.10.046
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1108,6 +1141,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#126]: https://github.com/koboldpress/black-flag/issues/126
 [#127]: https://github.com/koboldpress/black-flag/issues/127
 [#128]: https://github.com/koboldpress/black-flag/issues/128
+[#129]: https://github.com/koboldpress/black-flag/issues/129
 [#130]: https://github.com/koboldpress/black-flag/issues/130
 [#133]: https://github.com/koboldpress/black-flag/issues/133
 [#137]: https://github.com/koboldpress/black-flag/issues/137
@@ -1351,6 +1385,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#412]: https://github.com/koboldpress/black-flag/issues/412
 [#413]: https://github.com/koboldpress/black-flag/issues/413
 [#414]: https://github.com/koboldpress/black-flag/issues/414
+[#415]: https://github.com/koboldpress/black-flag/issues/415
 [#416]: https://github.com/koboldpress/black-flag/issues/416
 [#417]: https://github.com/koboldpress/black-flag/issues/417
 [#418]: https://github.com/koboldpress/black-flag/issues/418
@@ -1379,6 +1414,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#444]: https://github.com/koboldpress/black-flag/issues/444
 [#445]: https://github.com/koboldpress/black-flag/issues/445
 [#446]: https://github.com/koboldpress/black-flag/issues/446
+[#450]: https://github.com/koboldpress/black-flag/issues/450
 [#451]: https://github.com/koboldpress/black-flag/issues/451
 [#452]: https://github.com/koboldpress/black-flag/issues/452
 [#453]: https://github.com/koboldpress/black-flag/issues/453
@@ -1552,6 +1588,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#678]: https://github.com/koboldpress/black-flag/issues/678
 [#679]: https://github.com/koboldpress/black-flag/issues/679
 [#680]: https://github.com/koboldpress/black-flag/issues/680
+[#681]: https://github.com/koboldpress/black-flag/issues/681
 [#682]: https://github.com/koboldpress/black-flag/issues/682
 [#683]: https://github.com/koboldpress/black-flag/issues/683
 [#686]: https://github.com/koboldpress/black-flag/issues/686
@@ -1574,6 +1611,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#707]: https://github.com/koboldpress/black-flag/issues/707
 [#708]: https://github.com/koboldpress/black-flag/issues/708
 [#709]: https://github.com/koboldpress/black-flag/issues/709
+[#710]: https://github.com/koboldpress/black-flag/issues/710
 [#711]: https://github.com/koboldpress/black-flag/issues/711
 [#712]: https://github.com/koboldpress/black-flag/issues/712
 [#714]: https://github.com/koboldpress/black-flag/issues/714
@@ -1586,10 +1624,28 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#721]: https://github.com/koboldpress/black-flag/issues/721
 [#723]: https://github.com/koboldpress/black-flag/issues/723
 [#725]: https://github.com/koboldpress/black-flag/issues/725
+[#727]: https://github.com/koboldpress/black-flag/issues/727
 [#728]: https://github.com/koboldpress/black-flag/issues/728
 [#729]: https://github.com/koboldpress/black-flag/issues/729
 [#730]: https://github.com/koboldpress/black-flag/issues/730
 [#731]: https://github.com/koboldpress/black-flag/issues/731
 [#732]: https://github.com/koboldpress/black-flag/issues/732
 [#733]: https://github.com/koboldpress/black-flag/issues/733
+[#734]: https://github.com/koboldpress/black-flag/issues/734
 [#735]: https://github.com/koboldpress/black-flag/issues/735
+[#736]: https://github.com/koboldpress/black-flag/issues/736
+[#737]: https://github.com/koboldpress/black-flag/issues/737
+[#738]: https://github.com/koboldpress/black-flag/issues/738
+[#739]: https://github.com/koboldpress/black-flag/issues/739
+[#740]: https://github.com/koboldpress/black-flag/issues/740
+[#742]: https://github.com/koboldpress/black-flag/issues/742
+[#743]: https://github.com/koboldpress/black-flag/issues/743
+[#745]: https://github.com/koboldpress/black-flag/issues/745
+[#746]: https://github.com/koboldpress/black-flag/issues/746
+[#749]: https://github.com/koboldpress/black-flag/issues/749
+[#750]: https://github.com/koboldpress/black-flag/issues/750
+[#751]: https://github.com/koboldpress/black-flag/issues/751
+[#752]: https://github.com/koboldpress/black-flag/issues/752
+[#757]: https://github.com/koboldpress/black-flag/issues/757
+[#766]: https://github.com/koboldpress/black-flag/issues/766
+[#767]: https://github.com/koboldpress/black-flag/issues/767
