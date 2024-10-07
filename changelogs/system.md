@@ -4,6 +4,34 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.10.047] - Beta: Magic Items Batch 1
+Added a big chunk of magic items from the reference document, introduced editing mode to item sheets to help with displaying enchanted data, and re-designed the activation dialog to better display consumption amounts.
+
+### Improvements
+- Redesigned activation dialog and added consumption preview ([#722], [#778])
+- Item sheets now have lock control like actor sheets, toggling between enchanted/not enchanted data ([#756])
+- Measured templates can now be placed using guided system ([#760])
+- Activity chat cards from spells now display spell circle ([#784])
+
+### Compendium Content
+- Source fallback has been removed from BFRD items in favor of automatic detection ([#415])
+- Magic items up to "Dragon Scale Mail" have been completed ([#497])
+
+### Bug Fixes
+- Save activity DC formula should now be properly migrated ([#768])
+- Save activity should now show proper ability in chat card ([#769])
+- Luck re-rolls should now properly display on the chat card ([#771])
+- Situational terms can once again be applied to attack rolls ([#772])
+- XP bar should no longer obscure the actor sheet in certain browsers ([#773])
+- Rolling initiative through combat tracker will no longer throw error ([#775])
+- Activity & advancement sheets in locked compendiums should now be properly locked ([#776])
+- Roll notes should now display on attack rolls ([#777])
+- Modifying linked journal entry on concept sheets should no longer discard unsaved description changes ([#779])
+- Spellcasting advancement should no longer throw an error when opened from within a compendium ([#780])
+- Dragging a feature into the advancement tab of an item should no longer add it again if it already exists ([#781])
+- Items without identifiers explicitly set should now be properly registered ([#782])
+
+
 ## [0.10.046] - Beta: Checks, Enchantments, & Templates
 A wide mixture of system improvements including base proficiencies (for Jack of All Trades), respecting nonmagical resistances, activities on ammo, the Check activity type, the Enchantment effect type, and guided template placement.
 
@@ -1030,6 +1058,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.10.044]: https://github.com/koboldpress/black-flag/releases/tag/0.10.044
 [0.10.045]: https://github.com/koboldpress/black-flag/releases/tag/0.10.045
 [0.10.046]: https://github.com/koboldpress/black-flag/releases/tag/0.10.046
+[0.10.047]: https://github.com/koboldpress/black-flag/releases/tag/0.10.047
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1622,6 +1651,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#719]: https://github.com/koboldpress/black-flag/issues/719
 [#720]: https://github.com/koboldpress/black-flag/issues/720
 [#721]: https://github.com/koboldpress/black-flag/issues/721
+[#722]: https://github.com/koboldpress/black-flag/issues/722
 [#723]: https://github.com/koboldpress/black-flag/issues/723
 [#725]: https://github.com/koboldpress/black-flag/issues/725
 [#727]: https://github.com/koboldpress/black-flag/issues/727
@@ -1646,6 +1676,22 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#750]: https://github.com/koboldpress/black-flag/issues/750
 [#751]: https://github.com/koboldpress/black-flag/issues/751
 [#752]: https://github.com/koboldpress/black-flag/issues/752
+[#756]: https://github.com/koboldpress/black-flag/issues/756
 [#757]: https://github.com/koboldpress/black-flag/issues/757
+[#760]: https://github.com/koboldpress/black-flag/issues/760
 [#766]: https://github.com/koboldpress/black-flag/issues/766
 [#767]: https://github.com/koboldpress/black-flag/issues/767
+[#768]: https://github.com/koboldpress/black-flag/issues/768
+[#769]: https://github.com/koboldpress/black-flag/issues/769
+[#771]: https://github.com/koboldpress/black-flag/issues/771
+[#772]: https://github.com/koboldpress/black-flag/issues/772
+[#773]: https://github.com/koboldpress/black-flag/issues/773
+[#775]: https://github.com/koboldpress/black-flag/issues/775
+[#776]: https://github.com/koboldpress/black-flag/issues/776
+[#777]: https://github.com/koboldpress/black-flag/issues/777
+[#778]: https://github.com/koboldpress/black-flag/issues/778
+[#779]: https://github.com/koboldpress/black-flag/issues/779
+[#780]: https://github.com/koboldpress/black-flag/issues/780
+[#781]: https://github.com/koboldpress/black-flag/issues/781
+[#782]: https://github.com/koboldpress/black-flag/issues/782
+[#784]: https://github.com/koboldpress/black-flag/issues/784
