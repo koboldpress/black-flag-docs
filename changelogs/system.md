@@ -4,6 +4,29 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.10.049] - Beta: Cast, Summon, & Magic Items Batch 3
+Another big batch of magic items, as well as updates to existing items to make use of the new `Cast` activity.
+
+### Improvements
+- Added data model & configuration sheet for `Cast` and `Summon` activities ([#328], [#744])
+  - **Note**: Neither of these activities are functional yet, but they can be fully configured and will begin working in future releases.
+- Added Health configuration application & maximum HP override ([#755], [#793])
+- Save activities now support multiple abilities or no ability ([#791], [#799])
+- Activation override on activities is now explicitly set ([#794])
+- Activities can now trigger a primary action after being activated ([#795])
+
+### Compendium Content
+- Magic items up to "Potion of Water Breathing" have been completed ([#497])
+- Fixed broken embeds in description of Antipathy/Sympathy spell ([#804])
+
+### Bug Fixes
+- Check enrichers using capital letters in key should now be properly parsed ([#796])
+- Enrichers without config data should now be recognized ([#797])
+- Rolling attack & damage through an enricher in a compendium pack should no be properly prevented ([#798])
+- All item types should now be properly be displayed in NPC inventory, but not displayed on main tab ([#801])
+- NPC effects should no longer require items to be attuned ([#802])
+
+
 ## [0.10.048] - Beta: Effect Application & Magic Items Batch 2
 An interface for applying effects to tokens from activities has been added to chat. Plus continued work on magic items, some improvements to the armor class config, and more!
 
@@ -1080,6 +1103,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.10.046]: https://github.com/koboldpress/black-flag/releases/tag/0.10.046
 [0.10.047]: https://github.com/koboldpress/black-flag/releases/tag/0.10.047
 [0.10.048]: https://github.com/koboldpress/black-flag/releases/tag/0.10.048
+[0.10.049]: https://github.com/koboldpress/black-flag/releases/tag/0.10.049
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1360,6 +1384,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#325]: https://github.com/koboldpress/black-flag/issues/325
 [#326]: https://github.com/koboldpress/black-flag/issues/326
 [#327]: https://github.com/koboldpress/black-flag/issues/327
+[#328]: https://github.com/koboldpress/black-flag/issues/328
 [#329]: https://github.com/koboldpress/black-flag/issues/329
 [#331]: https://github.com/koboldpress/black-flag/issues/331
 [#332]: https://github.com/koboldpress/black-flag/issues/332
@@ -1694,12 +1719,14 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#740]: https://github.com/koboldpress/black-flag/issues/740
 [#742]: https://github.com/koboldpress/black-flag/issues/742
 [#743]: https://github.com/koboldpress/black-flag/issues/743
+[#744]: https://github.com/koboldpress/black-flag/issues/744
 [#745]: https://github.com/koboldpress/black-flag/issues/745
 [#746]: https://github.com/koboldpress/black-flag/issues/746
 [#749]: https://github.com/koboldpress/black-flag/issues/749
 [#750]: https://github.com/koboldpress/black-flag/issues/750
 [#751]: https://github.com/koboldpress/black-flag/issues/751
 [#752]: https://github.com/koboldpress/black-flag/issues/752
+[#755]: https://github.com/koboldpress/black-flag/issues/755
 [#756]: https://github.com/koboldpress/black-flag/issues/756
 [#757]: https://github.com/koboldpress/black-flag/issues/757
 [#760]: https://github.com/koboldpress/black-flag/issues/760
@@ -1724,4 +1751,15 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#786]: https://github.com/koboldpress/black-flag/issues/786
 [#788]: https://github.com/koboldpress/black-flag/issues/788
 [#789]: https://github.com/koboldpress/black-flag/issues/789
+[#791]: https://github.com/koboldpress/black-flag/issues/791
 [#792]: https://github.com/koboldpress/black-flag/issues/792
+[#793]: https://github.com/koboldpress/black-flag/issues/793
+[#794]: https://github.com/koboldpress/black-flag/issues/794
+[#795]: https://github.com/koboldpress/black-flag/issues/795
+[#796]: https://github.com/koboldpress/black-flag/issues/796
+[#797]: https://github.com/koboldpress/black-flag/issues/797
+[#798]: https://github.com/koboldpress/black-flag/issues/798
+[#799]: https://github.com/koboldpress/black-flag/issues/799
+[#801]: https://github.com/koboldpress/black-flag/issues/801
+[#802]: https://github.com/koboldpress/black-flag/issues/802
+[#804]: https://github.com/koboldpress/black-flag/issues/804
