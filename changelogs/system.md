@@ -4,6 +4,25 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.10.050] - Beta: Completed Reference Doc
+The all content from the Black Flag Reference Document is now integrated! This includes all of the monsters and improvements to a number of magic items to take advantage the now functional Summon activity.
+
+### Improvements
+- Summon activity is now fully functional ([#744])
+- Added "Until Destroyed or Dispelled" duration option ([#807])
+- Added Circle area of effect type ([#808])
+- Bonus modifiers can now increase spellcasting DC ([#810])
+- Enchantments now have the ability to apply changes to activities ([#813])
+
+### Compendium Content
+- Completed all content from the BFRD ([#497])
+
+### Bug Fixes
+- Fixed issue with items that have Consume Quantity set double-counting uses ([#806])
+- Fixed active effect suppression on PCs ([#811])
+- Automatic consumption scaling should now work for simple negative values ([#812])
+
+
 ## [0.10.049] - Beta: Cast, Summon, & Magic Items Batch 3
 Another big batch of magic items, as well as updates to existing items to make use of the new `Cast` activity.
 
@@ -1104,6 +1123,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.10.047]: https://github.com/koboldpress/black-flag/releases/tag/0.10.047
 [0.10.048]: https://github.com/koboldpress/black-flag/releases/tag/0.10.048
 [0.10.049]: https://github.com/koboldpress/black-flag/releases/tag/0.10.049
+[0.10.050]: https://github.com/koboldpress/black-flag/releases/tag/0.10.050
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1763,3 +1783,10 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#801]: https://github.com/koboldpress/black-flag/issues/801
 [#802]: https://github.com/koboldpress/black-flag/issues/802
 [#804]: https://github.com/koboldpress/black-flag/issues/804
+[#806]: https://github.com/koboldpress/black-flag/issues/806
+[#807]: https://github.com/koboldpress/black-flag/issues/807
+[#808]: https://github.com/koboldpress/black-flag/issues/808
+[#810]: https://github.com/koboldpress/black-flag/issues/810
+[#811]: https://github.com/koboldpress/black-flag/issues/811
+[#812]: https://github.com/koboldpress/black-flag/issues/812
+[#813]: https://github.com/koboldpress/black-flag/issues/813
