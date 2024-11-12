@@ -4,11 +4,37 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [0.10.051] - Beta: Choice Replacement & Temporary Maximum HP
+The system now supports feature & spell replacement on level up and applying temporary changes to maximum HP.
+
+### Improvements
+- `Cast` activity is now fully functional ([#328])
+- Previously learned spells can now be replaced at level up if allowed by class ([#635])
+- Actors now have temporary max HP, Maximum HP healing type now works, and added Maximum HP damage type ([#689])
+- Added flag that removes talent list restriction during Improvement ([#761])
+- Choose Features & Spells advancement types now support making replacements of earlier choices ([#762])
+- Save enricher now supports multiple abilities (from Save activity only) or no ability (using `[[/save ability=false]]`) ([#800])
+- Removed "Clothing" gear category and merged subtypes into "Adventuring Gear" and "Wondrous Item" categories ([#821])
+- Cast activity can now override the spellcasting ability used for spells ([#824])
+- Removed final uses of the deprecated `{{#select}}` Handlebars helper ([#827])
+- Added spell lists journal entry page type ([#828])
+- Spellcasting tab now lists more details on spells ([#830])
+
+### Compendium Content
+- Update Jack of All Trades to use new `unrestrictedTalents` flag ([#761])
+- Updated Path of the Sage to offer spell replacements ([#762])
+
+### Bug Fixes
+- Attribute consumption should no longer display "This Item" as a placeholder ([#823])
+- Fixed spells being removed when unrelated properties are changed in the Choose Spells configuration ([#829])
+- Fixed issue with "All" spell learning mode for non-Divine casters ([#831])
+
+
 ## [0.10.050] - Beta: Completed Reference Doc
 The all content from the Black Flag Reference Document is now integrated! This includes all of the monsters and improvements to a number of magic items to take advantage the now functional Summon activity.
 
 ### Improvements
-- Summon activity is now fully functional ([#744])
+- `Summon` activity is now fully functional ([#744])
 - Added "Until Destroyed or Dispelled" duration option ([#807])
 - Added Circle area of effect type ([#808])
 - Bonus modifiers can now increase spellcasting DC ([#810])
@@ -1124,6 +1150,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.10.048]: https://github.com/koboldpress/black-flag/releases/tag/0.10.048
 [0.10.049]: https://github.com/koboldpress/black-flag/releases/tag/0.10.049
 [0.10.050]: https://github.com/koboldpress/black-flag/releases/tag/0.10.050
+[0.10.051]: https://github.com/koboldpress/black-flag/releases/tag/0.10.051
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1647,6 +1674,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#631]: https://github.com/koboldpress/black-flag/issues/631
 [#632]: https://github.com/koboldpress/black-flag/issues/632
 [#634]: https://github.com/koboldpress/black-flag/issues/634
+[#635]: https://github.com/koboldpress/black-flag/issues/635
 [#636]: https://github.com/koboldpress/black-flag/issues/636
 [#637]: https://github.com/koboldpress/black-flag/issues/637
 [#638]: https://github.com/koboldpress/black-flag/issues/638
@@ -1689,6 +1717,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#683]: https://github.com/koboldpress/black-flag/issues/683
 [#686]: https://github.com/koboldpress/black-flag/issues/686
 [#688]: https://github.com/koboldpress/black-flag/issues/688
+[#689]: https://github.com/koboldpress/black-flag/issues/689
 [#690]: https://github.com/koboldpress/black-flag/issues/690
 [#691]: https://github.com/koboldpress/black-flag/issues/691
 [#692]: https://github.com/koboldpress/black-flag/issues/692
@@ -1750,6 +1779,8 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#756]: https://github.com/koboldpress/black-flag/issues/756
 [#757]: https://github.com/koboldpress/black-flag/issues/757
 [#760]: https://github.com/koboldpress/black-flag/issues/760
+[#761]: https://github.com/koboldpress/black-flag/issues/761
+[#762]: https://github.com/koboldpress/black-flag/issues/762
 [#764]: https://github.com/koboldpress/black-flag/issues/764
 [#766]: https://github.com/koboldpress/black-flag/issues/766
 [#767]: https://github.com/koboldpress/black-flag/issues/767
@@ -1780,6 +1811,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#797]: https://github.com/koboldpress/black-flag/issues/797
 [#798]: https://github.com/koboldpress/black-flag/issues/798
 [#799]: https://github.com/koboldpress/black-flag/issues/799
+[#800]: https://github.com/koboldpress/black-flag/issues/800
 [#801]: https://github.com/koboldpress/black-flag/issues/801
 [#802]: https://github.com/koboldpress/black-flag/issues/802
 [#804]: https://github.com/koboldpress/black-flag/issues/804
@@ -1790,3 +1822,11 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#811]: https://github.com/koboldpress/black-flag/issues/811
 [#812]: https://github.com/koboldpress/black-flag/issues/812
 [#813]: https://github.com/koboldpress/black-flag/issues/813
+[#821]: https://github.com/koboldpress/black-flag/issues/821
+[#823]: https://github.com/koboldpress/black-flag/issues/823
+[#824]: https://github.com/koboldpress/black-flag/issues/824
+[#827]: https://github.com/koboldpress/black-flag/issues/827
+[#828]: https://github.com/koboldpress/black-flag/issues/828
+[#829]: https://github.com/koboldpress/black-flag/issues/829
+[#830]: https://github.com/koboldpress/black-flag/issues/830
+[#831]: https://github.com/koboldpress/black-flag/issues/831

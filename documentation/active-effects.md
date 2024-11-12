@@ -4,7 +4,7 @@ title: Active Effects
 permalink: /documentation/active-effects
 ---
 
-![Up to date as of 0.10.043](https://img.shields.io/static/v1?label=black-flag&message=0.10.043&color=informational)
+![Up to date as of 0.10.051](https://img.shields.io/static/v1?label=black-flag&message=0.10.051&color=informational)
 
 ## Player Characters
 
@@ -71,6 +71,14 @@ Set a different ability for initiative or change initiative proficiency.
 | `system.attributes.initiative.ability`                  | Any               | `string `    | No         |
 | `system.attributes.initiative.proficiency.multiplier`   | Upgrade/Downgrade | `number`     | No         |
 
+
+### Flags
+
+There are certain special flags that can be set to control specific behavior.
+
+| Attribute Key                                           | Change Mode       | Effect Value | Roll Data? |
+| ------------------------------------------------------- | ----------------- | ------------ | ---------- |
+| `flags.black-flag.unrestrictedTalents`                  | Override          | `boolean `   | No         |
 
 
 ## NPCs
@@ -254,3 +262,27 @@ TODO
 ## Modifiers
 
 TODO
+
+### Spell Attack Bonus
+
+Bonuses to spell attacks can be done using the `bonus` modifier type with a type filter of `attack` and a second filter on `activity.attack.type.classification`:
+
+```javascript
+// Example: Wand of the War Mage +3
+{ "type": "bonus", "filter": [{ "k": "type", "v": "attack" }, { "k": "activity.attack.type.classification", "v": "spell" }], "formula": "3" }
+
+// Example: Moon Sickle +1
+{ "type": "bonus", "filter": [{ "k": "type", "v": "attack" }, { "k": "activity.attack.type.classification", "v": "spell" }, { "k": "class", "o": "in", "v": ["druid", "ranger"] }], "formula": "1" }
+```
+
+### Spellcasting DC Bonus
+
+Spellcasting DC can be changed using a modifier of the `bonus` type with a type filter of `spellcasting-dc`. Just using that type will cause the modifier to be applied to all spellcasting classes, but an `class` filter can be used to boost the DC for a specific class.
+
+```javascript
+// Example: Robe of the Archmagi, targets all spellcasting
+{ "type": "bonus", "filter": [{ "k": "type", "v": "spellcasting-dc" }], "formula": 2 }
+
+// Example: Moon Sickle +1, targets only Druid and Ranger spellcasting
+{ "type": "bonus", "filter": [{ "k": "type", "v": "spellcasting-dc" }, { "k": "class", "o": "in", "v": ["druid", "ranger"] }], "formula": 1 }
+```
