@@ -1,0 +1,19 @@
+:root {
+	--bf-blue: rgb(45 82 129);
+	--bf-blue: oklch(43.45% 0.089 255.25);
+}
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--bf-blue) transparent;
+
+	&::-webkit-scrollbar-track {
+		box-shadow: none;
+		border-radius: 0;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border: none;
+		background: var(--bf-blue);
+	}
+}

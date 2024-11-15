@@ -25,12 +25,16 @@ description: >-
 domain: black-flag.github.io
 url: "https://black-flag.github.io"
 baseurl: "/black-flag-docs"
-github_username:  arbron
+github_username: arbron
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+header_pages:
+  - changelogs/system.md
+  - documentation/active-effects.md
+  - documentation/roll-formulas.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
