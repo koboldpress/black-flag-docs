@@ -4,6 +4,31 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [1.0.052] - Ankheg: Official Release!
+The time is upon us! The system is officially emerging from beta. While no longer in beta, the system is still very much in `1.0` status and there are many improvements to come!
+
+### Improvements
+- Adjusted damage & healing enrichers to properly handle max HP damage type ([#770])
+- Completed removal of minimum uses field ([#815])
+- Added Table of Contents application usable by modules ([#833])
+- Added Welcome application with links to documentation, the support page, and official ToV modules ([#834])
+- Added round time to config so clock increments automatically during combat ([#836])
+- Added remaining icons for chat actions ([#837])
+- Added identifiers to all item types ([#841])
+- Adjusted the text for "Expanded Talent List" in journal pages to match errata text ([#844])
+- Luck can now be spent on Death Saves ([#847])
+
+### Compendium Content
+- Added UUID redirects from Monster Vault creatures to BFRD versions if Monster Vault isn't enabled ([#845])
+
+### Bug Fixes
+- Fixed issues with dark mode on various sheets ([#787])
+- Attack mode dropdown will no longer display if no attack modes are available ([#838])
+- Half casters & pact casters should now get slots at the correct level ([#839])
+- Spell manager & other selection dialogs should no longer display duplicate items ([#840])
+- Fixed check enricher failing when requesting a roll ([#843])
+
+
 ## [0.10.051] - Beta: Choice Replacement & Temporary Maximum HP
 The system now supports feature & spell replacement on level up and applying temporary changes to maximum HP.
 
@@ -16,7 +41,7 @@ The system now supports feature & spell replacement on level up and applying tem
 - Save enricher now supports multiple abilities (from Save activity only) or no ability (using `[[/save ability=false]]`) ([#800])
 - Removed "Clothing" gear category and merged subtypes into "Adventuring Gear" and "Wondrous Item" categories ([#821])
 - Cast activity can now override the spellcasting ability used for spells ([#824])
-- Removed final uses of the deprecated `{{#select}}` Handlebars helper ([#827])
+- Removed final uses of the deprecated `{% raw %}{{#select}}{% endraw %}` Handlebars helper ([#827])
 - Added spell lists journal entry page type ([#828])
 - Spellcasting tab now lists more details on spells ([#830])
 
@@ -1151,6 +1176,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.10.049]: https://github.com/koboldpress/black-flag/releases/tag/0.10.049
 [0.10.050]: https://github.com/koboldpress/black-flag/releases/tag/0.10.050
 [0.10.051]: https://github.com/koboldpress/black-flag/releases/tag/0.10.051
+[1.0.052]: https://github.com/koboldpress/black-flag/releases/tag/1.0.052
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1786,6 +1812,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#767]: https://github.com/koboldpress/black-flag/issues/767
 [#768]: https://github.com/koboldpress/black-flag/issues/768
 [#769]: https://github.com/koboldpress/black-flag/issues/769
+[#770]: https://github.com/koboldpress/black-flag/issues/770
 [#771]: https://github.com/koboldpress/black-flag/issues/771
 [#772]: https://github.com/koboldpress/black-flag/issues/772
 [#773]: https://github.com/koboldpress/black-flag/issues/773
@@ -1800,6 +1827,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#784]: https://github.com/koboldpress/black-flag/issues/784
 [#785]: https://github.com/koboldpress/black-flag/issues/785
 [#786]: https://github.com/koboldpress/black-flag/issues/786
+[#787]: https://github.com/koboldpress/black-flag/issues/787
 [#788]: https://github.com/koboldpress/black-flag/issues/788
 [#789]: https://github.com/koboldpress/black-flag/issues/789
 [#791]: https://github.com/koboldpress/black-flag/issues/791
@@ -1822,6 +1850,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#811]: https://github.com/koboldpress/black-flag/issues/811
 [#812]: https://github.com/koboldpress/black-flag/issues/812
 [#813]: https://github.com/koboldpress/black-flag/issues/813
+[#815]: https://github.com/koboldpress/black-flag/issues/815
 [#821]: https://github.com/koboldpress/black-flag/issues/821
 [#823]: https://github.com/koboldpress/black-flag/issues/823
 [#824]: https://github.com/koboldpress/black-flag/issues/824
@@ -1830,3 +1859,15 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#829]: https://github.com/koboldpress/black-flag/issues/829
 [#830]: https://github.com/koboldpress/black-flag/issues/830
 [#831]: https://github.com/koboldpress/black-flag/issues/831
+[#833]: https://github.com/koboldpress/black-flag/issues/833
+[#834]: https://github.com/koboldpress/black-flag/issues/834
+[#836]: https://github.com/koboldpress/black-flag/issues/836
+[#837]: https://github.com/koboldpress/black-flag/issues/837
+[#838]: https://github.com/koboldpress/black-flag/issues/838
+[#839]: https://github.com/koboldpress/black-flag/issues/839
+[#840]: https://github.com/koboldpress/black-flag/issues/840
+[#841]: https://github.com/koboldpress/black-flag/issues/841
+[#843]: https://github.com/koboldpress/black-flag/issues/843
+[#844]: https://github.com/koboldpress/black-flag/issues/844
+[#845]: https://github.com/koboldpress/black-flag/issues/845
+[#847]: https://github.com/koboldpress/black-flag/issues/847
