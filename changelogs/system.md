@@ -4,6 +4,21 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [1.0.053] - Ankheg: Bug Fixes & Minor Improvements
+Fix a few bugs in the first release and add support for "-" CRs on NPCs.
+
+### Improvements
+- NPCs can now have a CR of `-`, which results in an XP value of `0` ([#848])
+- Various places in the system now use `DocumentUUIDField` for proper validation ([#851])
+- Template count field now supports formulas ([#852])
+
+### Bug Fixes
+- "All Damage" resistance, vulnerability, and immunity can now be properly bypasses using the damage application UI ([#663])
+- Default variable damage type should now be properly selected if user doesn't interact with damage roll configuration dialog ([#849])
+- Documentation link in the Welcome Screen should now display properly in secure contexts ([#850])
+- Sheet should no longer minimize/maximize multiple times when placing multiple measured templates ([#853])
+
+
 ## [1.0.052] - Ankheg: Official Release!
 The time is upon us! The system is officially emerging from beta. While no longer in beta, the system is still very much in `1.0` status and there are many improvements to come!
 
@@ -1177,6 +1192,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.10.050]: https://github.com/koboldpress/black-flag/releases/tag/0.10.050
 [0.10.051]: https://github.com/koboldpress/black-flag/releases/tag/0.10.051
 [1.0.052]: https://github.com/koboldpress/black-flag/releases/tag/1.0.052
+[1.0.053]: https://github.com/koboldpress/black-flag/releases/tag/1.0.053
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1723,6 +1739,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#660]: https://github.com/koboldpress/black-flag/issues/660
 [#661]: https://github.com/koboldpress/black-flag/issues/661
 [#662]: https://github.com/koboldpress/black-flag/issues/662
+[#663]: https://github.com/koboldpress/black-flag/issues/663
 [#664]: https://github.com/koboldpress/black-flag/issues/664
 [#665]: https://github.com/koboldpress/black-flag/issues/665
 [#666]: https://github.com/koboldpress/black-flag/issues/666
@@ -1871,3 +1888,9 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#844]: https://github.com/koboldpress/black-flag/issues/844
 [#845]: https://github.com/koboldpress/black-flag/issues/845
 [#847]: https://github.com/koboldpress/black-flag/issues/847
+[#848]: https://github.com/koboldpress/black-flag/issues/848
+[#849]: https://github.com/koboldpress/black-flag/issues/849
+[#850]: https://github.com/koboldpress/black-flag/issues/850
+[#851]: https://github.com/koboldpress/black-flag/issues/851
+[#852]: https://github.com/koboldpress/black-flag/issues/852
+[#853]: https://github.com/koboldpress/black-flag/issues/853
