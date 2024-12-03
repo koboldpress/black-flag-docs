@@ -6,7 +6,7 @@ permalink: /documentation/table-of-contents
 
 The table of contents system allows modules to take advantage of automatic generation of table of contents view for their journal compendiums. There are a few flags that must be set by the module creator in order to take advantage of this system, but once set up the system will handle the rest and no additional code is required from the module.
 
-![Complete table of contents page](/assets/images/table-of-contents/complete.jpg)
+![Complete table of contents page](../assets/images/table-of-contents/complete.jpg)
 
 ### Pack Registration
 
@@ -36,7 +36,7 @@ The first set to setting up the ToC is to add a flag to whichever journal compen
 
 Once you have reloaded Foundry to ensure the manifest changes take effect and launched into your world, you should now find that opening the compendium results in a blank page with "Table of Contents" at the top. Perfect! That means everything is working so far, but you will need to set some additional flags to indicate to the system what journal entries should appear in the table of contents and in what order.
 
-![Empty table of contents page](/assets/images/table-of-contents/empty.jpg)
+![Empty table of contents page](../assets/images/table-of-contents/empty.jpg)
 
 ### Setting Journal Entry Flags
 
@@ -54,7 +54,7 @@ const journalEntry = await fromUuid("...");
 journalEntry.setFlag("black-flag", "type", "chapter");
 ```
 
-![Table of contents entry types](/assets/images/table-of-contents/types.jpg)
+![Table of contents entry types](../assets/images/table-of-contents/types.jpg)
 
 #### `showPages` flag
 
