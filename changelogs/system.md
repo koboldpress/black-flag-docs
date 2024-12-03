@@ -4,6 +4,15 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [1.0.054] - Ankheg: Additional Bug Fixes
+A few additional bug fixes.
+
+### Bug Fixes
+- Fixed error when selecting talent during Improvement ([#857])
+- Fixed expertise when applied by talent ([#858])
+- Base weapons will no longer display in weapon category list on weapon sheet ([#859])
+
+
 ## [1.0.053] - Ankheg: Bug Fixes & Minor Improvements
 Fix a few bugs in the first release and add support for "-" CRs on NPCs.
 
@@ -1193,6 +1202,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [0.10.051]: https://github.com/koboldpress/black-flag/releases/tag/0.10.051
 [1.0.052]: https://github.com/koboldpress/black-flag/releases/tag/1.0.052
 [1.0.053]: https://github.com/koboldpress/black-flag/releases/tag/1.0.053
+[1.0.054]: https://github.com/koboldpress/black-flag/releases/tag/1.0.054
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1894,3 +1904,6 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#851]: https://github.com/koboldpress/black-flag/issues/851
 [#852]: https://github.com/koboldpress/black-flag/issues/852
 [#853]: https://github.com/koboldpress/black-flag/issues/853
+[#857]: https://github.com/koboldpress/black-flag/issues/857
+[#858]: https://github.com/koboldpress/black-flag/issues/858
+[#859]: https://github.com/koboldpress/black-flag/issues/859
