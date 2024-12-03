@@ -11,6 +11,8 @@ This site provides documentation and guides for the **Black Flag Roleplaying** g
 - Changelogs
   - [Black Flag System](changelogs/system)
   - [Monster Vault](changelogs/monster-vault)
+  - [Player’s Guide](changelogs/players-guide)
+  - [Content Tools](changelogs/content-tools)
 - Documentation
   - [Active Effects](documentation/active-effects)
   - [Roll Formulas](documentation/roll-formulas)
