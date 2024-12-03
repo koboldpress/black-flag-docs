@@ -13,6 +13,10 @@ This site provides documentation and guides for the **Black Flag Roleplaying** g
   - [Monster Vault](changelogs/monster-vault)
   - [Player’s Guide](changelogs/players-guide)
   - [Content Tools](changelogs/content-tools)
-- Documentation
+- General Documentation
   - [Active Effects](documentation/active-effects)
   - [Roll Formulas](documentation/roll-formulas)
+- [Creator Guides](documentation/creator-guides)
+  - [Conversion Tutorial](documentation/conversion-tutorial)
+  - [Parsing Tutorial](documentation/parsing-tutorial)
+  - [Table of Contents](documentation/table-of-contents)
