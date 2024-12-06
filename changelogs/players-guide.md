@@ -4,6 +4,10 @@ title: Player’s Guide Changelog
 permalink: /changelogs/players-guide
 ---
 
+## 1.1.002
+- Add vehicle actors & stock vehicle features
+- Embed NPC stat blocks in Appendix C
+
 ## 1.0.1
 - Added missing Seahorse actor
 - Added four variants of Beast Spirit summoned actor
