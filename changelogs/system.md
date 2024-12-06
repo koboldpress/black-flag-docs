@@ -4,6 +4,21 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [1.1.055] - Basilisk: Guns & Cars
+The first major update the system brings with it vehicles and firearms rules.
+
+### Improvements
+- NPC stat blocks can now be embedded using `@Embed[...uuid... statblock]` ([#250])
+- Optional firearms rules presented in the GMG can now be enabled in settings ([#832])
+- Vehicle actors now supported
+- Adds module-controlled setting to require custom rules ([#860])
+
+### Bug Fixes
+- Fixed several places where item names could cause security issues ([#856])
+- Players should now be able to open locked item sheets ([#861])
+- Players should now be able to drop items onto the choose features/spell dialog, item sheets, and certain journal sheets ([#862])
+
+
 ## [1.0.054] - Ankheg: Additional Bug Fixes
 A few additional bug fixes.
 
