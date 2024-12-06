@@ -12,7 +12,7 @@ This site provides documentation and guides for the **Black Flag Roleplaying** g
   - [Black Flag System](changelogs/system)
   - [Player’s Guide](changelogs/players-guide)
   - [Monster Vault](changelogs/monster-vault)
-  - [Game Master’s Guide](changelogcs/game-masters-guide)
+  - [Game Master’s Guide](changelogs/game-masters-guide)
   - [Content Tools](changelogs/content-tools)
 - General Documentation
   - [Active Effects](documentation/active-effects)
