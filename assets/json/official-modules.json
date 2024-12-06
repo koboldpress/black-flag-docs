@@ -1,0 +1,36 @@
+{
+	"core": [
+		{
+			"id": "kp-tov-players-guide",
+			"name": "Player’s Guide",
+			"description": "<p>Start your own tale in an infinite universe of high fantasy adventure with the <em>Player’s Guide</em>! Within these pages, a trove of knowledge lies waiting for the valiant to claim it!</p><ul><li>Make your own unique, legendary hero with the new Lineage and Heritage system.</li><li>Select Talents and Backgrounds that make your hero stand apart.</li><li>Master improved spellcasting and martial abilities to ensure every hero stands tall in a fight!</li><li>Explore new downtime, exploration, and social encounter rules to expand your game beyond the dungeon.</li></ul><p>The <em>Player’s Guide</em> is a streamlined, 5E-compatible ruleset with unique mechanics to increase both risk and reward for adventurous players of all stripes!</p>",
+			"img": "https://koboldpress.github.io/black-flag-docs/assets/images/marketing/players-guide.jpg"
+		},
+		{
+			"id": "kp-tov-monster-vault",
+			"name": "Monster Vault",
+			"description": "<p>The <em>Monster Vault</em> contains over 400 monsters and all the guidance you need as a game master to run encounters with those monsters!</p><ul><li>Classic fantasy monsters, such as ogres, dragons, water elementals, and giants.</li><li>New monsters suitable for any fantasy or science fantasy world, such as ambush hags, virtuoso liches, fey guardians, mechadrons, and robots.</li><li>New terrors from the ever-corrupting Void, such as voidlings, star crows, crimson jellies, and the mighty void dragon.</li></ul><p>The <em>Monster Vault</em> contains all the information a GM needs to create encounters with monsters, including monster roles and tactics, guidelines for modifying monsters to fit your campaign, optional rules for Doom points, and rules for characters wanting to harvest monsters for unique crafting and spell components.</p>",
+			"img": "https://koboldpress.github.io/black-flag-docs/assets/images/marketing/monster-vault.jpg"
+		},
+		{
+			"id": "kp-tov-game-masters-guide",
+			"name": "Game Master’s Guide",
+			"description": "<p>Advance your game beyond the basics with the <em>Game Master’s Guide</em>. It’s got everything game masters need to build deep narratives, exciting combat, and compelling adventures.</p><ul><li>Customize your game to your players’ play styles. Everyone stays engaged and enthusiastic!</li><li>Step up your worldbuilding with checklists, tables, and prompts for fresh, unique setting.</li><li>Hit every pillar of the game: exploration, social, and combat, with tools and techniques for each area.</li><li>Make your own monsters and character options with detailed insight, best practices, and building blocks.</li></ul><p>The <em>Game Master’s Guide</em> is a distilled collection of professional, tested advice and tools for running a better, smarter, more fun game. It’s a level-up for your whole table.</p>",
+			"img": "https://koboldpress.github.io/black-flag-docs/assets/images/marketing/game-masters-guide.jpg"
+		}
+	],
+	"adventures": [
+		{
+			"id": "tov-caverns-of-the-spore-lord",
+			"name": "Caverns of the Spore Lord",
+			"description": "<p>The people of Hulgig are desperate. The hamlet’s tainted well water is transforming the residents into sporeborn. To make matters worse, the transmogrified villagers are drawn to the nearby cave complex that leads to the subterranean village of Bellgrove, and its mycolid inhabitants are having their own problems.</p>",
+			"img": "https://koboldpress.github.io/black-flag-docs/assets/images/marketing/caverns-of-the-spore-lord.jpg"
+		},
+		{
+			"id": "tov-hidden-tomb-of-nargoth",
+			"name": "Hidden Tomb of Nargoth",
+			"description": "<p>The seeds of an unearthly chaos have been sown throughout the Wyvernmere Valley. A sinister void cult works within the shadows to stoke havoc and discord. Their goal: Uncovering the lost wisdom of the ancient and powerful wizard Nargoth in an attempt to bring about the end of days.</p>",
+			"img": "https://koboldpress.github.io/black-flag-docs/assets/images/marketing/hidden-tomb-of-nargoth.jpg"
+		}
+	]
+}
