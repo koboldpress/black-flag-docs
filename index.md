@@ -6,12 +6,13 @@ permalink: /
 
 ![](assets/images/readme.jpg)
 
-This site provides documentation and guides for the **Black Flag Roleplaying** game system for Foundry VTT. Black Flag is a 5E-compatible game system that powers Kobold Press's **[Tale of the Valiant](https://www.talesofthevaliant.com)** roleplaying game.
+This site provides documentation and guides for the **Black Flag Roleplaying** game system for Foundry VTT. Black Flag is a 5E-compatible game system that powers Kobold Press's **[Tales of the Valiant](https://www.talesofthevaliant.com)** roleplaying game.
 
 - Changelogs
   - [Black Flag System](changelogs/system)
-  - [Monster Vault](changelogs/monster-vault)
   - [Player’s Guide](changelogs/players-guide)
+  - [Monster Vault](changelogs/monster-vault)
+  - [Game Master’s Guide](changelogcs/game-masters-guide)
   - [Content Tools](changelogs/content-tools)
 - General Documentation
   - [Active Effects](documentation/active-effects)

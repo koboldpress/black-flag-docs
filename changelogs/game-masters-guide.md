@@ -1,4 +1,8 @@
-# Tales of the Valiant Game Masters Guide Change Log
+---
+layout: page
+title: Game Master’s Guide Changelog
+permalink: /changelogs/game-masters-guide
+---
 
 ** Note **: This module was released on v1.0.055 of the Black Flag System. As this system is still under development, some issues/bugs may appear in the content. If you happen to find any issues/bugs in this module, please report them to https://support.koboldpress.com/ with the following information.
 
