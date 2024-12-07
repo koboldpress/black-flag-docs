@@ -4,13 +4,25 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [1.1.056] - Basilisk: Bug Fixes
+A few small bug fixes and improvements to the vehicle actor.
+
+### Improvements
+- Bonus Actions & Reactions sections on vehicle sheets now support descriptions ([#872])
+
+### Bug Fixes
+- Fixed error generating legendary actions description on NPC sheets ([#867])
+- Damage calculation when actor has non-magical damage resistance should work once again ([#868])
+- Damage & effect application dropdowns should now render properly in chat ([#875])
+
+
 ## [1.1.055] - Basilisk: Guns & Cars
 The first major update the system brings with it vehicles and firearms rules.
 
 ### Improvements
 - NPC stat blocks can now be embedded using `@Embed[...uuid... statblock]` ([#250])
 - Optional firearms rules presented in the GMG can now be enabled in settings ([#832])
-- Vehicle actors now supported
+- Vehicle actors now supported ([#846])
 - Adds module-controlled setting to require custom rules ([#860])
 
 ### Bug Fixes
@@ -1218,6 +1230,8 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [1.0.052]: https://github.com/koboldpress/black-flag/releases/tag/1.0.052
 [1.0.053]: https://github.com/koboldpress/black-flag/releases/tag/1.0.053
 [1.0.054]: https://github.com/koboldpress/black-flag/releases/tag/1.0.054
+[1.1.055]: https://github.com/koboldpress/black-flag/releases/tag/1.1.055
+[1.1.056]: https://github.com/koboldpress/black-flag/releases/tag/1.1.056
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1431,6 +1445,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#247]: https://github.com/koboldpress/black-flag/issues/247
 [#248]: https://github.com/koboldpress/black-flag/issues/248
 [#249]: https://github.com/koboldpress/black-flag/issues/249
+[#250]: https://github.com/koboldpress/black-flag/issues/250
 [#251]: https://github.com/koboldpress/black-flag/issues/251
 [#253]: https://github.com/koboldpress/black-flag/issues/253
 [#254]: https://github.com/koboldpress/black-flag/issues/254
@@ -1901,6 +1916,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#829]: https://github.com/koboldpress/black-flag/issues/829
 [#830]: https://github.com/koboldpress/black-flag/issues/830
 [#831]: https://github.com/koboldpress/black-flag/issues/831
+[#832]: https://github.com/koboldpress/black-flag/issues/832
 [#833]: https://github.com/koboldpress/black-flag/issues/833
 [#834]: https://github.com/koboldpress/black-flag/issues/834
 [#836]: https://github.com/koboldpress/black-flag/issues/836
@@ -1912,6 +1928,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#843]: https://github.com/koboldpress/black-flag/issues/843
 [#844]: https://github.com/koboldpress/black-flag/issues/844
 [#845]: https://github.com/koboldpress/black-flag/issues/845
+[#846]: https://github.com/koboldpress/black-flag/issues/846
 [#847]: https://github.com/koboldpress/black-flag/issues/847
 [#848]: https://github.com/koboldpress/black-flag/issues/848
 [#849]: https://github.com/koboldpress/black-flag/issues/849
@@ -1919,6 +1936,14 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#851]: https://github.com/koboldpress/black-flag/issues/851
 [#852]: https://github.com/koboldpress/black-flag/issues/852
 [#853]: https://github.com/koboldpress/black-flag/issues/853
+[#856]: https://github.com/koboldpress/black-flag/issues/856
 [#857]: https://github.com/koboldpress/black-flag/issues/857
 [#858]: https://github.com/koboldpress/black-flag/issues/858
 [#859]: https://github.com/koboldpress/black-flag/issues/859
+[#860]: https://github.com/koboldpress/black-flag/issues/860
+[#861]: https://github.com/koboldpress/black-flag/issues/861
+[#862]: https://github.com/koboldpress/black-flag/issues/862
+[#867]: https://github.com/koboldpress/black-flag/issues/867
+[#868]: https://github.com/koboldpress/black-flag/issues/868
+[#872]: https://github.com/koboldpress/black-flag/issues/872
+[#875]: https://github.com/koboldpress/black-flag/issues/875
