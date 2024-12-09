@@ -12,8 +12,8 @@ permalink: /changelogs/game-masters-guide
 * Screen grabs and/or video highlighting the problem.
 
 ## 12.0.1
-- Added vehicle and siege weapons actor that is now supported in Black Flag system 1.1.0 Build 0.55+.
-- Update all firearms weapons items using gunpowder properties that is now supported in Black Flag system 1.1.0 Build 0.55+.
+- Added vehicle and siege weapons actors that are now supported in Black Flag system 1.1.0 Build 0.55+.
+- Updated all firearms weapons items using gunpowder properties that is now supported in Black Flag system 1.1.0 Build 0.55+.
 - Add inline links to the above items on the Journal.
 
 ## 12.0.0
