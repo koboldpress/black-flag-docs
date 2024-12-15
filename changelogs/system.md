@@ -4,6 +4,23 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [1.1.057] - Basilisk: Siege Weapons & Enricher Improvements
+Added a new Siege Weapon actor type to support the weapons provided by the Game Master’s Guide and improved the enrichers provided by the system.
+
+### Improvements
+- Adjustments to the dimensions of a vehicle now reflects in the prototype token size ([#871])
+- Added the Siege Weapon actor type ([#874])
+- Damage thresholds are now respected and can by bypassed when applying damage ([#876])
+- Improved the localization system for numbers linked to a specific unit ([#877])
+- Units for container capacity can now be customized ([#878])
+- Enrichers that are linked to activities can now reference a specific activity by ID, rather than just the first matching activity of the correct type ([#880])
+- Lookup enricher can now look up activity data from an item ([#881])
+- Healing enricher now has `[[/heal]]` alias ([#882])
+- Roll build APIs in `BasicRoll` have been made more granular ([#883])
+- Renamed `Utility` activity to `Use` to match other activity naming ([#884])
+- Configuration parameters for skipping subsequent actions has been added ([#885])
+
+
 ## [1.1.056] - Basilisk: Bug Fixes
 A few small bug fixes and improvements to the vehicle actor.
 
