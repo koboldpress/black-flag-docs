@@ -16,6 +16,7 @@ This site provides documentation and guides for the **Black Flag Roleplaying** g
   - [Content Tools](changelogs/content-tools)
 - General Documentation
   - [Active Effects](documentation/active-effects)
+  - [Enrichers](documentation/enrichers)
   - [Roll Formulas](documentation/roll-formulas)
 - [Creator Guides](documentation/creator-guides)
   - [Conversion Tutorial](documentation/conversion-tutorial)
