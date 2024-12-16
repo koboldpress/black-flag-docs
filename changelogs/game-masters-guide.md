@@ -11,6 +11,9 @@ permalink: /changelogs/game-masters-guide
 * A description of the issue and a way to recreate the bug if it is not obvious in the description.
 * Screen grabs and/or video highlighting the problem.
 
+## 12.0.2
+- Updated Siege Weapons to use new actor that is now supported in 1.1.057.
+
 ## 12.0.1
 - Added vehicle and siege weapons actors that are now supported in Black Flag system 1.1.0 Build 0.55+.
 - Updated all firearms weapons items using gunpowder properties that is now supported in Black Flag system 1.1.0 Build 0.55+.
