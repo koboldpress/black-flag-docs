@@ -4,9 +4,13 @@ title: Player’s Guide Changelog
 permalink: /changelogs/players-guide
 ---
 
+## 1.1.003
+- Added icons for background tables that match backgrounds
+- Added missing subclass spell grants for Light, Leaf, Justice, Pack Master, and Reaper
+
 ## 1.1.002
-- Add vehicle actors & stock vehicle features
-- Embed NPC stat blocks in Appendix C
+- Added vehicle actors & stock vehicle features
+- Embedded NPC stat blocks in Appendix C
 
 ## 1.0.1
 - Added missing Seahorse actor
