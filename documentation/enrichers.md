@@ -4,7 +4,7 @@ title: Enrichers
 permalink: /documentation/enrichers
 ---
 
-![Up to date as of 1.1.057](https://img.shields.io/static/v1?label=black-flag&message=1.1.056&color=informational)
+![Up to date as of 1.2.058](https://img.shields.io/static/v1?label=black-flag&message=1.2.058&color=informational)
 
 Enrichers are bits of formatted text that can be used in journal entries, item or activity descriptions, or actor biographies to automatically enhance the text. They can be used to dynamically fetch information from the document they are contained within or to provide a link for rolling.
 
@@ -237,7 +237,7 @@ The damage enricher displays a damage description and provides a link for rollin
 | ----------- | ------- | --------- | --------- | --------- |
 | `activity`  | ID      |           |           |     ✔︎     |
 | `average`   | Boolean |           |           |     ✔︎     |
-| `formula`   | Formula |           |     ✔︎     |           |
+| `formula`   | Formula |     ✔︎     |     ✔︎     |           |
 | `magical`   | Boolean |           |           |     ✔︎     |
 | `mode`      | Choice  |           |           |     ✔︎     |
 | `type`      | Choice  |     ✔︎     |           |           |
@@ -326,7 +326,7 @@ The save enricher is used to make a saving throw. The enricher includes a "Reque
 | ---------- | ------- | --------- | --------- |
 | `ability`  | Choice  |     ✔︎     |           |
 | `activity` | ID      |           |           |
-| `dc`       | Formula |           |           |
+| `dc`       | Formula |     ✔︎     |           |
 
 - `ability`: Ability to use when making the save, or `false` to indicate that a save without an associated ability should be made
 - `activity`: Specify a specific activity by ID on the same item as this enricher

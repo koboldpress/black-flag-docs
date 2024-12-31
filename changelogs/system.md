@@ -4,6 +4,26 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [1.2.058] - Chimera: Forward Activity
+Adds the Forward activity which allows setting limited uses on spells granted by the *Spells* or *Choose Spells* advancement types.
+
+### Improvements
+- Added the ability to specify limited uses when granting spells through advancement ([#765])
+- Recovery periods now include "Dawn", "Day", and "Dusk" ([#826])
+- New `Forward` activity added for triggering another activity with different consumption ([#888])
+- Added the GitHub URL to the system's package manifest ([#890])
+
+### Compendium Content
+- Recovery periods on BFRD magic items updated to use new recovery periods ([#826])
+- Apply changes specified in Player's Guide errata to BFRD items ([#891])
+
+### Bug Fixes
+- Damage rolls will no longer display `undefined` when preparing complex formulas ([#886])
+- Heal enricher should no longer throw an error when automatically fetching activity on item with other, non-healing activities ([#887])
+- Spells set up on NPCs should now properly set up their consumption when using the NPC spellcasting configuration interface ([#890])
+- Blank damage enrichers in activity descriptions should now set activity properly ([#891])
+
+
 ## [1.1.057] - Basilisk: Siege Weapons & Enricher Improvements
 Added a new Siege Weapon actor type to support the weapons provided by the Game Master’s Guide and improved the enrichers provided by the system.
 
@@ -1249,6 +1269,8 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [1.0.054]: https://github.com/koboldpress/black-flag/releases/tag/1.0.054
 [1.1.055]: https://github.com/koboldpress/black-flag/releases/tag/1.1.055
 [1.1.056]: https://github.com/koboldpress/black-flag/releases/tag/1.1.056
+[1.1.057]: https://github.com/koboldpress/black-flag/releases/tag/1.1.057
+[1.2.058]: https://github.com/koboldpress/black-flag/releases/tag/1.2.058
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1882,6 +1904,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#761]: https://github.com/koboldpress/black-flag/issues/761
 [#762]: https://github.com/koboldpress/black-flag/issues/762
 [#764]: https://github.com/koboldpress/black-flag/issues/764
+[#765]: https://github.com/koboldpress/black-flag/issues/765
 [#766]: https://github.com/koboldpress/black-flag/issues/766
 [#767]: https://github.com/koboldpress/black-flag/issues/767
 [#768]: https://github.com/koboldpress/black-flag/issues/768
@@ -1928,6 +1951,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#821]: https://github.com/koboldpress/black-flag/issues/821
 [#823]: https://github.com/koboldpress/black-flag/issues/823
 [#824]: https://github.com/koboldpress/black-flag/issues/824
+[#826]: https://github.com/koboldpress/black-flag/issues/826
 [#827]: https://github.com/koboldpress/black-flag/issues/827
 [#828]: https://github.com/koboldpress/black-flag/issues/828
 [#829]: https://github.com/koboldpress/black-flag/issues/829
@@ -1962,5 +1986,21 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#862]: https://github.com/koboldpress/black-flag/issues/862
 [#867]: https://github.com/koboldpress/black-flag/issues/867
 [#868]: https://github.com/koboldpress/black-flag/issues/868
+[#871]: https://github.com/koboldpress/black-flag/issues/871
 [#872]: https://github.com/koboldpress/black-flag/issues/872
+[#874]: https://github.com/koboldpress/black-flag/issues/874
 [#875]: https://github.com/koboldpress/black-flag/issues/875
+[#876]: https://github.com/koboldpress/black-flag/issues/876
+[#877]: https://github.com/koboldpress/black-flag/issues/877
+[#878]: https://github.com/koboldpress/black-flag/issues/878
+[#880]: https://github.com/koboldpress/black-flag/issues/880
+[#881]: https://github.com/koboldpress/black-flag/issues/881
+[#882]: https://github.com/koboldpress/black-flag/issues/882
+[#883]: https://github.com/koboldpress/black-flag/issues/883
+[#884]: https://github.com/koboldpress/black-flag/issues/884
+[#885]: https://github.com/koboldpress/black-flag/issues/885
+[#886]: https://github.com/koboldpress/black-flag/issues/886
+[#887]: https://github.com/koboldpress/black-flag/issues/887
+[#888]: https://github.com/koboldpress/black-flag/issues/888
+[#890]: https://github.com/koboldpress/black-flag/issues/890
+[#891]: https://github.com/koboldpress/black-flag/issues/891
