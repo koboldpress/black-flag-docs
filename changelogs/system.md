@@ -4,6 +4,19 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [1.2.059] - Chimera: Bug Fixes
+Fix a few issues with compendium content, initiative modifiers, and property advancement.
+
+### Compendium Content
+- Rage bonus should now apply to damage rather than attack, should prompt for application ([#895])
+- Prayer of Healing is now marked as a ritual spell ([#896])
+
+### Bug Fixes
+- Fixed issue with spell pages when using compendium UUID redirects ([#893])
+- Initiative modifiers should now be applied to rolls no matter what button is pressed ([#894])
+- Changes should once again appear in `PropertyAdvancement` configuration ([#897])
+
+
 ## [1.2.058] - Chimera: Forward Activity
 Adds the Forward activity which allows setting limited uses on spells granted by the *Spells* or *Choose Spells* advancement types.
 
@@ -1271,6 +1284,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [1.1.056]: https://github.com/koboldpress/black-flag/releases/tag/1.1.056
 [1.1.057]: https://github.com/koboldpress/black-flag/releases/tag/1.1.057
 [1.2.058]: https://github.com/koboldpress/black-flag/releases/tag/1.2.058
+[1.2.059]: https://github.com/koboldpress/black-flag/releases/tag/1.2.059
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -2004,3 +2018,8 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#888]: https://github.com/koboldpress/black-flag/issues/888
 [#890]: https://github.com/koboldpress/black-flag/issues/890
 [#891]: https://github.com/koboldpress/black-flag/issues/891
+[#893]: https://github.com/koboldpress/black-flag/issues/893
+[#894]: https://github.com/koboldpress/black-flag/issues/894
+[#895]: https://github.com/koboldpress/black-flag/issues/895
+[#896]: https://github.com/koboldpress/black-flag/issues/896
+[#897]: https://github.com/koboldpress/black-flag/issues/897
