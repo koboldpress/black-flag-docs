@@ -4,6 +4,11 @@ title: Content Tools Changelog
 permalink: /changelogs/content-tools
 ---
 
+## [1.2.007]
+- Fixed bug preventing actors with custom AC formulas from converting ([#5])
+- Fixed bug preventing items with variable damage types from converting ([#6])
+- Added support for converting Forward activities ([#7])
+
 ## [1.1.006]
 - Added support for converting adventures ([#1])
 - Added support for converting scenes & tokens ([#3])
@@ -29,8 +34,12 @@ permalink: /changelogs/content-tools
 [1.0.004]: https://github.com/koboldpress/black-flag/releases/tag/1.0.004
 [1.0.005]: https://github.com/koboldpress/black-flag/releases/tag/1.0.005
 [1.1.006]: https://github.com/koboldpress/black-flag/releases/tag/1.1.006
+[1.2.007]: https://github.com/koboldpress/black-flag/releases/tag/1.2.007
 
 [#1]: https://github.com/koboldpress/black-flag-tools/issues/1
 [#2]: https://github.com/koboldpress/black-flag-tools/issues/2
 [#3]: https://github.com/koboldpress/black-flag-tools/issues/3
 [#4]: https://github.com/koboldpress/black-flag-tools/issues/4
+[#5]: https://github.com/koboldpress/black-flag-tools/issues/5
+[#6]: https://github.com/koboldpress/black-flag-tools/issues/6
+[#7]: https://github.com/koboldpress/black-flag-tools/issues/7

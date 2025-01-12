@@ -99,7 +99,7 @@ The calculation and lookup enrichers are designed to fetch data from the documen
 
 | Name       | Format  | Inferred  | Assembled |
 | ---------- | ------- | --------- | --------- |
-| `path`     | @-Path  |     ✔︎     |     ✔︎     |
+| `path`     | @-Path  |     ✔︎     |           |
 | `style`    | Choice  |     ✔︎     |           |
 
 - `path`: Path to the formula to display, see [Roll Formulas](roll-formulas) for a limited list of these paths. If there is no value found at the path (such as looking up the actor name on an item not in an actor), then the enricher will display the original path unless a fallback is provided using the enricher's label
@@ -329,7 +329,7 @@ The save enricher is used to make a saving throw. The enricher includes a "Reque
 | `dc`       | Formula |     ✔︎     |           |
 
 - `ability`: Ability to use when making the save, or `false` to indicate that a save without an associated ability should be made
-- `activity`: Specify a specific activity by ID on the same item as this enricher
+- `activity`: ID of an activity on the same item from which the details should be derived
 - `dc`: Specific number or formula used for the DC. Formula must not contain dice values. Can only be used inferred with a number, formulas must contains the `dc=` prefix
 
 #### Potential Issues
