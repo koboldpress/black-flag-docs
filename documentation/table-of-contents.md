@@ -27,7 +27,9 @@ The first set to setting up the ToC is to add a flag to whichever journal compen
 			"path": "./packs/rules/",
 			"type": "JournalEntry",
 			"flags": {
-				"display": "table-of-contents"
+				"black-flag": {
+					"display": "table-of-contents"
+				}
 			}
 		}
 	]

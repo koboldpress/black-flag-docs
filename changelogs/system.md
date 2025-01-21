@@ -4,6 +4,22 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [1.2.060] - Chimera: Enricher Improvements
+Improvements to enrichers, a new flag for module authors, and more errata changes to the BFRD.
+
+### Improvements
+- Check enricher supports multiple proficiencies & linking to activities ([#870], [#901])
+- Variable damage types can now be defined in damage enricher without leading key ([#899])
+- Added pack flag that allows setting default top-level sorting of compendium packs ([#900])
+- Save & check enrichers now support spellcasting ability ([#902])
+
+### Compendium Content
+- Applied remaining changes specified in Player's Guide errata to BFRD ([#891])
+
+### Bug Fixes
+- Damage enricher should no longer link to activity if damage formula is specified ([#898])
+
+
 ## [1.2.059] - Chimera: Bug Fixes
 Fix a few issues with compendium content, initiative modifiers, and property advancement.
 
@@ -28,7 +44,7 @@ Adds the Forward activity which allows setting limited uses on spells granted by
 
 ### Compendium Content
 - Recovery periods on BFRD magic items updated to use new recovery periods ([#826])
-- Apply changes specified in Player's Guide errata to BFRD items ([#891])
+- Applied changes specified in Player's Guide errata to BFRD items ([#891])
 
 ### Bug Fixes
 - Damage rolls will no longer display `undefined` when preparing complex formulas ([#886])
@@ -1285,6 +1301,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [1.1.057]: https://github.com/koboldpress/black-flag/releases/tag/1.1.057
 [1.2.058]: https://github.com/koboldpress/black-flag/releases/tag/1.2.058
 [1.2.059]: https://github.com/koboldpress/black-flag/releases/tag/1.2.059
+[1.2.060]: https://github.com/koboldpress/black-flag/releases/tag/1.2.060
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -2000,6 +2017,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#862]: https://github.com/koboldpress/black-flag/issues/862
 [#867]: https://github.com/koboldpress/black-flag/issues/867
 [#868]: https://github.com/koboldpress/black-flag/issues/868
+[#870]: https://github.com/koboldpress/black-flag/issues/870
 [#871]: https://github.com/koboldpress/black-flag/issues/871
 [#872]: https://github.com/koboldpress/black-flag/issues/872
 [#874]: https://github.com/koboldpress/black-flag/issues/874
@@ -2023,3 +2041,8 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#895]: https://github.com/koboldpress/black-flag/issues/895
 [#896]: https://github.com/koboldpress/black-flag/issues/896
 [#897]: https://github.com/koboldpress/black-flag/issues/897
+[#898]: https://github.com/koboldpress/black-flag/issues/898
+[#899]: https://github.com/koboldpress/black-flag/issues/899
+[#900]: https://github.com/koboldpress/black-flag/issues/900
+[#901]: https://github.com/koboldpress/black-flag/issues/901
+[#902]: https://github.com/koboldpress/black-flag/issues/902
