@@ -4,6 +4,14 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [1.2.061] - Chimera: Search Fix
+Fix a bug in the search system causing a number of interfaces to no longer function.
+
+### Bug Fixes
+- Advancement dialogs that rely on compendium searches will now work again ([#906], [#907])
+- Spell list journal pages no longer show only the first spell per collection ([#909])
+
+
 ## [1.2.060] - Chimera: Enricher Improvements
 Improvements to enrichers, a new flag for module authors, and more errata changes to the BFRD.
 
@@ -1302,6 +1310,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [1.2.058]: https://github.com/koboldpress/black-flag/releases/tag/1.2.058
 [1.2.059]: https://github.com/koboldpress/black-flag/releases/tag/1.2.059
 [1.2.060]: https://github.com/koboldpress/black-flag/releases/tag/1.2.060
+[1.2.061]: https://github.com/koboldpress/black-flag/releases/tag/1.2.061
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -2046,3 +2055,6 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#900]: https://github.com/koboldpress/black-flag/issues/900
 [#901]: https://github.com/koboldpress/black-flag/issues/901
 [#902]: https://github.com/koboldpress/black-flag/issues/902
+[#906]: https://github.com/koboldpress/black-flag/issues/906
+[#907]: https://github.com/koboldpress/black-flag/issues/907
+[#909]: https://github.com/koboldpress/black-flag/issues/909
