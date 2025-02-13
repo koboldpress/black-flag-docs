@@ -4,6 +4,21 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [1.2.062] - Chimera - Minor Fixes
+Fix a few minor bugs.
+
+### Improvements
+- Added enchantment target for simple damage bonuses to first damage part ([#924])
+
+### Compendium Content
+- Fixed advancement level for Precise Critical & incorrect table name in Font of Magic ([#914])
+
+### Bug Fixes
+- Activity selection dialog should now appear when using an item on an lair actor ([#917])
+- Non-SVG icons in activity selection dialog should now appear at the proper size ([#918])
+- Feature level tag on class journal page should now be properly sorted ([#927])
+
+
 ## [1.2.061] - Chimera: Search Fix
 Fix a bug in the search system causing a number of interfaces to no longer function.
 
@@ -1311,6 +1326,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [1.2.059]: https://github.com/koboldpress/black-flag/releases/tag/1.2.059
 [1.2.060]: https://github.com/koboldpress/black-flag/releases/tag/1.2.060
 [1.2.061]: https://github.com/koboldpress/black-flag/releases/tag/1.2.061
+[1.2.062]: https://github.com/koboldpress/black-flag/releases/tag/1.2.062
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -2058,3 +2074,8 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#906]: https://github.com/koboldpress/black-flag/issues/906
 [#907]: https://github.com/koboldpress/black-flag/issues/907
 [#909]: https://github.com/koboldpress/black-flag/issues/909
+[#914]: https://github.com/koboldpress/black-flag/issues/914
+[#917]: https://github.com/koboldpress/black-flag/issues/917
+[#918]: https://github.com/koboldpress/black-flag/issues/918
+[#924]: https://github.com/koboldpress/black-flag/issues/924
+[#927]: https://github.com/koboldpress/black-flag/issues/927
