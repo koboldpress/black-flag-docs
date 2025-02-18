@@ -4,7 +4,26 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
-## [1.2.062] - Chimera - Minor Fixes
+## [1.3.063] - Darkmantle: Improved Chat Messages & V13 Support
+Introduces new chat message types for combat turns, rests, and activations which include consumption/recovery details. Also adds initial support for Foundry V13.
+
+### Improvements
+- Added custom chat message type for combat turns, rests, and activations ([#583], [#933], [#936])
+- Converted remaining config applications to `ApplicationV2` ([#931])
+- Added combat message activation types ([#936])
+
+### Compendium Content
+- Change Bone Devil to be a devil ([#932])
+
+### Bug Fixes
+- Rest chat messages should now display properly if they have rolls ([#579])
+- Fixed a variety of UI issues when running in V13 ([#904])
+- Context menus should now open when running in V13 ([#928])
+- Table of contents and item compendiums should now open when running in V13 ([#929])
+- Settings sidebar should now render properly when running in V13 ([#930])
+
+
+## [1.2.062] - Chimera: Minor Fixes
 Fix a few minor bugs.
 
 ### Improvements
