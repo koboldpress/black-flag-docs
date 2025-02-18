@@ -1346,6 +1346,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [1.2.060]: https://github.com/koboldpress/black-flag/releases/tag/1.2.060
 [1.2.061]: https://github.com/koboldpress/black-flag/releases/tag/1.2.061
 [1.2.062]: https://github.com/koboldpress/black-flag/releases/tag/1.2.062
+[1.3.063]: https://github.com/koboldpress/black-flag/releases/tag/1.3.063
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1829,9 +1830,11 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#574]: https://github.com/koboldpress/black-flag/issues/574
 [#575]: https://github.com/koboldpress/black-flag/issues/575
 [#577]: https://github.com/koboldpress/black-flag/issues/577
+[#579]: https://github.com/koboldpress/black-flag/issues/579
 [#580]: https://github.com/koboldpress/black-flag/issues/580
 [#581]: https://github.com/koboldpress/black-flag/issues/581
 [#582]: https://github.com/koboldpress/black-flag/issues/582
+[#583]: https://github.com/koboldpress/black-flag/issues/583
 [#584]: https://github.com/koboldpress/black-flag/issues/584
 [#585]: https://github.com/koboldpress/black-flag/issues/585
 [#586]: https://github.com/koboldpress/black-flag/issues/586
@@ -2090,6 +2093,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#900]: https://github.com/koboldpress/black-flag/issues/900
 [#901]: https://github.com/koboldpress/black-flag/issues/901
 [#902]: https://github.com/koboldpress/black-flag/issues/902
+[#904]: https://github.com/koboldpress/black-flag/issues/904
 [#906]: https://github.com/koboldpress/black-flag/issues/906
 [#907]: https://github.com/koboldpress/black-flag/issues/907
 [#909]: https://github.com/koboldpress/black-flag/issues/909
@@ -2098,3 +2102,10 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#918]: https://github.com/koboldpress/black-flag/issues/918
 [#924]: https://github.com/koboldpress/black-flag/issues/924
 [#927]: https://github.com/koboldpress/black-flag/issues/927
+[#928]: https://github.com/koboldpress/black-flag/issues/928
+[#929]: https://github.com/koboldpress/black-flag/issues/929
+[#930]: https://github.com/koboldpress/black-flag/issues/930
+[#931]: https://github.com/koboldpress/black-flag/issues/931
+[#932]: https://github.com/koboldpress/black-flag/issues/932
+[#933]: https://github.com/koboldpress/black-flag/issues/933
+[#936]: https://github.com/koboldpress/black-flag/issues/936
