@@ -4,6 +4,15 @@ title: Player’s Guide Changelog
 permalink: /changelogs/players-guide
 ---
 
+## 1.2.005
+- Added default sorting for spells compendium & folder coloring ([#900])
+- Fixed advancement level for Precise Critical & incorrect table name in Font of Magic ([#914])
+- Initial Paladin skills now set to apply correctly ([#937])
+- Changed use activity on Divine Smite to damage activity ([#940])
+- Shield of Faith should now grant correct AC bonus ([#947])
+- Scrutinous talent now applies bonus to passive skills, not skill checks ([#955])
+- Fixed typo in Favored Disciple modifier
+
 ## 1.2.004
 - Added Cloud heritage spells
 - Added proper consumption to Eldritch Master ([#879])
@@ -36,3 +45,9 @@ permalink: /changelogs/players-guide
 [#879]: https://github.com/koboldpress/black-flag/issues/879
 [#895]: https://github.com/koboldpress/black-flag/issues/895
 [#896]: https://github.com/koboldpress/black-flag/issues/896
+[#900]: https://github.com/koboldpress/black-flag/issues/900
+[#914]: https://github.com/koboldpress/black-flag/issues/914
+[#937]: https://github.com/koboldpress/black-flag/issues/937
+[#940]: https://github.com/koboldpress/black-flag/issues/940
+[#947]: https://github.com/koboldpress/black-flag/issues/947
+[#955]: https://github.com/koboldpress/black-flag/issues/955
