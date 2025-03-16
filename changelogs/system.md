@@ -4,6 +4,26 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [1.3.064] - Darkmantle: Minor Fixes
+Fix a few bugs with spellcasting and some content issues.
+
+### Improvements
+- Freeform prerequisites can now be entered ([#952])
+
+### Compendium Content
+- Initial Paladin skills now set to apply correctly ([#937])
+- Changed use activity on Divine Smite to damage activity ([#940])
+- Shield of Faith should now grant correct AC bonus ([#947])
+- Scrutinous talent now applies bonus to passive skills, not skill checks ([#955])
+
+### Bug Fixes
+- Automatically granted spells at higher levels should no longer throw error ([#911])
+- Half and third casters without multiclassing should now correctly calculate spell slots ([#949])
+- Combat durations should now show scalar value input ([#951])
+- Initial spell scaling for pact spells should now be correct ([#954])
+- Notes applied by advancements should no longer cause issues in ability/skill config dialogs ([#956])
+
+
 ## [1.3.063] - Darkmantle: Improved Chat Messages & V13 Support
 Introduces new chat message types for combat turns, rests, and activations which include consumption/recovery details. Also adds initial support for Foundry V13.
 
@@ -1347,6 +1367,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [1.2.061]: https://github.com/koboldpress/black-flag/releases/tag/1.2.061
 [1.2.062]: https://github.com/koboldpress/black-flag/releases/tag/1.2.062
 [1.3.063]: https://github.com/koboldpress/black-flag/releases/tag/1.3.063
+[1.3.064]: https://github.com/koboldpress/black-flag/releases/tag/1.3.064
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -2097,6 +2118,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#906]: https://github.com/koboldpress/black-flag/issues/906
 [#907]: https://github.com/koboldpress/black-flag/issues/907
 [#909]: https://github.com/koboldpress/black-flag/issues/909
+[#911]: https://github.com/koboldpress/black-flag/issues/911
 [#914]: https://github.com/koboldpress/black-flag/issues/914
 [#917]: https://github.com/koboldpress/black-flag/issues/917
 [#918]: https://github.com/koboldpress/black-flag/issues/918
@@ -2109,3 +2131,12 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#932]: https://github.com/koboldpress/black-flag/issues/932
 [#933]: https://github.com/koboldpress/black-flag/issues/933
 [#936]: https://github.com/koboldpress/black-flag/issues/936
+[#937]: https://github.com/koboldpress/black-flag/issues/937
+[#940]: https://github.com/koboldpress/black-flag/issues/940
+[#947]: https://github.com/koboldpress/black-flag/issues/947
+[#949]: https://github.com/koboldpress/black-flag/issues/949
+[#951]: https://github.com/koboldpress/black-flag/issues/951
+[#952]: https://github.com/koboldpress/black-flag/issues/952
+[#954]: https://github.com/koboldpress/black-flag/issues/954
+[#955]: https://github.com/koboldpress/black-flag/issues/955
+[#956]: https://github.com/koboldpress/black-flag/issues/956
