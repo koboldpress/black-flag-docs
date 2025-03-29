@@ -4,6 +4,18 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [1.3.065] - Darkmantle: Few More Fixes
+A few more bug fixes.
+
+### Compendium Content
+- Certain spells should no longer automatically apply their effects to the actor gaining them ([#962])
+
+### Bug Fixes
+- Recharge abilities should once again roll at start of turn ([#958])
+- Petrified condition should no longer break actor sheets ([#960])
+- Skill & tool with multiple word names should now be localized properly in enrichers ([#961])
+
+
 ## [1.3.064] - Darkmantle: Minor Fixes
 Fix a few bugs with spellcasting and some content issues.
 
@@ -1368,6 +1380,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [1.2.062]: https://github.com/koboldpress/black-flag/releases/tag/1.2.062
 [1.3.063]: https://github.com/koboldpress/black-flag/releases/tag/1.3.063
 [1.3.064]: https://github.com/koboldpress/black-flag/releases/tag/1.3.064
+[1.3.065]: https://github.com/koboldpress/black-flag/releases/tag/1.3.065
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -2140,3 +2153,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#954]: https://github.com/koboldpress/black-flag/issues/954
 [#955]: https://github.com/koboldpress/black-flag/issues/955
 [#956]: https://github.com/koboldpress/black-flag/issues/956
+[#958]: https://github.com/koboldpress/black-flag/issues/958
+[#960]: https://github.com/koboldpress/black-flag/issues/960
+[#961]: https://github.com/koboldpress/black-flag/issues/961
+[#962]: https://github.com/koboldpress/black-flag/issues/962
