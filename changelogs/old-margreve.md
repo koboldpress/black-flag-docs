@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Old Manrgreve Changelog
+title: The Old Manrgreve Changelog
 permalink: /changelogs/old-margreve
 ---
 
