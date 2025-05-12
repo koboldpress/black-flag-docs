@@ -4,6 +4,22 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [1.3.066] - Darkmantle: V13 Compatibility
+Fix the major issues preventing the system from being used with Foundry V13.
+
+### Improvements
+- Resolved a number of deprecation warnings present when running in V13 ([#982])
+
+### Bug Fixes
+- Trait advancements should now only show the configured options in V13 ([#967])
+- Luck bonuses can now be applied in V13 ([#968])
+- A variety of UI issues have been resolved in V13 ([#970])
+- Table of contents application will no longer throw an error when opened in V13 ([#971])
+- Activity/advancement creation dialog should now submit properly in V13 ([#980])
+- Creating new characters should no longer throw HP validation error in V13
+- "Game System" should once again be properly localized in settings sidebar in V13
+
+
 ## [1.3.065] - Darkmantle: Few More Fixes
 A few more bug fixes.
 
@@ -1381,6 +1397,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [1.3.063]: https://github.com/koboldpress/black-flag/releases/tag/1.3.063
 [1.3.064]: https://github.com/koboldpress/black-flag/releases/tag/1.3.064
 [1.3.065]: https://github.com/koboldpress/black-flag/releases/tag/1.3.065
+[1.3.066]: https://github.com/koboldpress/black-flag/releases/tag/1.3.066
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -2157,3 +2174,9 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#960]: https://github.com/koboldpress/black-flag/issues/960
 [#961]: https://github.com/koboldpress/black-flag/issues/961
 [#962]: https://github.com/koboldpress/black-flag/issues/962
+[#967]: https://github.com/koboldpress/black-flag/issues/967
+[#968]: https://github.com/koboldpress/black-flag/issues/968
+[#970]: https://github.com/koboldpress/black-flag/issues/970
+[#971]: https://github.com/koboldpress/black-flag/issues/971
+[#980]: https://github.com/koboldpress/black-flag/issues/980
+[#982]: https://github.com/koboldpress/black-flag/issues/982
