@@ -4,6 +4,10 @@ title: Player’s Guide Changelog
 permalink: /changelogs/players-guide
 ---
 
+## 1.3.006
+- Updated spells to have the correct transfer valued for active effects ([#962])
+- Verified compatibility with Foundry V13
+
 ## 1.2.005
 - Added default sorting for spells compendium & folder coloring ([#900])
 - Fixed advancement level for Precise Critical & incorrect table name in Font of Magic ([#914])
@@ -51,3 +55,4 @@ permalink: /changelogs/players-guide
 [#940]: https://github.com/koboldpress/black-flag/issues/940
 [#947]: https://github.com/koboldpress/black-flag/issues/947
 [#955]: https://github.com/koboldpress/black-flag/issues/955
+[#962]: https://github.com/koboldpress/black-flag/issues/962
