@@ -4,6 +4,28 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [1.3.067] - Darkmantle: Additional V13 Bug Fixes
+Resolve a few more bugs in V13 as well as some content issues.
+
+### Improvements
+- Improved styling of new roll table titles when embedded ([#1003])
+
+### Compendium Content
+- Changed activity descriptions on Wind Up ability to match rule text ([#983])
+- Fixed Font of Inspiration consumption to target correct item UUID ([#985])
+- Changed Roper's creature type to be correct ([#1004])
+
+### Bug Fixes
+- Adding custom entries to Trait advancement should no longer cause sheet to crash in V13 ([#987])
+- Multiple scale values should now apply correctly to actor in V13 ([#989])
+- Using `@item.circle` in roll formulas should now function in V13 ([#990])
+- Map Location journal entry page type should now be styled correctly in V13 ([#991])
+- System styles should no longer cause problems on core applications in V13 ([#993], [#1000])
+- Embedded roll tables should now be rollable on items ([#998])
+- Inline embeds with labels should now be correctly styled in V13 ([#999])
+- Fast forwarded rolls will now have the correct roll mode ([#1005])
+
+
 ## [1.3.066] - Darkmantle: V13 Compatibility
 Fix the major issues preventing the system from being used with Foundry V13.
 
@@ -1398,6 +1420,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [1.3.064]: https://github.com/koboldpress/black-flag/releases/tag/1.3.064
 [1.3.065]: https://github.com/koboldpress/black-flag/releases/tag/1.3.065
 [1.3.066]: https://github.com/koboldpress/black-flag/releases/tag/1.3.066
+[1.3.067]: https://github.com/koboldpress/black-flag/releases/tag/1.3.067
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -2180,3 +2203,16 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#971]: https://github.com/koboldpress/black-flag/issues/971
 [#980]: https://github.com/koboldpress/black-flag/issues/980
 [#982]: https://github.com/koboldpress/black-flag/issues/982
+[#983]: https://github.com/koboldpress/black-flag/issues/983
+[#985]: https://github.com/koboldpress/black-flag/issues/985
+[#987]: https://github.com/koboldpress/black-flag/issues/987
+[#989]: https://github.com/koboldpress/black-flag/issues/989
+[#990]: https://github.com/koboldpress/black-flag/issues/990
+[#991]: https://github.com/koboldpress/black-flag/issues/991
+[#993]: https://github.com/koboldpress/black-flag/issues/993
+[#998]: https://github.com/koboldpress/black-flag/issues/998
+[#999]: https://github.com/koboldpress/black-flag/issues/999
+[#1000]: https://github.com/koboldpress/black-flag/issues/1000
+[#1003]: https://github.com/koboldpress/black-flag/issues/1003
+[#1004]: https://github.com/koboldpress/black-flag/issues/1004
+[#1005]: https://github.com/koboldpress/black-flag/issues/1005

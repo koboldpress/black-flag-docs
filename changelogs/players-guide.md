@@ -4,6 +4,10 @@ title: Player’s Guide Changelog
 permalink: /changelogs/players-guide
 ---
 
+## 1.3.007
+- Changed activity descriptions on Wind Up ability to match rule text ([#983])
+- Fixed Font of Inspiration consumption to target correct item UUID ([#985])
+
 ## 1.3.006
 - Updated spells to have the correct transfer valued for active effects ([#962])
 - Verified compatibility with Foundry V13
@@ -56,3 +60,5 @@ permalink: /changelogs/players-guide
 [#947]: https://github.com/koboldpress/black-flag/issues/947
 [#955]: https://github.com/koboldpress/black-flag/issues/955
 [#962]: https://github.com/koboldpress/black-flag/issues/962
+[#983]: https://github.com/koboldpress/black-flag/issues/983
+[#985]: https://github.com/koboldpress/black-flag/issues/985

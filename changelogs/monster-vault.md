@@ -14,7 +14,6 @@ permalink: /changelogs/monster-vault
 ---
 
 ## 12.1.0
-
 - Updates throughout to utilize the latest features available in Black Flag v1.3.063.
 - Error corrections throughout.
 - Incorporate latest available errata as of 1/31/2025.
