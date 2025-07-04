@@ -4,6 +4,9 @@ title: Content Tools Changelog
 permalink: /changelogs/content-tools
 ---
 
+## [1.3.009]
+- Fixed context menu not appearing in V13 ([#15])
+
 ## [1.3.008]
 - Fixed bug with "Languages Known in Life" tag during conversion ([#8])
 - Added optional system for generating documents with well-known IDs ([#11])
@@ -42,6 +45,7 @@ permalink: /changelogs/content-tools
 [1.1.006]: https://github.com/koboldpress/black-flag/releases/tag/1.1.006
 [1.2.007]: https://github.com/koboldpress/black-flag/releases/tag/1.2.007
 [1.3.008]: https://github.com/koboldpress/black-flag/releases/tag/1.3.008
+[1.3.009]: https://github.com/koboldpress/black-flag/releases/tag/1.3.009
 
 [#1]: https://github.com/koboldpress/black-flag-tools/issues/1
 [#2]: https://github.com/koboldpress/black-flag-tools/issues/2
@@ -54,3 +58,4 @@ permalink: /changelogs/content-tools
 [#11]: https://github.com/koboldpress/black-flag-tools/issues/11
 [#12]: https://github.com/koboldpress/black-flag-tools/issues/12
 [#13]: https://github.com/koboldpress/black-flag-tools/issues/13
+[#15]: https://github.com/koboldpress/black-flag-tools/issues/15
