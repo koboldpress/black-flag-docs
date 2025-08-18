@@ -4,6 +4,28 @@ title: The Old Manrgreve Changelog
 permalink: /changelogs/old-margreve
 ---
 
+## 13.0.4
+Fixed broken UUID links from the following character options ([#976](https://github.com/koboldpress/black-flag/issues/976)):
+
+**Heritages**
+
+- Forest Bastion
+- Hiveheim
+- Old Ways
+
+**Lineages**
+
+- Bearfolk - Apex Predator
+- Erina - Digger
+
+**Subclasses**
+
+- Shadow Chewer Barbarian
+- Owls Druid
+- Roses Druid
+- Grove Warden Ranger
+- Underfoot Rogue
+
 ## 13.0.3
 - Verified for v13.
 
