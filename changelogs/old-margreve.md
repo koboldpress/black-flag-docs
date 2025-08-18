@@ -5,7 +5,7 @@ permalink: /changelogs/old-margreve
 ---
 
 ## 13.0.5
-Fixed ID mismatch on Epic Books for Warlock subclasses:
+Fixed ID mismatch on Epic Boons for Warlock subclasses:
 
 - Elder Wood
 - Hunter in Darkness
