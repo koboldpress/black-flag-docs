@@ -4,8 +4,6 @@ title: Game Master’s Guide Changelog
 permalink: /changelogs/game-masters-guide
 ---
 
-# Tales of the Valiant Game Masters Guide Change Log
-
 **Note**:  The current version of the module is released on v1.3.067 of the Black Flag System and FVTT v13.347. As development for this system and core software is ongoing, some issues/bugs may appear in the content. If you find any issues/bugs in this module, please report them to https://support.koboldpress.com/ with the following information.
 
 - Module name and version

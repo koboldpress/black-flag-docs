@@ -4,6 +4,10 @@ title: Content Tools Changelog
 permalink: /changelogs/content-tools
 ---
 
+## [1.3.010]
+- Fixed languages on actors not converting properly ([#9])
+- Added support for converting compatible DnD5e features through version 5.1
+
 ## [1.3.009]
 - Fixed context menu not appearing in V13 ([#15])
 
@@ -46,6 +50,7 @@ permalink: /changelogs/content-tools
 [1.2.007]: https://github.com/koboldpress/black-flag/releases/tag/1.2.007
 [1.3.008]: https://github.com/koboldpress/black-flag/releases/tag/1.3.008
 [1.3.009]: https://github.com/koboldpress/black-flag/releases/tag/1.3.009
+[1.3.010]: https://github.com/koboldpress/black-flag/releases/tag/1.3.010
 
 [#1]: https://github.com/koboldpress/black-flag-tools/issues/1
 [#2]: https://github.com/koboldpress/black-flag-tools/issues/2
@@ -55,6 +60,7 @@ permalink: /changelogs/content-tools
 [#6]: https://github.com/koboldpress/black-flag-tools/issues/6
 [#7]: https://github.com/koboldpress/black-flag-tools/issues/7
 [#8]: https://github.com/koboldpress/black-flag-tools/issues/8
+[#9]: https://github.com/koboldpress/black-flag-tools/issues/9
 [#11]: https://github.com/koboldpress/black-flag-tools/issues/11
 [#12]: https://github.com/koboldpress/black-flag-tools/issues/12
 [#13]: https://github.com/koboldpress/black-flag-tools/issues/13

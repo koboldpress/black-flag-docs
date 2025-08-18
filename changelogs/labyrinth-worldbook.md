@@ -4,8 +4,6 @@ title: Labyrinth Worldbook Changelog
 permalink: /changelogs/labyrinth-worldbook
 ---
 
-# Labyrinth Worldbook Change Log
-
 ## 13.0.2
 Updated enchantments for the following items:
 

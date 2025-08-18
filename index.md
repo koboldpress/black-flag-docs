@@ -13,6 +13,8 @@ This site provides documentation and guides for the **Black Flag Roleplaying** g
   - [Player’s Guide](changelogs/players-guide)
   - [Monster Vault](changelogs/monster-vault)
   - [Game Master’s Guide](changelogs/game-masters-guide)
+	- [Labyrinth Adventures](changelogs/labyrinth-adventures)
+	- [Labyrinth Worldbook](changelogs/labyrinth-worldbook)
 	- [The Old Margreve](changelogs/old-margreve.md)
   - [Content Tools](changelogs/content-tools)
 - General Documentation
