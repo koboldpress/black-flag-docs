@@ -4,6 +4,12 @@ title: The Old Manrgreve Changelog
 permalink: /changelogs/old-margreve
 ---
 
+## 13.0.5
+Fixed ID mismatch on Epic Books for Warlock subclasses:
+
+- Elder Wood
+- Hunter in Darkness
+
 ## 13.0.4
 Fixed broken UUID links from the following character options ([#976](https://github.com/koboldpress/black-flag/issues/976)):
 
