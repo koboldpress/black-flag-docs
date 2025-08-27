@@ -4,6 +4,20 @@ title: Labyrinth Worldbook Changelog
 permalink: /changelogs/labyrinth-worldbook
 ---
 
+## 13.0.3
+
+#### Journals
+
+Removed placeholder text in Journals - "FOO" - and corrected affected text for the following:
+
+- **Clockwork Cart**. Updated Cargo Capacity.
+- **Void Angel**. Updated Chain action's Hit description.
+- **Realm Singer**. Removed placeholder text under Actions.
+
+#### Actors
+
+- **Void Angel**. Added missing Chain action and Blasphemous Word reaction.
+
 ## 13.0.2
 Updated enchantments for the following items:
 
