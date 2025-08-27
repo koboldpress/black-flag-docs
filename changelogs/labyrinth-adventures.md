@@ -4,6 +4,15 @@ title: Labyrinth Adventures Changelog
 permalink: /changelogs/labyyrinth-adventures
 ---
 
+## 13.0.1
+Updated all macros (and consolidated some)
+
+- Add UIs to macros that did not have one.
+- Updated all macros and UI to work under FVTT App v2.
+- Enhanced functionality on many of the macros.
+
+**Note**: If you installed any of the adventures into your world, it is recommended that you delete the installed journal and macro directory, then reinstall them.
+
 ## 13.0.0
 - Initial release
 
