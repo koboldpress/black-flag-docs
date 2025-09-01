@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Labyrinth Adventures Changelog
-permalink: /changelogs/labyyrinth-adventures
+permalink: /changelogs/labyrinth-adventures
 ---
 
 ## 13.0.1

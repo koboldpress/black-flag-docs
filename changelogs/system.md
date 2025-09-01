@@ -4,6 +4,67 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [2.0.068] - Ettercap: Just About Everything
+The massive 2.0 update is here! This version of the system adds support for dark mode throughout the system, including in actors sheets, item sheets, and journals. Long awaited features like full dynamic token ring support, improved HP bar, and unidentified items are now in the system! Activities have been improved with a number of new visibility options as well as improvements to the check and save activities.
+
+To take advantage of new features in Foundry V13, this release now has a brand new token ruler that uses the actor's available movement types to display normal, double, and triple movement ranges. This also supports core's movement modes to properly track swimming and climbing speed reductions if an actor doesn't have those movement types, as well as rules-accurate handling of crawling speeds. This release also includes a new Difficult Terrain scene region behavior allowing GMs to draw areas of difficult terrain and for certain actors to have configured types of difficult terrain they ignore.
+
+Finally, Black Flag has gained support for the metric system! Metric measurement units are now available everywhere in the system that takes units, and a set of options have been added to control what unit system is used during play. When switching to the metric system, any items or actors using imperial units will be automatically converted so everything displays properly.
+
+### Improvements
+- Luck can now be granted to characters by the GM on a failed attack or save from the chat card ([#49])
+- Stacks of items in the inventory can now be split using the context menu ([#307])
+- Items can now be unidentified, showing an alternate title & description while hiding some details ([#330])
+- New characters will now have the default currencies on their sheet ([#365])
+- Dynamic token rings now highlight when actor takes damage, is healed, or is targeted ([#457])
+- HP bar now represents temp HP and temp max HP ([#477])
+- Actors can now specify how many luck points they gain on a failed attack or save ([#487])
+- Metric measurement system is now included, localization options added to specify units used ([#494])
+- Actor & Item socket handlers have been reworked, old auto-calling method has been deprecated ([#608])
+- Enrichers now use new `onRender` system, rather than a global event listener ([#854])
+- Actor's `sourcedItems` data now respects compendium UUID redirects, added `identifiedItems` ([#913])
+- Expanded status conditions with "Burning", "Dehydration", "Falling", "Malnutrition", "Suffocation", as well as several cover statuses ([#922])
+- Rewrote all system applications in `ApplicationV2`, gaining support for dark mode and other themes ([#963], [#969])
+- Resolved all deprecation warnings presented by V13, removed V12 cross-compatibility code ([#966])
+- Expanded space for quantity in the currency section of the inventory to support large numbers ([#972])
+- Rewrote `createDialog` implementation to match core's updated API ([#1008])
+- Advancement & activity lists now use dynamic SVG icons to work better in dark mode ([#1009])
+- Save activities can now specify if the damage & effects are applied when target saves ([#1018])
+- Attack and damage enrichers now have `extended` format for display in stat blocks ([#1019])
+- Check & Save activities now have a bonus field that is added to rolls ([#1020])
+- Save activity now has an option for visibility of save button ([#1021])
+- Replaced core's `base` active effect type with a new `standard` type that includes magical property & separate status effects ([#1022])
+- Activities now have extensive visibility controls ([#1023])
+- Enchantments can now specify rider activities & effects that are automatically added alongside the enchantment ([#1025])
+- Renamed `units` to `unit` throughout the system to be grammatically correct ([#1026])
+- Scene config now presents list of unit options for grid unit, rather than a freeform text input ([#1027])
+- Measured templates will now convert size to the proper scene grid size when placing ([#1028])
+- Token ruler now displays movement limits, localizes distance unit, compares against actor movement speeds ([#1029], [#1033], [#1036])
+- Added difficult terrain region behavior type, actors can now ignore certain difficult terrain types ([#1034])
+- Actors now have "All Languages" option ([#1038])
+- Added new natural weapon type which supports melee & ranged without being thrown
+- Swarm attacks no longer add ability modifier to damage
+
+### Compendium Content
+- Fixed missing speeds on Ancient Gold Dragon ([#1014])
+- Updated NPC attacks to use extended enrichers ([#1019])
+- Updated magic items that use enchantments with rider activities & effects ([#1025])
+- Converted a number of natural NPC attacks from features to natural weapons
+- Fixed certain NPCs that had `null` rather than `0` for ability mods
+
+### Bug Fixes
+- Damage enrichers with explicit formula will no longer also pull damage from activity when placed into activity descriptions ([#912])
+- Trait advancement will no longer show as unfulfilled if no additional choices are possible ([#988])
+- Legendary Actions with additional activities using another activation type will no longer move out of the Legendary Actions section on NPC sheets ([#1002])
+- Add & delete custom languages/etc. buttons once again work ([#1007])
+- Journal embeds now function properly ([#1011])
+- Spells with concentration now appear properly for non-GM users ([#1013])
+- Advantage & disadvantage on initiative rolls now rolls the correct dice ([#1015])
+- User & actor context menus no longer throw error ([#1017])
+- Plural localization no longer fails to fall back if using plural rule that doesn't exist in in English ([#1024])
+- Exhaustion can once again be applied properly from token HUD ([#1032])
+
+
 ## [1.3.067] - Darkmantle: Additional V13 Bug Fixes
 Resolve a few more bugs in V13 as well as some content issues.
 
@@ -1421,6 +1482,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [1.3.065]: https://github.com/koboldpress/black-flag/releases/tag/1.3.065
 [1.3.066]: https://github.com/koboldpress/black-flag/releases/tag/1.3.066
 [1.3.067]: https://github.com/koboldpress/black-flag/releases/tag/1.3.067
+[2.0.068]: https://github.com/koboldpress/black-flag/releases/tag/2.0.068
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1464,6 +1526,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#45]: https://github.com/koboldpress/black-flag/issues/45
 [#46]: https://github.com/koboldpress/black-flag/issues/46
 [#47]: https://github.com/koboldpress/black-flag/issues/47
+[#49]: https://github.com/koboldpress/black-flag/issues/49
 [#51]: https://github.com/koboldpress/black-flag/issues/51
 [#52]: https://github.com/koboldpress/black-flag/issues/52
 [#53]: https://github.com/koboldpress/black-flag/issues/53
@@ -1684,6 +1747,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#303]: https://github.com/koboldpress/black-flag/issues/303
 [#305]: https://github.com/koboldpress/black-flag/issues/305
 [#306]: https://github.com/koboldpress/black-flag/issues/306
+[#307]: https://github.com/koboldpress/black-flag/issues/307
 [#308]: https://github.com/koboldpress/black-flag/issues/308
 [#309]: https://github.com/koboldpress/black-flag/issues/309
 [#310]: https://github.com/koboldpress/black-flag/issues/310
@@ -1704,6 +1768,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#327]: https://github.com/koboldpress/black-flag/issues/327
 [#328]: https://github.com/koboldpress/black-flag/issues/328
 [#329]: https://github.com/koboldpress/black-flag/issues/329
+[#330]: https://github.com/koboldpress/black-flag/issues/330
 [#331]: https://github.com/koboldpress/black-flag/issues/331
 [#332]: https://github.com/koboldpress/black-flag/issues/332
 [#333]: https://github.com/koboldpress/black-flag/issues/333
@@ -1733,6 +1798,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#361]: https://github.com/koboldpress/black-flag/issues/361
 [#363]: https://github.com/koboldpress/black-flag/issues/363
 [#364]: https://github.com/koboldpress/black-flag/issues/364
+[#365]: https://github.com/koboldpress/black-flag/issues/365
 [#368]: https://github.com/koboldpress/black-flag/issues/368
 [#369]: https://github.com/koboldpress/black-flag/issues/369
 [#370]: https://github.com/koboldpress/black-flag/issues/370
@@ -1815,6 +1881,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#454]: https://github.com/koboldpress/black-flag/issues/454
 [#455]: https://github.com/koboldpress/black-flag/issues/455
 [#456]: https://github.com/koboldpress/black-flag/issues/456
+[#457]: https://github.com/koboldpress/black-flag/issues/457
 [#458]: https://github.com/koboldpress/black-flag/issues/458
 [#459]: https://github.com/koboldpress/black-flag/issues/459
 [#460]: https://github.com/koboldpress/black-flag/issues/460
@@ -1832,13 +1899,16 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#474]: https://github.com/koboldpress/black-flag/issues/474
 [#475]: https://github.com/koboldpress/black-flag/issues/475
 [#476]: https://github.com/koboldpress/black-flag/issues/476
+[#477]: https://github.com/koboldpress/black-flag/issues/477
 [#478]: https://github.com/koboldpress/black-flag/issues/478
 [#479]: https://github.com/koboldpress/black-flag/issues/479
 [#481]: https://github.com/koboldpress/black-flag/issues/481
 [#482]: https://github.com/koboldpress/black-flag/issues/482
 [#486]: https://github.com/koboldpress/black-flag/issues/486
+[#487]: https://github.com/koboldpress/black-flag/issues/487
 [#490]: https://github.com/koboldpress/black-flag/issues/490
 [#493]: https://github.com/koboldpress/black-flag/issues/493
+[#494]: https://github.com/koboldpress/black-flag/issues/494
 [#495]: https://github.com/koboldpress/black-flag/issues/495
 [#496]: https://github.com/koboldpress/black-flag/issues/496
 [#497]: https://github.com/koboldpress/black-flag/issues/497
@@ -1927,6 +1997,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#603]: https://github.com/koboldpress/black-flag/issues/603
 [#606]: https://github.com/koboldpress/black-flag/issues/606
 [#607]: https://github.com/koboldpress/black-flag/issues/607
+[#608]: https://github.com/koboldpress/black-flag/issues/608
 [#610]: https://github.com/koboldpress/black-flag/issues/610
 [#612]: https://github.com/koboldpress/black-flag/issues/612
 [#613]: https://github.com/koboldpress/black-flag/issues/613
@@ -2129,6 +2200,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#851]: https://github.com/koboldpress/black-flag/issues/851
 [#852]: https://github.com/koboldpress/black-flag/issues/852
 [#853]: https://github.com/koboldpress/black-flag/issues/853
+[#854]: https://github.com/koboldpress/black-flag/issues/854
 [#856]: https://github.com/koboldpress/black-flag/issues/856
 [#857]: https://github.com/koboldpress/black-flag/issues/857
 [#858]: https://github.com/koboldpress/black-flag/issues/858
@@ -2172,9 +2244,12 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#907]: https://github.com/koboldpress/black-flag/issues/907
 [#909]: https://github.com/koboldpress/black-flag/issues/909
 [#911]: https://github.com/koboldpress/black-flag/issues/911
+[#912]: https://github.com/koboldpress/black-flag/issues/912
+[#913]: https://github.com/koboldpress/black-flag/issues/913
 [#914]: https://github.com/koboldpress/black-flag/issues/914
 [#917]: https://github.com/koboldpress/black-flag/issues/917
 [#918]: https://github.com/koboldpress/black-flag/issues/918
+[#922]: https://github.com/koboldpress/black-flag/issues/922
 [#924]: https://github.com/koboldpress/black-flag/issues/924
 [#927]: https://github.com/koboldpress/black-flag/issues/927
 [#928]: https://github.com/koboldpress/black-flag/issues/928
@@ -2197,15 +2272,20 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#960]: https://github.com/koboldpress/black-flag/issues/960
 [#961]: https://github.com/koboldpress/black-flag/issues/961
 [#962]: https://github.com/koboldpress/black-flag/issues/962
+[#963]: https://github.com/koboldpress/black-flag/issues/963
+[#966]: https://github.com/koboldpress/black-flag/issues/966
 [#967]: https://github.com/koboldpress/black-flag/issues/967
 [#968]: https://github.com/koboldpress/black-flag/issues/968
+[#969]: https://github.com/koboldpress/black-flag/issues/969
 [#970]: https://github.com/koboldpress/black-flag/issues/970
 [#971]: https://github.com/koboldpress/black-flag/issues/971
+[#972]: https://github.com/koboldpress/black-flag/issues/972
 [#980]: https://github.com/koboldpress/black-flag/issues/980
 [#982]: https://github.com/koboldpress/black-flag/issues/982
 [#983]: https://github.com/koboldpress/black-flag/issues/983
 [#985]: https://github.com/koboldpress/black-flag/issues/985
 [#987]: https://github.com/koboldpress/black-flag/issues/987
+[#988]: https://github.com/koboldpress/black-flag/issues/988
 [#989]: https://github.com/koboldpress/black-flag/issues/989
 [#990]: https://github.com/koboldpress/black-flag/issues/990
 [#991]: https://github.com/koboldpress/black-flag/issues/991
@@ -2213,6 +2293,33 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#998]: https://github.com/koboldpress/black-flag/issues/998
 [#999]: https://github.com/koboldpress/black-flag/issues/999
 [#1000]: https://github.com/koboldpress/black-flag/issues/1000
+[#1002]: https://github.com/koboldpress/black-flag/issues/1002
 [#1003]: https://github.com/koboldpress/black-flag/issues/1003
 [#1004]: https://github.com/koboldpress/black-flag/issues/1004
 [#1005]: https://github.com/koboldpress/black-flag/issues/1005
+[#1007]: https://github.com/koboldpress/black-flag/issues/1007
+[#1008]: https://github.com/koboldpress/black-flag/issues/1008
+[#1009]: https://github.com/koboldpress/black-flag/issues/1009
+[#1011]: https://github.com/koboldpress/black-flag/issues/1011
+[#1013]: https://github.com/koboldpress/black-flag/issues/1013
+[#1014]: https://github.com/koboldpress/black-flag/issues/1014
+[#1015]: https://github.com/koboldpress/black-flag/issues/1015
+[#1017]: https://github.com/koboldpress/black-flag/issues/1017
+[#1018]: https://github.com/koboldpress/black-flag/issues/1018
+[#1019]: https://github.com/koboldpress/black-flag/issues/1019
+[#1020]: https://github.com/koboldpress/black-flag/issues/1020
+[#1021]: https://github.com/koboldpress/black-flag/issues/1021
+[#1022]: https://github.com/koboldpress/black-flag/issues/1022
+[#1023]: https://github.com/koboldpress/black-flag/issues/1023
+[#1024]: https://github.com/koboldpress/black-flag/issues/1024
+[#1025]: https://github.com/koboldpress/black-flag/issues/1025
+[#1026]: https://github.com/koboldpress/black-flag/issues/1026
+[#1027]: https://github.com/koboldpress/black-flag/issues/1027
+[#1028]: https://github.com/koboldpress/black-flag/issues/1028
+[#1029]: https://github.com/koboldpress/black-flag/issues/1029
+[#1030]: https://github.com/koboldpress/black-flag/issues/1030
+[#1032]: https://github.com/koboldpress/black-flag/issues/1032
+[#1033]: https://github.com/koboldpress/black-flag/issues/1033
+[#1034]: https://github.com/koboldpress/black-flag/issues/1034
+[#1036]: https://github.com/koboldpress/black-flag/issues/1036
+[#1038]: https://github.com/koboldpress/black-flag/issues/1038
