@@ -4,6 +4,13 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [2.0.069] - Ettercap: Region Behavior Fix
+Fix a bug causing core's region behaviors to throw errors.
+
+### Bug Fixes
+- Using core region behaviors in a scene will no longer cause errors on token movement ([#1039])
+
+
 ## [2.0.068] - Ettercap: Just About Everything
 The massive 2.0 update is here! This version of the system adds support for dark mode throughout the system, including in actors sheets, item sheets, and journals. Long awaited features like full dynamic token ring support, improved HP bar, and unidentified items are now in the system! Activities have been improved with a number of new visibility options as well as improvements to the check and save activities.
 
@@ -1483,6 +1490,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [1.3.066]: https://github.com/koboldpress/black-flag/releases/tag/1.3.066
 [1.3.067]: https://github.com/koboldpress/black-flag/releases/tag/1.3.067
 [2.0.068]: https://github.com/koboldpress/black-flag/releases/tag/2.0.068
+[2.0.069]: https://github.com/koboldpress/black-flag/releases/tag/2.0.069
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -2323,3 +2331,4 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#1034]: https://github.com/koboldpress/black-flag/issues/1034
 [#1036]: https://github.com/koboldpress/black-flag/issues/1036
 [#1038]: https://github.com/koboldpress/black-flag/issues/1038
+[#1039]: https://github.com/koboldpress/black-flag/issues/1039
