@@ -4,6 +4,13 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [2.0.070] - Ettercap: NPC Description Fix
+Fix a bug preventing NPC descriptions from being editable.
+
+### Bug Fixes
+- Editing NPC descriptions now possible ([#1040])
+
+
 ## [2.0.069] - Ettercap: Region Behavior Fix
 Fix a bug causing core's region behaviors to throw errors.
 
