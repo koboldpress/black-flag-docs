@@ -4,9 +4,13 @@ title: Player’s Guide Changelog
 permalink: /changelogs/players-guide
 ---
 
-## 1.3.007
+## 2.0.007
+- Changed Touch of Luck to increase amount of luck granted on failed attack or save ([#487])
 - Changed activity descriptions on Wind Up ability to match rule text ([#983])
+- Fixed active effect key for Enforcer's Ready to Rumble feature ([#987])
 - Fixed Font of Inspiration consumption to target correct item UUID ([#985])
+- Added activity visibility options & enchantment riders to magic items ([#1023])
+- Added ignored difficult terrain to magic items, spells, and NPCs ([#1034])
 
 ## 1.3.006
 - Updated spells to have the correct transfer valued for active effects ([#962])
@@ -48,6 +52,7 @@ permalink: /changelogs/players-guide
 
 
 [#227]: https://github.com/koboldpress/black-flag/issues/227
+[#487]: https://github.com/koboldpress/black-flag/issues/487
 [#846]: https://github.com/koboldpress/black-flag/issues/846
 [#855]: https://github.com/koboldpress/black-flag/issues/855
 [#879]: https://github.com/koboldpress/black-flag/issues/879
@@ -61,4 +66,7 @@ permalink: /changelogs/players-guide
 [#955]: https://github.com/koboldpress/black-flag/issues/955
 [#962]: https://github.com/koboldpress/black-flag/issues/962
 [#983]: https://github.com/koboldpress/black-flag/issues/983
+[#984]: https://github.com/koboldpress/black-flag/issues/984
 [#985]: https://github.com/koboldpress/black-flag/issues/985
+[#1023]: https://github.com/koboldpress/black-flag/issues/1023
+[#1034]: https://github.com/koboldpress/black-flag/issues/1034
