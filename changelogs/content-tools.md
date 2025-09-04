@@ -4,6 +4,11 @@ title: Content Tools Changelog
 permalink: /changelogs/content-tools
 ---
 
+## [2.0.011]
+- Updated conversion to support new data present in Black Flag 2.0
+- Fixed error attempting to parse converted compendium containing non-parsable document types ([#18])
+- Removed V12-compatible code
+
 ## [1.3.010]
 - Fixed languages on actors not converting properly ([#9])
 - Added support for converting compatible DnD5e features through version 5.1
@@ -51,6 +56,7 @@ permalink: /changelogs/content-tools
 [1.3.008]: https://github.com/koboldpress/black-flag/releases/tag/1.3.008
 [1.3.009]: https://github.com/koboldpress/black-flag/releases/tag/1.3.009
 [1.3.010]: https://github.com/koboldpress/black-flag/releases/tag/1.3.010
+[2.0.011]: https://github.com/koboldpress/black-flag/releases/tag/2.0.011
 
 [#1]: https://github.com/koboldpress/black-flag-tools/issues/1
 [#2]: https://github.com/koboldpress/black-flag-tools/issues/2
@@ -65,3 +71,4 @@ permalink: /changelogs/content-tools
 [#12]: https://github.com/koboldpress/black-flag-tools/issues/12
 [#13]: https://github.com/koboldpress/black-flag-tools/issues/13
 [#15]: https://github.com/koboldpress/black-flag-tools/issues/15
+[#18]: https://github.com/koboldpress/black-flag-tools/issues/18
