@@ -4,6 +4,20 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [2.0.071] - Ettercap: Minor Fixes
+Fix a few additional bugs with the updated apps.
+
+### Improvements
+- Replace core's edit image method to support icon counter in Black Flag tools ([#1041])
+
+### Compendium Content
+- Changed Touch of Luck to increase amount of luck granted on failed attack or save ([#487])
+
+### Bug Fixes
+- Healing formulas should once again be editable on Heal activity ([#1042])
+- Choice count should now be settable in Trait advancement sheet ([#1043])
+
+
 ## [2.0.070] - Ettercap: NPC Description Fix
 Fix a bug preventing NPC descriptions from being editable.
 
@@ -1499,6 +1513,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [2.0.068]: https://github.com/koboldpress/black-flag/releases/tag/2.0.068
 [2.0.069]: https://github.com/koboldpress/black-flag/releases/tag/2.0.069
 [2.0.070]: https://github.com/koboldpress/black-flag/releases/tag/2.0.070
+[2.0.071]: https://github.com/koboldpress/black-flag/releases/tag/2.0.071
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -2341,3 +2356,6 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#1038]: https://github.com/koboldpress/black-flag/issues/1038
 [#1039]: https://github.com/koboldpress/black-flag/issues/1039
 [#1040]: https://github.com/koboldpress/black-flag/issues/1040
+[#1041]: https://github.com/koboldpress/black-flag/issues/1041
+[#1042]: https://github.com/koboldpress/black-flag/issues/1042
+[#1043]: https://github.com/koboldpress/black-flag/issues/1043
