@@ -4,6 +4,25 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [2.0.072] - Ettercap: Disabled Enchantments
+Hides riders linked to disabled enchantments on sheets.
+
+### Improvements
+- Rider activities & effects are now hidden and disabled if enchantment is disabled ([#1031])
+- Manual and other interactive rolls now have indicator ([#1046])
+- Added `postBuildRollConfig` hook and extended system's usage of `hookNames` ([#1049])
+- Improved logic of default type of newly created consumption parts ([#1050])
+
+### Bug Fixes
+- Configuring prerequisites on talents works again ([#1044])
+- Ensure actor's exhaustion value matches derived value if effect is deleted directly ([#107])
+- Prevent summoned creature's effects from being lost if item changes are applied ([#1048])
+- Item uses consumption type on non-embedded items now properly shows "This Item" placeholder ([#1052])
+- Activities with combat activation types will no longer be displayed if they are not usable ([#1053])
+- Defeated combatants will no longer trigger combat recovery or activations ([#1054])
+- Combat tracker buttons are once again usable ([#1055])
+
+
 ## [2.0.071] - Ettercap: Minor Fixes
 Fix a few additional bugs with the updated apps.
 
@@ -1514,6 +1533,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [2.0.069]: https://github.com/koboldpress/black-flag/releases/tag/2.0.069
 [2.0.070]: https://github.com/koboldpress/black-flag/releases/tag/2.0.070
 [2.0.071]: https://github.com/koboldpress/black-flag/releases/tag/2.0.071
+[2.0.072]: https://github.com/koboldpress/black-flag/releases/tag/2.0.072
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -2349,6 +2369,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#1028]: https://github.com/koboldpress/black-flag/issues/1028
 [#1029]: https://github.com/koboldpress/black-flag/issues/1029
 [#1030]: https://github.com/koboldpress/black-flag/issues/1030
+[#1031]: https://github.com/koboldpress/black-flag/issues/1031
 [#1032]: https://github.com/koboldpress/black-flag/issues/1032
 [#1033]: https://github.com/koboldpress/black-flag/issues/1033
 [#1034]: https://github.com/koboldpress/black-flag/issues/1034
@@ -2359,3 +2380,12 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#1041]: https://github.com/koboldpress/black-flag/issues/1041
 [#1042]: https://github.com/koboldpress/black-flag/issues/1042
 [#1043]: https://github.com/koboldpress/black-flag/issues/1043
+[#1044]: https://github.com/koboldpress/black-flag/issues/1044
+[#1046]: https://github.com/koboldpress/black-flag/issues/1046
+[#1048]: https://github.com/koboldpress/black-flag/issues/1048
+[#1049]: https://github.com/koboldpress/black-flag/issues/1049
+[#1050]: https://github.com/koboldpress/black-flag/issues/1050
+[#1052]: https://github.com/koboldpress/black-flag/issues/1052
+[#1053]: https://github.com/koboldpress/black-flag/issues/1053
+[#1054]: https://github.com/koboldpress/black-flag/issues/1054
+[#1055]: https://github.com/koboldpress/black-flag/issues/1055
