@@ -4,6 +4,17 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [2.0.073] - Ettercap: Identifier Fix
+Fixes an issue with automatic identifier generation that was causing issues with some equipment.
+
+### Bug Fixes
+- Auto-generated identifiers will no longer contain invalid characters ([#1057])
+- Check & save enrichers should now always be linked to correct activity in activity description ([#1059])
+- Tables embedded in NPC stat blocks should no longer have odd styling of first row ([#1060])
+- Multiply active effect mode will no longer produce a value for empty formula fields ([#1062])
+- Map location journal pages will now render properly if "Display Page Title" is unchecked ([#1063])
+
+
 ## [2.0.072] - Ettercap: Disabled Enchantments
 Hides riders linked to disabled enchantments on sheets.
 
@@ -1534,6 +1545,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [2.0.070]: https://github.com/koboldpress/black-flag/releases/tag/2.0.070
 [2.0.071]: https://github.com/koboldpress/black-flag/releases/tag/2.0.071
 [2.0.072]: https://github.com/koboldpress/black-flag/releases/tag/2.0.072
+[2.0.073]: https://github.com/koboldpress/black-flag/releases/tag/2.0.073
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -2389,3 +2401,8 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#1053]: https://github.com/koboldpress/black-flag/issues/1053
 [#1054]: https://github.com/koboldpress/black-flag/issues/1054
 [#1055]: https://github.com/koboldpress/black-flag/issues/1055
+[#1057]: https://github.com/koboldpress/black-flag/issues/1057
+[#1059]: https://github.com/koboldpress/black-flag/issues/1059
+[#1060]: https://github.com/koboldpress/black-flag/issues/1060
+[#1062]: https://github.com/koboldpress/black-flag/issues/1062
+[#1063]: https://github.com/koboldpress/black-flag/issues/1063
