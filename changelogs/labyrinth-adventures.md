@@ -4,6 +4,11 @@ title: Labyrinth Adventures Changelog
 permalink: /changelogs/labyrinth-adventures
 ---
 
+## 13.0.2
+**In the Court of the Clockwork Queen**
+- Added token art to the Clockwork Parasite, Clockwork Cadaver, and Clockwork Controller to all relevant scenes (also added to actors in the actors directory).
+- Updated the link to the correct Rotate Rings macro in the final scene.
+
 ## 13.0.1
 Updated all macros (and consolidated some)
 
