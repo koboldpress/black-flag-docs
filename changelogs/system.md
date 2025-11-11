@@ -4,6 +4,28 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [2.0.074] - Ettercap: Hit Die Rolling
+Adds the ability to roll consumed hit dice in an activity and fixes several issues.
+
+### Improvements
+- Allow hit dice that are consumed by an activity to be rolled using `@consumed.hd` formula ([#351])
+- Add hints to consumption target field when item isn't embedded ([#1051])
+- Consumption targets now support identifier-based remapping in addition to UUID remapping ([#1066])
+- Summoned tokens will now be placed at same elevation as summoner ([#1083])
+
+### Compendium Content
+- Add hit die rolling to Fighter's "Last Stand" feature ([#351])
+- Frightened condition reference page is no longer misspelled ([#1077])
+
+### Bug Fixes
+- Situation bonus field for damage & skills should work once more ([#1064])
+- Show artwork button should no longer break in certain hosting situations ([#1065])
+- Items destroyed when a Forward activity triggers a Cast activity should now retain item data properly ([#1067])
+- Source of Magic dropdown now has proper dark mode styling ([#1072])
+- Negative consumption with dice now properly displays and scales ([#1074])
+- Summoning should now work for players even if existing imported actor exists that they don't have permissions on ([#1082])
+
+
 ## [2.0.073] - Ettercap: Identifier Fix
 Fixes an issue with automatic identifier generation that was causing issues with some equipment.
 
@@ -1546,6 +1568,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [2.0.071]: https://github.com/koboldpress/black-flag/releases/tag/2.0.071
 [2.0.072]: https://github.com/koboldpress/black-flag/releases/tag/2.0.072
 [2.0.073]: https://github.com/koboldpress/black-flag/releases/tag/2.0.073
+[2.0.074]: https://github.com/koboldpress/black-flag/releases/tag/2.0.074
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -1851,6 +1874,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#347]: https://github.com/koboldpress/black-flag/issues/347
 [#348]: https://github.com/koboldpress/black-flag/issues/348
 [#350]: https://github.com/koboldpress/black-flag/issues/350
+[#351]: https://github.com/koboldpress/black-flag/issues/351
 [#352]: https://github.com/koboldpress/black-flag/issues/352
 [#353]: https://github.com/koboldpress/black-flag/issues/353
 [#355]: https://github.com/koboldpress/black-flag/issues/355
@@ -2397,6 +2421,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#1048]: https://github.com/koboldpress/black-flag/issues/1048
 [#1049]: https://github.com/koboldpress/black-flag/issues/1049
 [#1050]: https://github.com/koboldpress/black-flag/issues/1050
+[#1051]: https://github.com/koboldpress/black-flag/issues/1051
 [#1052]: https://github.com/koboldpress/black-flag/issues/1052
 [#1053]: https://github.com/koboldpress/black-flag/issues/1053
 [#1054]: https://github.com/koboldpress/black-flag/issues/1054
@@ -2406,3 +2431,12 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#1060]: https://github.com/koboldpress/black-flag/issues/1060
 [#1062]: https://github.com/koboldpress/black-flag/issues/1062
 [#1063]: https://github.com/koboldpress/black-flag/issues/1063
+[#1064]: https://github.com/koboldpress/black-flag/issues/1064
+[#1065]: https://github.com/koboldpress/black-flag/issues/1065
+[#1066]: https://github.com/koboldpress/black-flag/issues/1066
+[#1067]: https://github.com/koboldpress/black-flag/issues/1067
+[#1072]: https://github.com/koboldpress/black-flag/issues/1072
+[#1074]: https://github.com/koboldpress/black-flag/issues/1074
+[#1077]: https://github.com/koboldpress/black-flag/issues/1077
+[#1082]: https://github.com/koboldpress/black-flag/issues/1082
+[#1083]: https://github.com/koboldpress/black-flag/issues/1083
