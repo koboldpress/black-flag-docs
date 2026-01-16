@@ -17,7 +17,7 @@
   - Blood Reservoir: Bloodstone Sentinel
   - Corrupted Art Healing: Virtuoso Lich
   - Join Malleable: Moderate Malleable; Major Malleable, and Massive Malleable
-  - Surpress HP: Diminution Drake
+  - Suppress HP: Diminution Drake
   - Swarm Form: Bone Colossus, Bone Posthume Swarm
   - Replicate/Join: Ulnorya
   - And more...
