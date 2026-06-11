@@ -1,7 +1,8 @@
-# Tome of Beasts II Change Log
-
-## 1.0.0
-- Initial Release
+---
+layout: page
+title: Tome of Beasts II Changelog
+permalink: /changelogs/tomb-of-beasts-2
+---
 
 ## 13.0.0
 - This is a complete update to this module from top to tail for Core v13+ and D&D5e 5.2+.
@@ -13,11 +14,14 @@
 - Corrections from the latest Errata document are also included (05/29/2025).
 - Added Table of Contents to the Journal Compendium
 - Applications added throughout on select creatures to extend the functionality of FoundryVTT or help the GM manage a special feature during an encounter.
-  - Sewer Plague Rest Recovery: Brachyura Shambler, Pestilence Swarm, and Sporous Crab
-  - Blood Reservoir: Bloodstone Sentinel
-  - Corrupted Art Healing: Virtuoso Lich
-  - Join Malleable: Moderate Malleable; Major Malleable, and Massive Malleable
-  - Suppress HP: Diminution Drake
-  - Swarm Form: Bone Colossus, Bone Posthume Swarm
-  - Replicate/Join: Ulnorya
-  - And more...
+- Sewer Plague Rest Recovery: Brachyura Shambler, Pestilence Swarm, and Sporous Crab
+- Blood Reservoir: Bloodstone Sentinel
+- Corrupted Art Healing: Virtuoso Lich
+- Join Malleable: Moderate Malleable; Major Malleable, and Massive Malleable
+- Suppress HP: Diminution Drake
+- Swarm Form: Bone Colossus, Bone Posthume Swarm
+- Replicate/Join: Ulnorya
+- And more...
+
+## 1.0.0
+- Initial Release

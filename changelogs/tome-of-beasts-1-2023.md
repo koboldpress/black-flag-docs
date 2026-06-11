@@ -1,4 +1,8 @@
-# Tome of Beasts I 2023 Changelong
+---
+layout: page
+title: Tome of Beasts I 2023 Changelog
+permalink: /changelogs/tomb-of-beasts-1-2023
+---
 
 ## 13.0.0
 - This is a complete update to this module from top to tail for Core v13+ and D&D5e 5.2+.
