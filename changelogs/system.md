@@ -4,17 +4,87 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [3.0.075] - Flinderbeast: V14, Enchant, Teleport, & PG2 Support
+This major update brings support for Foundry V14 to Black Flag, resolving numerous compatibility issues in the system, fixing a number of long-standing bugs, and adding full support for detached windows and the new region-based measured templates.
+
+This update also brings a number of new features including two new activity types: Enchant for applying enchantment active effects to items and Teleport for moving your token. The Summon activity also now supports matching token disposition and adding temporary HP to summoned creatures and the Forward activity can now override the activation cost. Across all activities applied effects can now be limited to certain class or character levels.
+
+Finally there are several features added to support the upcoming Player's Guide 2 book. The Spellcasting advancement now supports multiple sources of magic and replacing spells when using the "Spellbook" learning mode, fully supporting the Theurge class. There is also now an optional "Epic Advancement" mode that enables levels 21–30 where players are able t take advantage of Epic Improvements and Epic Level Boons.
+
+### Improvements
+- Added Enchant activity, rework how enchant activities consider themselves "applied" ([#741])
+- Features tab now displays subclass, lineage, heritage, & background names, class levels ([#981])
+- Active effects applied by activities can now be limited by levels ([#1068])
+- Dependent documents are now handled through `dependentOn` flag ([#1081])
+- Starting equipment can now have an arbitrary amount of gold ([#1088])
+- Summon activity now has a "Match Disposition" option ([#1089])
+- Resolved numerous deprecation warnings in V14 ([#1112])
+- Fully added support for detached windows ([#1113])
+- Template & token placement systems have been reworked to take advantage of new V14 APIs ([#1130])
+- Spellcasting advancement now supports multiple sources of magic, enabling the Theurge to be implemented ([#1131])
+- Choose Features advancement choices can now be filtered by a specific class if feature type supports it ([#1132])
+- Spellcasting advancement now supports "Replace" option when the "Spellbook" learning mode is enabled ([#1134])
+- Added support for optional Epic Advancement rule from PG2 ([#1138])
+- Migrated `standard` active effects back into `base` type ([#1142])
+- Stand-along active effect documents can now be applied with activities ([#1143], [#1144])
+- Area of Effect options now includes "Wall (ring)" type ([#1146])
+- Added Teleport activity ([#1148])
+- Magical bonus on armor, ammunition, and weapons can now be a formula ([#1150])
+- Summon activity now has option to add temporary HP to summoned creatures ([#1152])
+- Forward activity can now set new activation cost, cast activity now properly fetches cost from linked spell ([#1154])
+- New `round` period called at the top of each combat round ([#1155])
+- Added framework for applying persisted migrations to world documents & non-module compendiums ([#1157])
+- Applied and Template enchantments are now displayed in their own sheet sections ([#1159])
+- Items can now be hidden on the actor sheet using an active effect ([#1161])
+- Overrides are now always usable when configuring rider activities ([#1163])
+- Renamed "Round" recovery to "Start of Turn" and added "End of Turn" ([#1164])
+- Activation dialog now always displays the scaling slider if a maximum is set ([#1166])
+- Active effects on actor & item sheets now display rich tooltip when hovered ([#1168])
+- Swapped to using non-persisted fields rather than bespoke `FORMULA_FIELDS` system ([#1169])
+
+### Compendium Content
+- Armor Expert talent now properly adds AC when taken ([#945])
+- Manifest Miracles is now spelled correctly ([#1086])
+- Rage and other effects filtering on removed `activity.type.value` key now use proper key ([#1091])
+- Stone Golem's Protective Slabs activity now has correct formula ([#1092])
+- Grave Touch now uses spellcasting ability for attack rolls ([#1099])
+- Martial Actions, Heroic Boons, & Epic Boons now all accept additional choice beyond base pool ([#1105], [#1133])
+- Dark One's Blessing now has correct formula for Warlock level ([#1127])
+- New "Active Effects" compendium contains a number of pre-built active effects ([#1145])
+
+### Bug Fixes
+- Spells without spell mode set are now treated as "standard" spells for displaying preparation button ([#1084])
+- Modifying portrait through character sheet header now works properly ([#1087])
+- Resting no longer throws error when producing rest result message ([#1097])
+- `[[/heal]]` now works as proper alias for `[[/healing]]` enricher ([#1100])
+- Spells should now properly communicate scaling level with damage rolls ([#1104])
+- Data models have been updated to fix compatibility issues with V14 ([#1111], [#1121])
+- Tool checks through enrichers should now respect proficiency of roller ([#1114])
+- Skill, tool, vehicle, and attack rolls should no longer throw errors when reconfigured in V14 ([#1122])
+- `BasicRoll#buildPost` should no longer transform roll data into a serialized format in V14 ([#1123])
+- Tools added via effect or advancement should now display properly on sheet in V14 ([#1124])
+- Map Location journal entry page pins should no longer throw error when dragged to canvas ([#1125])
+- PCs without any armor proficiency will no longer be considered proficient in all armor types ([#1129])
+- All status effects defined by the system are available in V14 ([#1136])
+- Interacting with token status HUD will no longer throw an error in V14 ([#1137])
+- At-will, innate, and ritual spells no longer display spell circle selection is activation dialog ([#1149])
+- Enchantments targeting `system.damage.base` are now properly reflected in rolled damage ([#1156])
+- Update activity & advancement documents will no longer cause data not present in form to be lost in V14 ([#1162])
+- Damage enrichers now support any capitalization for inferred damage types ([#1165])
+- Save activity will no longer show "DC 0" on the chat button if no DC formula is set ([#1167])
+
+
 ## [2.0.074] - Ettercap: Hit Die Rolling
 Adds the ability to roll consumed hit dice in an activity and fixes several issues.
 
 ### Improvements
 - Allow hit dice that are consumed by an activity to be rolled using `@consumed.hd` formula ([#351])
-- Add hints to consumption target field when item isn't embedded ([#1051])
+- Added hints to consumption target field when item isn't embedded ([#1051])
 - Consumption targets now support identifier-based remapping in addition to UUID remapping ([#1066])
 - Summoned tokens will now be placed at same elevation as summoner ([#1083])
 
 ### Compendium Content
-- Add hit die rolling to Fighter's "Last Stand" feature ([#351])
+- Added hit die rolling to Fighter's "Last Stand" feature ([#351])
 - Frightened condition reference page is no longer misspelled ([#1077])
 
 ### Bug Fixes
@@ -1569,6 +1639,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [2.0.072]: https://github.com/koboldpress/black-flag/releases/tag/2.0.072
 [2.0.073]: https://github.com/koboldpress/black-flag/releases/tag/2.0.073
 [2.0.074]: https://github.com/koboldpress/black-flag/releases/tag/2.0.074
+[3.0.075]: https://github.com/koboldpress/black-flag/releases/tag/3.0.075
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -2198,6 +2269,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#738]: https://github.com/koboldpress/black-flag/issues/738
 [#739]: https://github.com/koboldpress/black-flag/issues/739
 [#740]: https://github.com/koboldpress/black-flag/issues/740
+[#741]: https://github.com/koboldpress/black-flag/issues/741
 [#742]: https://github.com/koboldpress/black-flag/issues/742
 [#743]: https://github.com/koboldpress/black-flag/issues/743
 [#744]: https://github.com/koboldpress/black-flag/issues/744
@@ -2348,6 +2420,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#936]: https://github.com/koboldpress/black-flag/issues/936
 [#937]: https://github.com/koboldpress/black-flag/issues/937
 [#940]: https://github.com/koboldpress/black-flag/issues/940
+[#945]: https://github.com/koboldpress/black-flag/issues/945
 [#947]: https://github.com/koboldpress/black-flag/issues/947
 [#949]: https://github.com/koboldpress/black-flag/issues/949
 [#951]: https://github.com/koboldpress/black-flag/issues/951
@@ -2368,6 +2441,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#971]: https://github.com/koboldpress/black-flag/issues/971
 [#972]: https://github.com/koboldpress/black-flag/issues/972
 [#980]: https://github.com/koboldpress/black-flag/issues/980
+[#981]: https://github.com/koboldpress/black-flag/issues/981
 [#982]: https://github.com/koboldpress/black-flag/issues/982
 [#983]: https://github.com/koboldpress/black-flag/issues/983
 [#985]: https://github.com/koboldpress/black-flag/issues/985
@@ -2435,8 +2509,65 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#1065]: https://github.com/koboldpress/black-flag/issues/1065
 [#1066]: https://github.com/koboldpress/black-flag/issues/1066
 [#1067]: https://github.com/koboldpress/black-flag/issues/1067
+[#1068]: https://github.com/koboldpress/black-flag/issues/1068
 [#1072]: https://github.com/koboldpress/black-flag/issues/1072
 [#1074]: https://github.com/koboldpress/black-flag/issues/1074
 [#1077]: https://github.com/koboldpress/black-flag/issues/1077
+[#1081]: https://github.com/koboldpress/black-flag/issues/1081
 [#1082]: https://github.com/koboldpress/black-flag/issues/1082
 [#1083]: https://github.com/koboldpress/black-flag/issues/1083
+[#1084]: https://github.com/koboldpress/black-flag/issues/1084
+[#1086]: https://github.com/koboldpress/black-flag/issues/1086
+[#1087]: https://github.com/koboldpress/black-flag/issues/1087
+[#1088]: https://github.com/koboldpress/black-flag/issues/1088
+[#1089]: https://github.com/koboldpress/black-flag/issues/1089
+[#1091]: https://github.com/koboldpress/black-flag/issues/1091
+[#1092]: https://github.com/koboldpress/black-flag/issues/1092
+[#1097]: https://github.com/koboldpress/black-flag/issues/1097
+[#1099]: https://github.com/koboldpress/black-flag/issues/1099
+[#1100]: https://github.com/koboldpress/black-flag/issues/1100
+[#1104]: https://github.com/koboldpress/black-flag/issues/1104
+[#1105]: https://github.com/koboldpress/black-flag/issues/1105
+[#1111]: https://github.com/koboldpress/black-flag/issues/1111
+[#1112]: https://github.com/koboldpress/black-flag/issues/1112
+[#1113]: https://github.com/koboldpress/black-flag/issues/1113
+[#1114]: https://github.com/koboldpress/black-flag/issues/1114
+[#1121]: https://github.com/koboldpress/black-flag/issues/1121
+[#1122]: https://github.com/koboldpress/black-flag/issues/1122
+[#1123]: https://github.com/koboldpress/black-flag/issues/1123
+[#1124]: https://github.com/koboldpress/black-flag/issues/1124
+[#1125]: https://github.com/koboldpress/black-flag/issues/1125
+[#1127]: https://github.com/koboldpress/black-flag/issues/1127
+[#1129]: https://github.com/koboldpress/black-flag/issues/1129
+[#1130]: https://github.com/koboldpress/black-flag/issues/1130
+[#1131]: https://github.com/koboldpress/black-flag/issues/1131
+[#1132]: https://github.com/koboldpress/black-flag/issues/1132
+[#1133]: https://github.com/koboldpress/black-flag/issues/1133
+[#1134]: https://github.com/koboldpress/black-flag/issues/1134
+[#1136]: https://github.com/koboldpress/black-flag/issues/1136
+[#1137]: https://github.com/koboldpress/black-flag/issues/1137
+[#1138]: https://github.com/koboldpress/black-flag/issues/1138
+[#1142]: https://github.com/koboldpress/black-flag/issues/1142
+[#1143]: https://github.com/koboldpress/black-flag/issues/1143
+[#1144]: https://github.com/koboldpress/black-flag/issues/1144
+[#1145]: https://github.com/koboldpress/black-flag/issues/1145
+[#1146]: https://github.com/koboldpress/black-flag/issues/1146
+[#1148]: https://github.com/koboldpress/black-flag/issues/1148
+[#1149]: https://github.com/koboldpress/black-flag/issues/1149
+[#1150]: https://github.com/koboldpress/black-flag/issues/1150
+[#1152]: https://github.com/koboldpress/black-flag/issues/1152
+[#1154]: https://github.com/koboldpress/black-flag/issues/1154
+[#1155]: https://github.com/koboldpress/black-flag/issues/1155
+[#1156]: https://github.com/koboldpress/black-flag/issues/1156
+[#1157]: https://github.com/koboldpress/black-flag/issues/1157
+[#1159]: https://github.com/koboldpress/black-flag/issues/1159
+[#1161]: https://github.com/koboldpress/black-flag/issues/1161
+[#1162]: https://github.com/koboldpress/black-flag/issues/1162
+[#1163]: https://github.com/koboldpress/black-flag/issues/1163
+[#1164]: https://github.com/koboldpress/black-flag/issues/1164
+[#1165]: https://github.com/koboldpress/black-flag/issues/1165
+[#1166]: https://github.com/koboldpress/black-flag/issues/1166
+[#1167]: https://github.com/koboldpress/black-flag/issues/1167
+[#1168]: https://github.com/koboldpress/black-flag/issues/1168
+[#1169]: https://github.com/koboldpress/black-flag/issues/1169
+[#1161]: https://github.com/koboldpress/black-flag/issues/1161

@@ -4,6 +4,18 @@ title: Player’s Guide Changelog
 permalink: /changelogs/players-guide
 ---
 
+## 3.0.008
+- Armor Expert talent now properly adds AC when taken ([#945])
+- Fixed Chaos Origin not granting spells ([#1073])
+- Fixed number of languages granted by Anointed heritage ([#1075])
+- Manifest Miracles is now spelled correctly ([#1086])
+- Rage and other effects filtering on removed `activity.type.value` key now use proper key ([#1091])
+- Grave Touch now uses spellcasting ability for attack rolls ([#1099])
+- Changed Fire Under Tongue to already have usage consumed ([#1103])
+- Dark One's Blessing now has correct formula for Warlock level ([#1127])
+- Martial Actions, Heroic Boons, & Epic Boons now support additional drops ([#1105], [#1132], [#1133])
+- Various activities have swapped to use new Teleport activity ([#1148])
+
 ## 2.0.007
 - Changed Touch of Luck to increase amount of luck granted on failed attack or save ([#487])
 - Changed activity descriptions on Wind Up ability to match rule text ([#983])
@@ -62,6 +74,7 @@ permalink: /changelogs/players-guide
 [#914]: https://github.com/koboldpress/black-flag/issues/914
 [#937]: https://github.com/koboldpress/black-flag/issues/937
 [#940]: https://github.com/koboldpress/black-flag/issues/940
+[#945]: https://github.com/koboldpress/black-flag/issues/945
 [#947]: https://github.com/koboldpress/black-flag/issues/947
 [#955]: https://github.com/koboldpress/black-flag/issues/955
 [#962]: https://github.com/koboldpress/black-flag/issues/962
@@ -70,3 +83,14 @@ permalink: /changelogs/players-guide
 [#985]: https://github.com/koboldpress/black-flag/issues/985
 [#1023]: https://github.com/koboldpress/black-flag/issues/1023
 [#1034]: https://github.com/koboldpress/black-flag/issues/1034
+[#1073]: https://github.com/koboldpress/black-flag/issues/1073
+[#1075]: https://github.com/koboldpress/black-flag/issues/1075
+[#1086]: https://github.com/koboldpress/black-flag/issues/1086
+[#1091]: https://github.com/koboldpress/black-flag/issues/1091
+[#1099]: https://github.com/koboldpress/black-flag/issues/1099
+[#1103]: https://github.com/koboldpress/black-flag/issues/1103
+[#1105]: https://github.com/koboldpress/black-flag/issues/1105
+[#1127]: https://github.com/koboldpress/black-flag/issues/1127
+[#1132]: https://github.com/koboldpress/black-flag/issues/1132
+[#1133]: https://github.com/koboldpress/black-flag/issues/1133
+[#1148]: https://github.com/koboldpress/black-flag/issues/1148
