@@ -1648,6 +1648,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [2.0.073]: https://github.com/koboldpress/black-flag/releases/tag/2.0.073
 [2.0.074]: https://github.com/koboldpress/black-flag/releases/tag/2.0.074
 [3.0.075]: https://github.com/koboldpress/black-flag/releases/tag/3.0.075
+[3.0.076]: https://github.com/koboldpress/black-flag/releases/tag/3.0.076
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
