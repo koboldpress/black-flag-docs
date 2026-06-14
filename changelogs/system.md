@@ -4,6 +4,14 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [3.0.076] - Flinderbeast: Modifiers & Movement Fixes
+Fix bugs caused by multiple modifiers added by active effects and preventing movement preparation.
+
+### Bug Fixes
+- Multiple modifiers applied using active effects or advancement will no longer cause preparation to fail ([#1173])
+- Movement now starts with a multiplier of `1` rather than `0` ([#1174])
+
+
 ## [3.0.075] - Flinderbeast: V14, Enchant, Teleport, & PG2 Support
 This major update brings support for Foundry V14 to Black Flag, resolving numerous compatibility issues in the system, fixing a number of long-standing bugs, and adding full support for detached windows and the new region-based measured templates.
 
@@ -2571,3 +2579,5 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#1168]: https://github.com/koboldpress/black-flag/issues/1168
 [#1169]: https://github.com/koboldpress/black-flag/issues/1169
 [#1161]: https://github.com/koboldpress/black-flag/issues/1161
+[#1173]: https://github.com/koboldpress/black-flag/issues/1173
+[#1174]: https://github.com/koboldpress/black-flag/issues/1174
