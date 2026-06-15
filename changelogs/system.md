@@ -4,6 +4,13 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [3.0.077] - Flinderbeast: Equipment Advancement Fix
+Fix an issue with migrating data for characters who choose starting gold rather than equipment.
+
+### Bug Fixes
+- Migration of equipment value data no longer uses incorrect key ([#1175])
+
+
 ## [3.0.076] - Flinderbeast: Modifiers & Movement Fixes
 Fix bugs caused by multiple modifiers added by active effects and preventing movement preparation.
 
@@ -1649,6 +1656,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [2.0.074]: https://github.com/koboldpress/black-flag/releases/tag/2.0.074
 [3.0.075]: https://github.com/koboldpress/black-flag/releases/tag/3.0.075
 [3.0.076]: https://github.com/koboldpress/black-flag/releases/tag/3.0.076
+[3.0.077]: https://github.com/koboldpress/black-flag/releases/tag/3.0.077
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -2582,3 +2590,4 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#1161]: https://github.com/koboldpress/black-flag/issues/1161
 [#1173]: https://github.com/koboldpress/black-flag/issues/1173
 [#1174]: https://github.com/koboldpress/black-flag/issues/1174
+[#1175]: https://github.com/koboldpress/black-flag/issues/1175
