@@ -4,6 +4,23 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [3.0.078] - Flinderbeast - Assorted Bug Fixes
+Fix a variety of bugs and open up Natural Adaptation options.
+
+### Compendium Content
+- Updated Smallfolk to support new Natural Adaptation options provided by other modules ([#1180])
+
+### Bug Fixes
+- Using activities with AoE templates no longer throws error ([#1181])
+- Activity range formulas no long display as infinite in chat cards ([#1182])
+- Scale value CRs of 1/8 and 1/4 now display properly ([#1184])
+- Changing Class Restriction on advancement now saves properly ([#1186])
+- Replacing previous choice with Choose Features advancement now works again ([#1188])
+- Teleport activity now respects infinite distances ([#1189])
+- Spell slot consumption in activities is no longer inverted ([#1190])
+
+
+
 ## [3.0.077] - Flinderbeast: Equipment Advancement Fix
 Fix an issue with migrating data for characters who choose starting gold rather than equipment.
 
