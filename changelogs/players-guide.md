@@ -4,6 +4,10 @@ title: Player’s Guide Changelog
 permalink: /changelogs/players-guide
 ---
 
+## 3.0.009
+- Updated Kobold, Smallfolk & Syderean to support module-provided Natural Adaptation options ([#1180])
+- Fixed pact recovery in Eldritch Master to work with latest system update ([#1190])
+
 ## 3.0.008
 - Armor Expert talent now properly adds AC when taken ([#945])
 - Fixed Chaos Origin not granting spells ([#1073])
@@ -94,3 +98,5 @@ permalink: /changelogs/players-guide
 [#1132]: https://github.com/koboldpress/black-flag/issues/1132
 [#1133]: https://github.com/koboldpress/black-flag/issues/1133
 [#1148]: https://github.com/koboldpress/black-flag/issues/1148
+[#1180]: https://github.com/koboldpress/black-flag/issues/1180
+[#1190]: https://github.com/koboldpress/black-flag/issues/1190
