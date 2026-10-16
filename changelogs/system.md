@@ -4,6 +4,13 @@ title: System Changelog
 permalink: /changelogs/system
 ---
 
+## [3.0.079] - Flinderbeast - Sheet Registration Bug Fix
+Fix a bug introduced by 14.369 preventing sheets from being registered.
+
+### Bug Fixes
+- Fixed failure during sheet registration ([#1217])
+
+
 ## [3.0.078] - Flinderbeast - Assorted Bug Fixes
 Fix a variety of bugs and open up Natural Adaptation options.
 
@@ -18,7 +25,6 @@ Fix a variety of bugs and open up Natural Adaptation options.
 - Replacing previous choice with Choose Features advancement now works again ([#1188])
 - Teleport activity now respects infinite distances ([#1189])
 - Spell slot consumption in activities is no longer inverted ([#1190])
-
 
 
 ## [3.0.077] - Flinderbeast: Equipment Advancement Fix
@@ -1675,6 +1681,7 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [3.0.076]: https://github.com/koboldpress/black-flag/releases/tag/3.0.076
 [3.0.077]: https://github.com/koboldpress/black-flag/releases/tag/3.0.077
 [3.0.078]: https://github.com/koboldpress/black-flag/releases/tag/3.0.078
+[3.0.079]: https://github.com/koboldpress/black-flag/releases/tag/3.0.079
 
 [#1]: https://github.com/koboldpress/black-flag/issues/1
 [#2]: https://github.com/koboldpress/black-flag/issues/2
@@ -2617,3 +2624,4 @@ Character creation workflow created with classes, lineages, heritages, and backg
 [#1188]: https://github.com/koboldpress/black-flag/issues/1188
 [#1189]: https://github.com/koboldpress/black-flag/issues/1189
 [#1190]: https://github.com/koboldpress/black-flag/issues/1190
+[#1217]: https://github.com/koboldpress/black-flag/issues/1217
