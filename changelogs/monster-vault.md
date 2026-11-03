@@ -4,9 +4,8 @@ title: Monster Vault Changelog
 permalink: /changelogs/monster-vault
 ---
 
-**Note**:  The current version of the module is released on v1.3.067 of the Black Flag System and FVTT v13.347. As development for this system and core software is ongoing, some issues/bugs may appear in the content. If you find any issues/bugs in this module, please report them to https://support.koboldpress.com/ with the following information.
-
----
+## 14.0.0
+- Updated manifest to FoundryVTT v14.x and Black Flag 3.x.
 
 ## 13.0.1
 - Verified for v13
